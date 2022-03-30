@@ -4,7 +4,7 @@
 build
 .idea
 curriculum-ddd.iml
-.settings/org.eclipse.buildship.core.prefs
+.settings/
 .project
 learning-objectives.adoc
-.vscode/settings.json
+.vscode/
