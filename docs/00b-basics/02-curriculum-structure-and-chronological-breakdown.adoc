@@ -15,7 +15,6 @@
 
 |===
 
-
 // end::DE[]
 
 // tag::EN[]
@@ -39,5 +38,12 @@
 // end::EN[]
 
 // tag::REMARK[]
+[NOTE]
+====
+Bitte die oben angegebene Tabelle entsprechend anpassen.
 
+= = =
+
+Please adjust the table above according to your curriculum.
+====
 // end::REMARK[]
