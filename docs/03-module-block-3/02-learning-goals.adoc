@@ -1,31 +1,65 @@
 === {learning-goals}
 
 // tag::DE[]
+Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodell die entspre- chenden fachlichen Klassen abzuleiten.
+
 [[LZ-3-1]]
-==== LZ 3-1: Dies ist das erste Lernziel in Kapitel 3, das mit xyz
-
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
-
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+==== LZ 3-1: Ein Domänenmodell um technisch motivierte Bausteine von DDD erweitern können
+* Die TN können für ein vorliegendes Domänenmodell bestehend aus Entities, Value Objects und Services weitere Bausteine bestimmen:
+** Factories zur Erzeugung von Entities
+** Repositories für die Verwaltung von Entities
+** Aggregates, um Entities und Value Types zu kapseln
 
 [[LZ-3-2]]
-==== LZ 3-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+==== LZ 3-2: Schnittstellen für fachliche Klassen modellieren können
+* Die TN können die Entwurfsprinzipien und Heuristiken aus dem Foundation Level für den DDD-Entwurf einschätzen und anwenden.
+* Die TN beherrschen die Technik CRC-Karten als Hilfsmittel bei der Modellierung.
+
+
+[[LZ-3-3]]
+==== LZ 3-3: Wechselwirkungen zwischen einer Implementation und ihrem Modell kennen und berücksich-
+tigen können
+* Die TN verstehen, dass Veränderungen in der Fachsprache oder dem Modell entsprechende Veränderungen in der Software folgen müssen.
+* Die TN verstehen, dass Änderungen an der Implementierung des Modells, beispielsweise durch Refactorings von Services oder Repositories, ein Hinweis darauf sind, dass das Domä- nenmodell aktualisieren werden sollte.
+
+
+[[LZ-3-4]]
+==== LZ 3-4: Argumentieren können, wieso sich DDD bei komplexer Geschäftslogik lohnt
+* Die TN kennen alternative Ansätze und können die Vorteile von DDD bei komplexer Ge- schäftslogik vermitteln.
+** Table Module, Transaction Script und Domain Model (Fowler, Patterns of Enterprise Application Architecture, 2002)
+** Smart UI (Evans, 2003)
 
 // end::DE[]
 
 // tag::EN[]
+This section teaches methods and approaches to derive the corresponding domain classes from a domain model.
+
 [[LG-3-1]]
-==== LG 3-1: TBD
-tbd.
+==== LG 3-1: Be able to extend a domain model with technical building blocks from DDD
+* The course participants specify additional components for an existing domain model consisting of Entities, Value Objects, and Services:
+** Factories to create Entities
+** Repositories to manage Entities
+** Aggregates to encapsulate Entities and Value Types
+
 
 [[LG-3-2]]
-==== LG 3-2: TBD
-tbd.
+==== LG 3-2: Be able to model interfaces for domain classes
+* The course participants can assess and apply the design principles and heuristics from the Foundation Level to the DDD design.
+* The course participants are proficient in the CRC-Cards technique as a tool for modeling.
+
+
+[[LG-3-3]]
+==== LG 3-3: Know and be able to take into account interactions between an implementation and its model
+* The course participants understand that changes in the domain-specific terminology or in the model must be followed by corresponding changes in the software.
+* The course participants understand that changes to the implementation of the model, such as due to the refactoring of Services or Repositories, are an indication that the domain model should be updated.
+
+
+[[LG-3-4]]
+==== LG 3-4: Be able to argue why DDD is worthwhile for complex business logic
+* The course participants know alternative approaches and can explain the advantages of DDD for complex business logic.
+** Table Module, Transaction Script and Domain Model (Fowler, Patterns of Enterprise Application Architecture, 2002)
+** Smart UI (Evans, 2003)
+
 // end::EN[]
 
 // tag::REMARK[]

@@ -1,21 +1,29 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 60 Min. | Übungszeit: 60 Min.
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
 
+* Kohäsion und Kopplung 
+* SOLID
+* Zyklenfreiheit
+* Law of Demeter 
+* CRC-Karten
 
 // end::DE[]
 
 // tag::EN[]
 |===
-| Duration: XXX min | Practice time: XXX min
+| Duration: 60 min | Practice time: 60 min
 |===
 
 === Terms and Principles
-Term 1, Term 2, Term 3
+* Cohesion and coupling
+* SOLID
+* Avoidance of cyclical dependencies
+* Law of Demeter
+* CRC cards
 
 // end::EN[]
 
