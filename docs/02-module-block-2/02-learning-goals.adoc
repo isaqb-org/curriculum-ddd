@@ -1,30 +1,175 @@
 === {learning-goals}
 
 // tag::DE[]
-[[LZ-2-1]]
-==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
+In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten ein Domänenmodell erstellen und verfeinern können.
 
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+[[LZ-2-1]]
+==== LZ 2-1: Den hohen Stellenwert von Domänen-Experten in DDD kennen und erläutern können
+* Die TN können Domänen-Experten vermitteln, dass DDD ihnen Verantwortung und Gestal- tungsmöglichkeiten bietet (Empowerment).
+* Die TN sind in der Lage, einem Entwicklungsteam zu vermitteln, dass Software die vorhandene Domäne unterstützen muss.
+* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domä- nen-Experten vorhanden ist.
+* Die TN verstehen, dass implizites Domänen-Wissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
+* Die TN sind in der Lage, Vertrauen bei Domänen-Experten in das Modell und in die gleichbe- rechtigte Zusammenarbeit zu schaffen.
+* Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestal- tung durch die Domänen-Experten vermitteln.
 
 [[LZ-2-2]]
-==== LZ 2-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+==== LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner unterstützen können
+* Die TN kennen Einflussfaktoren auf die Eignung von Domänen-Experten und können diese einschätzen:
+** Umfassende Erfahrung und Wissen in der eigenen Domäne 
+** Motivation
+** Zeitliche Verfügbarkeit während und nach dem Projekt
+** Abstraktionsvermögen
+** Flexibilität
+
+
+[[LZ-2-3]]
+==== LZ 2-3: Mit Domänen-Experten kommunizieren können
+* Die TN beherrschen Modelle um mit Domänen-Experten in einen gleichberechtigten Dialog zu treten:
+** Das Kommunikationsquadrat 
+** Vier-Ohren-Modell
+** Das innere Team
+* Die TN verstehen, dass der Kommunikation zwischen Fachbereichen und Entwicklungsteams in DDD eine zentrale Bedeutung zukommt.
+* Die TN verstehen, dass Domänen-Experten bewusst und unbewusst über Domänenwissen verfügen.
+
+
+[[LZ-2-4]]
+==== LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänen-Experten einsetzen können
+* Die TN beherrschen die Verwendung von Klassen- und Objektdiagrammen zur Darstellung von Domänenmodellen.
+* Die TN beherrschen szenariobasierte Modellierungstechniken: 
+** Use-Cases
+** User-Stories zu späteren Modellierung von Domain Events
+** Domain Events
+* Die TN können Glossare für die Begriffe einer Ubiquitous Language anlegen.
+
+
+[[LZ-2-5]]
+==== LZ 2-5:  Interviews als Mittel zur Modellierung führen können
+* Die TN verstehen, dass Interviews geeignet sind, um bewusstes Domänenwissen offenzule- gen.
+* Die TN verstehen, dass der Interviewer das Gespräch auch unbewusst beeinflusst.
+** die Auswahl der Fragen bestimmt, was zur Sprache kommt
+** der Interviewer hat eigenen Annahmen, die der Interview-Partner nicht kennt 
+** durch den Bestätigungsfehler können Missverständnisse entstehen
+* Die TN beherrschen es, ein Interview entlang eines konkreten Szenarios aus der Domäne zu strukturieren und durchzuführen.
+* Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, wel- ches der Interview-Partner nachvollziehen kann.
+
+
+[[LZ-2-6]]
+==== LZ 2-6: Beobachtung als Mittel zur Modellierung beherrschen
+* Die TN können die Beobachtungstechniken Feldbeobachtung und Apprenticing3 als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:
+** Feldbeobachtung
+*** Analyse als stiller Beobachter
+*** Arbeitsabläufe werden schriftlich erfasst
+*** Verständnisfragen an den Domänen-Experten in seltenen Fällen 
+** Apprenticing
+*** Ist eine Erweiterung der Feldbeobachtung
+*** Nach einer Reihe von Beobachtungsdurchläufen übernehmen die Beobachter exemplarisch einen kleinen Teil der Arbeit des Domänen-Experten
+
+
+[[LZ-2-7]]
+==== LZ 2-7: Einen Event-Storming-Workshop durchführen können
+* Die TN können einen Event-Storming-Workshop (Brandolini, 2013) vorbereiten, moderieren, und nachbereiten.
+* Die TN verstehen, dass Event-Storming-Workshops ohne strenge Koordination stattfinden.
+* Die TN verstehen, dass Event Storming sich auf die Erhebung von Domain Events konzentriert.
+* Die TN können die ungeordnete Information aus dem Workshop strukturieren.
+
+
+[[LZ-2-8]]
+==== LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänen-Experten diskutieren können
+* Die TN können organisatorische Rahmenbedingungen ermitteln und berücksichtigen:
+** Technische und räumliche Ressourcen
+** Räumliche Verteilung der Domänen-Experten
+** Juristische Rahmenbedingungen für das Anfertigen von Mitschriften, Audio/Video-Streams, Fotos, etc.
+* Die TN können mit den Domänen-Experten diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.
+* Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Exper- ten und Entwicklern diskutieren.
+
 
 // end::DE[]
 
 // tag::EN[]
 [[LG-2-1]]
-==== LG 2-1: TBD
-tbd.
+==== LG 2-1: Know and be able to explain the high importance of domain experts in DDD
+* The course participants can teach domain experts that DDD offers them responsibility and creative possibilities (empowerment).
+* The course participants are able to teach a development team that software must support the existing domain.
+* The course participants understand that knowledge about the domain primarily exists in the minds of the domain experts.
+* The course participants understand that implicit domain knowledge must be revealed and recorded so that it can be modeled.
+* The course participants are able to build trust with domain experts regarding the model as well as working together as equals.
+* The course participants are able to communicate to project sponsors and product owners about the need for active participation from the domain experts.
+
 
 [[LG-2-2]]
-==== LG 2-2: TBD
-tbd.
+==== LG 2-2: Be able to provide support in selecting suitable contact persons
+* The course participants know influencing factors concerning the suitability of domain experts and can assess them based on their:
+** comprehensive experience and knowledge in their own domain; 
+** motivation;
+** availability during and after the project;
+** ability to think abstractly; and
+** flexibility.
+
+
+[[LG-2-3]]
+==== LG 2-3: Be able to communicate with domain experts
+* The course participants are proficient in different communication models in order to enter into an equitable dialog with domain experts:
+** the “Communication Square” or “Four Sides” (German: “Kommunikationsquadrat” or “Vier-Seiten”)
+** Four-Ears (German: “Vier Ohren”)
+** the Inner Team (German: „das Innere Team“)
+* The course participants understand that the communication between domain experts and
+development teams in DDD is of critical importance.
+* The course participants understand that domain experts may consciously or unconsciously
+possess domain knowledge.
+
+
+[[LG-2-4]]
+==== LG 2-4: Be able to use modeling techniques when working with domain experts
+* The course participants are proficient in the use of class and object diagrams to depict domain models.
+* The course participants are proficient in scenario-based modeling techniques:
+** Use cases
+** User stories for subsequent modeling of Domain Events
+** Domain Events
+* The course participants can create glossaries for the terms of a ubiquitous language.
+
+
+[[LG-2-5]]
+==== LG 2-5: Be able to conduct interviews to model a domain
+* The course participants understand that interviews are suitable for revealing domain knowledge.
+* The course participants understand that the interviewer also unconsciously influences the conversation.
+** The selection of questions determines what is discussed
+** The interviewer makes their own assumptions, which the interview partner is not aware of
+** Confirmation bias can lead to misunderstandings
+* The course participants are proficient at structuring and conducting an interview relating to a concrete scenario from the domain.
+* The course participants understand that it is helpful to create a model that the interview partner can understand during an interview.
+
+
+[[LG-2-6]]
+==== LG 2-6: Be proficient in observation to understand a domain
+* The course participants can apply the observation techniques of “field observation” and “apprenticing”3 as tools for revealing unconscious domain knowledge:
+** Field observation
+*** Analysis as a silent observer
+*** Working processes are recording in writing
+*** In rare cases, questions to the domain experts to verify comprehension 
+** Apprenticing
+*** Is an expansion of field observation
+*** Following a series of observation cycles, the observers performs a small, but exemplary part of the domain expert's work
+
+
+[[LG-2-7]]
+==== LG 2-7: Be able to conduct an “Event-Storming” workshop
+* The course participants can prepare, host, and follow up on an event-storming workshop (Brandolini, 2013).
+* The course participants understand that event-storming workshops are performed without strict coordination.
+* The course participants understand that event storming focuses on collecting Domain Events.
+* The course participants can structure the disordered information from the workshop.
+
+
+
+[[LG-2-8]]
+==== LG 2-8: Be able to select a suitable modeling approach and discuss it with domain experts
+* The course participants can identify and address organizational constraints:
+** Technical and room resources
+** Geographically distributed domain experts
+** Legal constraints for the production of transcripts, audio/video streams, photos, etc.
+* The course participants can discuss with the domain experts whether the model should be developed iteratively or in advance.
+* The course participants can discuss the consequences of vagueness and misperceptions in the model with domain experts and developers.
+
+
 // end::EN[]
 
 // tag::REMARK[]
