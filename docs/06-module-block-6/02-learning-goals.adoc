@@ -14,7 +14,7 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Mode
 [[LZ-6-2]]
 ==== LZ 6-2: Das eigene Modell von äußeren Einflüssen isolieren können
 * Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.
-* Die TN können die Schnittstellen-Patterns footnote:11[Vgl.: <<gamms>>] einsetzen, um ein Anticorruption Layer zu kon- struieren.
+* Die TN können die Schnittstellen-Patterns footnote:11[Vgl.: <<gamma>>] einsetzen, um ein Anticorruption Layer zu kon- struieren.
 
 
 [[LZ-6-3]]
@@ -39,7 +39,7 @@ This section teaches approaches with which the consistency within a model can be
 [[LG-6-2]]
 ==== LG 6-2: Be able to isolate your own model from external influences
 * The course participants can identify the possible influences that a model of a neighboring system can have on their own model.
-* The course participants can apply the Interface Patterns footnote:11[Cf.: <<gamms>>] to construct an Anti-Corruption Layer.
+* The course participants can apply the Interface Patterns footnote:11[Cf.: <<gamma>>] to construct an Anti-Corruption Layer.
 
 
 [[LG-6-3]]

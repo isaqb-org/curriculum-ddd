@@ -93,4 +93,4 @@ ATTENTION: labels have to be non-numeric.
 
 **Z**
 
-- [[[zullighoven,Züllighoven, H. (1998)]]] Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz. dpunkt.
+- [[[zullighoven,Züllighoven, H. (1998)]]] Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz. dpunkt.
