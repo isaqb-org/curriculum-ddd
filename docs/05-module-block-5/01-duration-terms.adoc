@@ -1,20 +1,26 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 150 Min. | Übungszeit: 60 Min.
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+* Modellkonsistenz
+* Bounded Context, Context Map
+* Shared Kernel, Customer/Supplier Teams, Open Host Service footnote:6[Vgl.: Übersicht auf Seite 388 <<evans>>]
+* Domain Event
 
 // end::DE[]
 
 // tag::EN[]
 |===
-| Duration: XXX min | Practice time: XXX min
+| Duration: 150 min | Practice time: 60 min
 |===
 
 === Terms and Principles
-Term 1, Term 2, Term 3
+* Modelconsistency
+* Bounded Context, Context Map
+* Shared Kernel, Customer/Supplier Teams, Open Host Service footnote:6[Cf.: Overview on page 388 <<evans>>]
+* Domain Event
 
 // end::EN[]
 
