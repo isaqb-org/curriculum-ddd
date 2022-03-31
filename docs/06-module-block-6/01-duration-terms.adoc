@@ -1,20 +1,24 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 60 Min. | Übungszeit: 30 Min.
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+* Anticorruption-Layer 
+* Continuous Integration 
+* Separate Ways footnote:6[]
 
 // end::DE[]
 
 // tag::EN[]
 |===
-| Duration: XXX min | Practice time: XXX min
+| Duration: 60 min | Practice time: 30 min
 |===
 
 === Terms and Principles
-Term 1, Term 2, Term 3
+* Anticorruption-Layer 
+* Continuous Integration 
+* Separate Ways footnote:6[]
 
 // end::EN[]
 

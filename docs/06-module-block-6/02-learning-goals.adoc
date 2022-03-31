@@ -2,22 +2,52 @@
 
 
 // tag::DE[]
+Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt wer- den kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.
+
 [[LZ-6-1]]
-==== LZ 6-1: 
+==== LZ 6-1: Verstehen, wie Continuous Integration(CI)footnote:10[Vgl.: Continuous Integration <<evans>>] zu lokaler Modellkonsistenz beiträgt
+* Die TN kennen die Vorteile davon, CI innerhalb eines Bounded Contexts stattfinden zu lassen, und können dies von Continuous Deployment abgrenzen.
+* Die TN verstehen, dass Continuous Integration einer Fragmentierung des Modells durch ver- schiedene Entwickler entgegenwirkt.
+* Die TN verstehen, dass CI die Kommunikation über das Modell und das Verständnis des Mo- dells durch das Team fördert.
 
 
 [[LZ-6-2]]
-==== LZ 6-2: 
+==== LZ 6-2: Das eigene Modell von äußeren Einflüssen isolieren können
+* Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.
+* Die TN können die Schnittstellen-Patterns footnote:11[Vgl.: <<gamms>>] einsetzen, um ein Anticorruption Layer zu kon- struieren.
+
+
+[[LZ-6-3]]
+==== LZ 6-3: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways), unter Berücksichtigung der Aspekte aus Block 5
+* Die TN können die Koordinierungs-Kosten eines gemeinsamen Modells dem Overhead bei getrennten Modellen gegenüberstellen.
+* Die TN verstehen, dass die Aufteilung eines Modells entlang einer sinnvollen Grenze gesche- hen muss.
+* Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leich- ter zu wahren ist.
+* Die TN sind in der Lage, die verbleibenden Funktionen können zu duplizieren oder miteinander zu integrieren.
 
 // end::DE[]
 
 // tag::EN[]
+This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to outsource parts of the model.
+
 [[LG-6-1]]
-==== LG 6-1: 
+==== LG 6-1: Understand how Continuous Integration (CI)footnote:10[Cf.: Continuous Integration <<evans>>] contributes towards local model consistency
+* The course participants know the advantages of performing CI within a Bounded Context and can differentiate this from continuous deployment.
+* The course participants understand that Continuous Integration counteracts the fragmenting of the model by various developers.
+* The course participants understand that CI promotes communication about the model and the understanding of the model by the team.
 
 
 [[LG-6-2]]
-==== LG 6-2: 
+==== LG 6-2: Be able to isolate your own model from external influences
+* The course participants can identify the possible influences that a model of a neighboring system can have on their own model.
+* The course participants can apply the Interface Patterns footnote:11[Cf.: <<gamms>>] to construct an Anti-Corruption Layer.
+
+
+[[LG-6-3]]
+==== LG 6-3: Understand the circumstances in which it is appropriate to divide the model (Separate Ways), taking into account the aspects from section 5.
+* The course participants can contrast the coordination costs of a common model with the overheads for separate models.
+* The course participants understand that a model must be divided along a sensible boundary.
+* The course participants understand that, in these cases, local model consistency is easier to maintain in two partial models.
+* The course participants are able to duplicate the remaining functions or integrate them with each other.
 
 // end::EN[]
 

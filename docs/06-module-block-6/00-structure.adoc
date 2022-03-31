@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Und so heißt Modul 6
+== Lokale Modellkonsistenz wahren
 // end::DE[]
 
 // tag::EN[]
-== And This is Module no 6
+== Maintaining local model consistency
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
