@@ -32,11 +32,11 @@ vergleichbar.
 ** **Aggregates** dienen der Gruppierung von Entities. Der äußere Zugriff geschieht aus- schließlich über ein global identifizierbares Aggregate Root. Das Aggregate Root ist zudem für die Einhaltung von Invarianten innerhalb des Aggregates verantwortlich. Dies erzielt eine lose Kopplung in der Benutzung von Aggregates, versteckt die ent- haltenen Entities vor äußerem Zugriff und erleichtert so das Einhalten von Invarianten. Der Lebenszyklus aller enthaltenen Entities wird durch den Lebenszyklus des Aggregate Roots bestimmt.
 ** **Factories** stellen Erzeugungsmechanismen für Entities dar. Mit ihnen lässt sich potenziell komplexe Logik aus den Konstruktoren von Entities auslagern.
 ** **Repositories** dienen der Bestandsverwaltung von Entities zur Laufzeit. Das Ermitteln und Herausgeben einer Referenz auf ein Entity oder Aggregate zu einem eindeutigen Identifikator fällt in ihren Aufgabenbereich. Hinter ihnen lassen sich Schnittstellen zu Drittsystemen wie Datenbanken oder entfernten Services verbergen.
-** **Domain Events** unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern1 an angemeldete Klienten propagiert.
+** **Domain Events** unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern footnote:1[Vgl.: Observer <<gamma>>] an angemeldete Klienten propagiert.
 
 [[LZ-1-5]]
 ==== LZ 1-5: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können
-* Die TN sind in der Lage die Bausteine in Beziehung zu setzen und sinnvoll miteinander zu kombinieren2.
+* Die TN sind in der Lage die Bausteine in Beziehung zu setzen und sinnvoll miteinander zu kombinieren.footnote:2[Vgl.: Übersicht auf Seite 65 <<evans>>]
 
 // end::DE[]
 
@@ -74,11 +74,11 @@ Entities. Entities have an identity.
 ** **Aggregates** are used to group Entities. External access exclusively takes place via a globally identifiable Aggregate Root. The Aggregate Root is also responsible for the compliance of invariants within the Aggregate. This achieves a loose coupling when using Aggregates, hides the contained Entities from external access, and facilitates the compliance of invariants. The lifecycle of all contained Entities is thus determined by the lifecycle of the Aggregate Root.
 ** **Factories** represent creation mechanisms for Entities. They allow potentially complex logic to be outsourced from the constructors of Entities.
 ** **Repositories** are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third- party systems such as databases or remote services.
-** **Domain Events** support the sharing of information about the occurrence of domain- related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern1 to registered clients.
+** **Domain Events** support the sharing of information about the occurrence of domain- related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern footnote:1[Cf.: Observer <<gamma>>] to registered clients.
 
 [[LG-1-5]]
 ==== LG 1-5: Know and be able to explain the connections between the building blocks
-* The course participants are able to create a relationship between the building blocks and combine them in a sensible manner2.
+* The course participants are able to create a relationship between the building blocks and combine them in a sensible manner.footnote:2[Cf.: Overview on page 65 <<evans>>]
 
 // end::EN[]
 

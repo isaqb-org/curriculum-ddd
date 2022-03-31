@@ -55,7 +55,7 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten 
 
 [[LZ-2-6]]
 ==== LZ 2-6: Beobachtung als Mittel zur Modellierung beherrschen
-* Die TN können die Beobachtungstechniken Feldbeobachtung und Apprenticing3 als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:
+* Die TN können die Beobachtungstechniken "Feldbeobachtung" und "Apprenticing"footnote:3[Vgl.: Kapitel 10 <<hruschka>>] als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:
 ** Feldbeobachtung
 *** Analyse als stiller Beobachter
 *** Arbeitsabläufe werden schriftlich erfasst
@@ -141,7 +141,7 @@ possess domain knowledge.
 
 [[LG-2-6]]
 ==== LG 2-6: Be proficient in observation to understand a domain
-* The course participants can apply the observation techniques of “field observation” and “apprenticing”3 as tools for revealing unconscious domain knowledge:
+* The course participants can apply the observation techniques of “field observation” and “apprenticing”footnote:3[Cf.: Chapter 10 <<hruschka>>] as tools for revealing unconscious domain knowledge:
 ** Field observation
 *** Analysis as a silent observer
 *** Working processes are recording in writing
