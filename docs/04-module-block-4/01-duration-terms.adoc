@@ -1,21 +1,31 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 105 Min. | Übungszeit: 60 Min.
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+* Hexagonal Architecture (Cockburn, 2012)
+* Command-Query Responsibility Segregation (Dahan, 2009), (Vernon, 2013) 
+* Layered Architecture (Evans, 2003)
+* Dependency Injection (Vernon, 2013)
+* Werkzeug- und Materialansatz (WAM)
+* Behaviour Driven Development (BDD)
 
 
 // end::DE[]
 
 // tag::EN[]
 |===
-| Duration: XXX min | Practice time: XXX min
+| Duration: 105 min | Practice time: 60 min
 |===
 
 === Terms and Principles
-Term 1, Term 2, Term 3
+* Hexagonal Architecture (Cockburn, 2012)
+* Command-Query Responsibility Segregation (Dahan, 2009), (Vernon, 2013) 
+* Layered Architecture (Evans, 2003)
+* Dependency Injection (Vernon, 2013)
+* Werkzeug- und Materialansatz (WAM)
+* Behaviour Driven Development (BDD)
 // end::EN[]
 
 // tag::REMARK[]

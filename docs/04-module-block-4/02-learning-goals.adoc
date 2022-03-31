@@ -1,31 +1,64 @@
 === {learning-goals}
 
 // tag::DE[]
+Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Software-Architek- turen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Do- main Driven Design und zwei verwandten Methoden.
+
 [[LZ-4-1]]
-==== LZ 4-1: Dies ist das erste Lernziel in Kapitel 4, das mit xyz
-
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
-
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+==== LZ 4-1: Ausgewählte Architekturstile beherrschen und ein Domänenmodell integrieren können
+* Die TN können um das Domänenmodell eine hexagonale Architektur entwerfen.
+** **Ports** an den Außenseiten des inneren Hexagons bieten Schnittstellen zur Kommunikation zwischen fachlichem Kern und seiner Umgebung.
+** **Adapter**footnote:4[Vgl.: Adapter <<gamma>>] verbinden die Ports mit konkreten Drittsystemen über verschiedene Kommunikationskanäle wie REST-APIs, SOAP, Message Queues oder Db-Connections.
+** Die Applikation liegt im Inneren des Hexagons mit dem Domänenmodell als Kern.
+** Bei der inneren Modellierung liegt der Fokus auf der Realisierung fachlicher Anforderungen mit Hilfe des Domänenmodells.
+** In der äußeren Modellierung liegt der Fokus auf der Bereitstellung fachlicher Operationen und Daten über plattformunabhängige Schnittstellen.
+** Das Domänenmodell treibt die Modellierung externer Schnittstellen.
+** Ports verwenden Transfer-Klassen anstatt Entities aus dem Domänenmodell. Die TN verstehen, dass dies Versionskonflikte an den Schnittstellen bei Änderungen des Modells entgegenwirkt.
+* Die TN können das Domänenmodell mit dem Command-Query Responsibility Segregation Pattern (CQRS) einsetzen.
+** Aufteilen des Domänenmodells in Query- und Command Model
+** Repositories und Aggregrates für die jeweilige Verarbeitung von Commands oder Queries
+** Domain Events als Synchronisationsmittel zwischen Query- und Command Model
+* Die TN können Software-Entwicklern die Unterschiede von CQRS, einer hexagonalen Archi- tektur und einer Schichtenarchitektur vermitteln.
 
 [[LZ-4-2]]
-==== LZ 4-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+==== LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD, WAM und BDD formulieren können
+* Die TN kennen Spezifikationen aus BDD und können sie mit der Ubiquitous Language in Zu- sammenhang bringen. Sie verstehen, dass sich Spezifikationen mit den Wörtern der UL formulieren lassen.
+* Die TN verstehen, dass BDD Anforderungen mithilfe der Benutzungsschnittstelle formuliert (Outside-In), und DDD Anforderungen dies über das Domänenmodell ausdrückt (Inside-Out)footnote:5[Vgl.: <<stenberg>>]
+* Die TN können die Bausteine von DDD mit den Bausteinen von WAM vergleichen.
 
 // end::DE[]
 
 // tag::EN[]
+This section uses selected examples to teach how a domain model can be integrated into software architectures. On the basis of examples, it teaches the similarities and differences between domain- driven design and two related methods.
+
 [[LG-4-1]]
-==== LG 4-1: TBD
-tbd.
+==== LG 4-1: Be proficient in selected architecture styles and be able to integrate a domain model
+* The course participants can design a hexagonal architecture for the domain model.
+** **Ports** to the outer sides of the inner hexagon offer interfaces for communication
+between the core of the domain and its environment.
+** **Adapters**footnote:4[Cf.: Adapter <<gamma>>] connect the ports to specific third-party systems via various
+communication channels, such as REST APIs, SOAP, message queues or database
+connections.
+** The application lies inside the hexagon with the domain model as the core.
+** During internal modeling, the focus lies on implementing domain requirements with
+the help of the domain model.
+** In external modeling, the focus lies on providing domain operations and data via
+platform-independent interfaces.
+** The domain model drives the modeling of external interfaces.
+** Ports use transfer classes instead of Entities from the domain model. The course
+participants understand that this counteracts conflicts between versions at the
+interfaces in the event of changes to the model.
+* The course participants can use the domain model with the Command Query Responsibility
+Segregation pattern (CQRS).
+** Division of the domain model into query and command model
+** Repositories and Aggregates for the respective processing of commands or queries o Domain Events as a synchronization tool between query and command model
+* The course participants can explain the differences between CQRS, a hexagonal architecture, and a layered architecture to software developers.
 
 [[LG-4-2]]
-==== LG 4-2: TBD
-tbd.
+==== LG 4-2: Be able to formulate correlations and distinctions between DDD, T&M Approach and BDD
+* The course participants know specifications from BDD and can relate them to the ubiquitous language. They understand that specifications can be formulated with the terms of the ubiquitous language.
+* The course participants understand that BDD formulates requirements with the help of the user interface (outside-in), and DDD expresses requirements via the domain model (inside- out)footnote:5[Cf.: <<stenberg>>]
+* The course participants can compare the building blocks of DDD with the components of the T&M approach.
+
 // end::EN[]
 
 // tag::REMARK[]

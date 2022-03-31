@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Viertes Modul, das ist sein Titel
+== Das Modell in der Anwendungsarchitektur
 // end::DE[]
 
 // tag::EN[]
-== Fourth Module, This is its Title
+== The model in the application architecture
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
