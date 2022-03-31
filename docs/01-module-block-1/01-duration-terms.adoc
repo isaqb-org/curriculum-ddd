@@ -1,33 +1,36 @@
-// tag::DE[]
-|===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
-|===
-
-=== Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
-
-// end::DE[]
-
-// tag::EN[]
-|===
-| Duration: XXX min | Practice time: XXX min
-|===
-
-=== Terms and Principles
-Term 1, Term 2, Term 3
-// end::EN[]
-
-
 // tag::REMARK[]
 [NOTE]
 ====
 Überschrift in 00-structure.adoc ersetzen
 ====
 // end::REMARK[]
+// tag::DE[]
+|===
+| Dauer: 120 Min. | Übungszeit: 75 Min.
+|===
 
-// tag::REMARK[]
-[NOTE]
-====
-Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
-====
-// end::REMARK[]
+=== Begriffe und Konzepte
+- Domäne (engl.: domain), Domänenmodell (engl.: domain model) 
+- Ubiquitous Language
+- Module
+- Entity, Value Object, Aggregate, Service
+- Factory, Repository
+- Domain Events (Vernon, 2013)
+
+// end::DE[]
+
+// tag::EN[]
+|===
+| Duration: 120 min | Practice time: 75 min
+|===
+
+=== Terms and Principles
+- Domain, domain model
+- Ubiquitous language
+- Modules
+- Entity, Value Object, Aggregate, Service
+- Factory, Repository
+- Domain Events (Vernon, 2013)
+// end::EN[]
+
+

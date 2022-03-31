@@ -32,24 +32,65 @@ ATTENTION: labels have to be non-numeric.
 ====
 // end::REMARK[]
 
+
+**A**
+
+- [[[avram,Avram, A., & Marinescu, F. (2007)]]] Domain-Driven Design Quickly. InfoQ Enterprise Software Development Series.
+
 **B**
 
-- [[[bachmann,Bachmann et al. 2000]]] Bachmann, F., L. Bass, et al.: Software Architecture Documentation in Practice. Software Engineering Institute, CMU/SEI-2000-SR-004.
-- [[[bass,Bass et al. 2003]]] Bass, L., Clements, P. und Kazman, R. (2003): Software Architecture in Practice. Addison-Wesley, Reading, Mass
+- [[[beck,Beck, K., & Cunningham, W. (1989)]]]  A laboratory for teaching object oriented thinking. OOPSLA '89 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
+- [[[brandolini,Brandolini, A. (18. November 2013)]]]  Introducing Event Storming. Von http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html abgerufen
 
 **C**
 
-- [[[clements,Clements et al. 2003]]] Clements, P., F. Bachmann, L. Bass, D. Garlan, J. Ivers et al.: Documenting Software Architectures – Views and Beyond. Addison Wesley, 2003.
+- [[[cockburn,Cockburn, A. (2012)]]] Hexagonal Architecture. Von http://alistair.cockburn.us/Hexagonal+architecture abgerufen
+- [[[conway,Conway, M. E. (April 1968)]]] How do Committees Invent? Datamation 14.
+
+**D**
+
+- [[[dahan,Dahan, U. (9. Dezember 2009)]]] Clarified CQRS. Von http://udidahan.com/2009/12/09/clarified-cqrs/ abgerufen
+
+**E**
+
+- [[[evans,Evans, E. (2003)]]] Domain-Driven Design: Tacking Complexity In the Heart of Software. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.
+
+**F**
+
+- [[[fowler2002,Fowler, M. (November 2002)]]] Patterns of Enterprise Application Architecture. Addison Wesley.
+- [[[fowler2011,Fowler, M. (14. Juli 2011)]]] CQRS. Von http://martinfowler.com/bliki/CQRS.html abgerufen
+
+**G**
+
+- [[[gamma,Gamma, E., Helm, R., Johnson, R. E., & Vlissides, J. (1994)]]] Design Patterns. Elements of Reusable Object-Oriented Software. Addison-Wesley Professional Computing Series.
 
 **H**
 
-- [[[hargis,Hargis 2004]]] Hargis, Gretchen et al.: Quality Technical Information: A Handbook for Writers and Editors. Prentice Hall, IBM Press, 2004.
+- [[[hruschka,Hruschka, P. (2014)]]] Business Analysis und Requirements Engineering. Carl Hanser, München.
 
-**K**
+**L**
 
-- [[[kruchten,Kruchten 1995]]] Kruchten, P.: Architectural Blueprints – The 4-1 View Model of Architecture. IEEE Software November 1995; 12(6), p. 42-50.
+- [[[liebherr,Liebherr, K., Holland, I., & Riel, A. (1988)]]] Object-oriented programming: an objective sense of style. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
+- [[[lilienthal,Lilienthal, C. (December 2015)]]] Langlebige Software-Architekturen. dpunkt.verlag.
+
+**M**
+
+- [[[martin,Martin, R. C. (2002)]]] Agile Software Development, Principles, Patterns, and Practices. Prentice Hall Computer.
+
+**N**
+
+- [[[north,North, D. (3. März 2016)]]] Introducing BDD . Von http://dannorth.net/introducing-bdd/ abgerufen
 
 **S**
 
-- [[[starke,Starke 2011]]] Starke, G. (2011): Effektive Software-Architekturen - Ein praktischer Leitfaden. 5. Auflage 2011, Carl Hanser Verlag, München.
+- [[[schulz2010,Schulz von Thun, F. (2010)]]] Miteinander Reden: 1. Rowohlt Taschenbuch Verlag.
+- [[[schulz2013,Schulz von Thun, F. (2013)]]] Miteinander Reden: 3. Rowohlt Taschenbuch Verlag.
+- [[[stenberg,Stenberg, J. (24. Februar 2015)]]] Behaviour-Driven Development Combined with Domain-Driven Design. Von http://www.infoq.com/news/2015/02/bdd-ddd abgerufen
 
+**V**
+
+- [[[vernon,Vernon, V. (2013)]]] Implementing Domain-Driven Design. Addison-Wesley Longman Publishing Co., Inc.
+
+**Z**
+
+- [[[zullighoven,Züllighoven, H. (1998)]]] Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz. dpunkt.

@@ -4,11 +4,11 @@
 
 
 // tag::DE[]
-== Dies ist der Titel des ersten Moduls
+== Domäne, Modell und Ubiquitous Language
 // end::DE[]
 
 // tag::EN[]
-== This is the First Module's Title
+== Domain, model and ubiquitous language
 // end::EN[]
 
 

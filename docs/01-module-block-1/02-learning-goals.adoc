@@ -1,23 +1,85 @@
 === {learning-goals}
 
 // tag::DE[]
+Dieser Block dient der Motivation und Einführung in Domain Driven Design. Die grundlegenden Kon- zepte Domäne, Domänenmodell und Ubiquitous Language werden hier vermittelt.
+Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen Bausteine von Domä- nenmodellen und die dazwischenliegenden Beziehungen.
+
 [[LZ-1-1]]
-==== LZ 1-1: Dies ist das erste Lernziel, in Kategorie xy
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
+==== LZ 1-1: Die Zusammenhänge zwischen Domäne, Software und Modell kennen und erläutern können
+* Die Teilnehmer (TN) können die Abhängigkeit von Software zu einer Domäne beschreiben. Sie verstehen, dass Software nicht zum Selbstzweck existiert.
+* Die TN verstehen Domänenmodelle als Mittel zur Abstraktion von Fachwissen.
+* Die TN verstehen, dass Domänenmodelle die Ideen und Zusammenhänge einer Domäne repräsentieren.
+* Die TN können das Domänenmodell als Hilfsmittel zur Annäherung von Software an die Domäne erklären.
 
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+[[LZ-1-2]]
+==== LZ 1-2: Die Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
+* Die TN verstehen, dass eine gemeinsame Sprache für Domänen-Experten und Entwickler dem wechselseitigen Verständnis dient.
+* Die TN verstehen den Begriff der Ubiquity (Allgegenwärtigkeit): Alle Stakeholder verstehen und nutzen eine einzige, von ihnen entwickelte Fachsprache zur Kommunikation im Rahmen des Projekts.
 
+[[LZ-1-3]]
+==== LZ 1-3: Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
+* Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language direkt der Fach- sprache der Domänen-Experten entspringen.
+
+[[LZ-1-4]]
+==== LZ 1-4: Die Bausteine von Domain Driven Design kennen und erklären können
+* Die TN verstehen die grundlegenden Bausteine von Domain Driven Design.
+** Value Objects stellen elementare Wert-Typen aus der fachlichen Welt dar. Sie können nur andere Value Objects enthalten. Value Objects haben keine Identität, sind jedoch
+vergleichbar.
+** Entities repräsentieren Dinge der fachlichen Welt. Sie können Value Objects und an- dere Entities enthalten. Entities haben eine Identität.
+* Die TN verstehen die weiterführenden Bausteine von Domain Driven Design.
+** **Modules** als statische Gruppierungsmechanismen für Code-Artefakte.
+** **Services** kapseln eigenständige Funktionen, die sich nicht einzelnen Entities zuord- nen lassen. Sie entkoppeln Funktionalität von Zuständen, und sollten deswegen selbst zustandslos sein. Sie ermöglichen unter anderem das Erfassen von fachlichen Prozes- sen in einem Domänenmodell.
+** **Aggregates** dienen der Gruppierung von Entities. Der äußere Zugriff geschieht aus- schließlich über ein global identifizierbares Aggregate Root. Das Aggregate Root ist zudem für die Einhaltung von Invarianten innerhalb des Aggregates verantwortlich. Dies erzielt eine lose Kopplung in der Benutzung von Aggregates, versteckt die ent- haltenen Entities vor äußerem Zugriff und erleichtert so das Einhalten von Invarianten. Der Lebenszyklus aller enthaltenen Entities wird durch den Lebenszyklus des Aggregate Roots bestimmt.
+** **Factories** stellen Erzeugungsmechanismen für Entities dar. Mit ihnen lässt sich potenziell komplexe Logik aus den Konstruktoren von Entities auslagern.
+** **Repositories** dienen der Bestandsverwaltung von Entities zur Laufzeit. Das Ermitteln und Herausgeben einer Referenz auf ein Entity oder Aggregate zu einem eindeutigen Identifikator fällt in ihren Aufgabenbereich. Hinter ihnen lassen sich Schnittstellen zu Drittsystemen wie Datenbanken oder entfernten Services verbergen.
+** **Domain Events** unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern1 an angemeldete Klienten propagiert.
+
+[[LZ-1-5]]
+==== LZ 1-5: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können
+* Die TN sind in der Lage die Bausteine in Beziehung zu setzen und sinnvoll miteinander zu kombinieren2.
 
 // end::DE[]
 
+
+
 // tag::EN[]
+This section serves as an introduction to domain-driven design and provides the motivation for its development. The fundamental concepts Domain, Domain Model, and Ubiquitous Language are presented here.
+The course participants also obtain a detailed insight into the various components of domain models and the relationships between them.
+
 [[LG-1-1]]
-==== LG 1-1: The is the first learning goal, in category xy
-tbd.
+==== LG 1-1: Know and be able to explain the connections between domains, software, and models
+* The course participants can describe the dependency between software and a domain. They understand that software does not exist as an end in itself.
+* The course participants understand domain models as a tool for abstracting expert knowledge.
+* The course participants understand that domain models represent the ideas and relationships of a domain.
+* The course participants can explain the domain model as a tool to align the software with the domain.
+
+[[LG-1-2]]
+==== LG 1-2: Understand the role of domain-specific terminology in the construction of a ubiquitous language
+* The course participants understand that a common language for both domain experts and developers assists mutual understanding.
+* The course participants understand the term ubiquity: all stakeholders understand and use a single domain-specific terminology that they have developed for communication within the project.
+
+[[LG-1-3]]
+==== LG 1-3: Understand the role of domain-specific terminology in the construction of a ubiquitous language
+* The course participants know that the fundamental terms of a ubiquitous language originate from the domain experts.
+
+[[LG-1-4]]
+==== LG 1-4: Know and be able to explain the building blocks of domain-driven design
+* The course participants understand the fundamental building blocks of domain-driven design. o Value Objects represent elementary value types from the domain. They can only
+contain other Value Objects. Value Objects have no identity, but are comparable.
+** Entities represent things in the domain. They can contain Value Objects and other
+Entities. Entities have an identity.
+* The course participants understand the additional building blocks of domain-driven design.
+** **Modules** as static grouping mechanisms for code artifacts.
+** **Services** encapsulate independent functions that cannot be allocated to individual Entities. They decouple functionality from states and should therefore be stateless. They enable, among other things, domain processes to be documented in a domain model.
+** **Aggregates** are used to group Entities. External access exclusively takes place via a globally identifiable Aggregate Root. The Aggregate Root is also responsible for the compliance of invariants within the Aggregate. This achieves a loose coupling when using Aggregates, hides the contained Entities from external access, and facilitates the compliance of invariants. The lifecycle of all contained Entities is thus determined by the lifecycle of the Aggregate Root.
+** **Factories** represent creation mechanisms for Entities. They allow potentially complex logic to be outsourced from the constructors of Entities.
+** **Repositories** are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third- party systems such as databases or remote services.
+** **Domain Events** support the sharing of information about the occurrence of domain- related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern1 to registered clients.
+
+[[LG-1-5]]
+==== LG 1-5: Know and be able to explain the connections between the building blocks
+* The course participants are able to create a relationship between the building blocks and combine them in a sensible manner2.
+
 // end::EN[]
 
 // tag::REMARK[]
