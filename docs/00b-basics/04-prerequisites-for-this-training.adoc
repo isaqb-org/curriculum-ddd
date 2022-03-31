@@ -3,17 +3,14 @@
 
 Teilnehmerinnen und Teilnehmer **sollten** folgende Kenntnisse und/oder Erfahrung mitbringen:
 
-- Voraussetzung 1
-- Voraussetzung 2, etc.
+- Grundlagen und weiterführende Konzepte der objektorientierten Software-Entwicklung
+- Erfahrungen bei der Modellierung von objektorientierten Architekturen
 
 **Hilfreich** für das Verständnis einiger Konzepte sind darüber hinaus:
 
-- Kenntnisgruppe 1:
-  * Kenntnis 1
-  * Erfahrung 2
-  * Kenntnis 3
-  * Erfahrung 4
-  * Wissen 5
+- Wissen über agile Methoden der Software-Entwicklung, wie z. B. Scrum, Kanban, XP, etc. 
+- Erfahrung bei der Zusammenarbeit von Fachbereich und Software-Entwicklern.
+
 // end::DE[]
 
 // tag::EN[]
@@ -21,22 +18,11 @@ Teilnehmerinnen und Teilnehmer **sollten** folgende Kenntnisse und/oder Erfahrun
 
 Participants **should** have the following prerequisite knowledge:
 
-- Prerequisite 1
-- Prerequisite 2, etc.
+- Fundamentals and advanced concepts of object-oriented software development
+- Experience in modeling object-oriented architectures
 
 Knowledge in the following areas may be **helpful** for understanding some concepts:
 
-- Area 1:
-  * Knowledge 1
-  * Experience 2
-  * Knowledge 3
-  * Experience 4
-  * Understanding 5
+- Knowledge of agile methods of software development, such as Scrum, Kanban, XP, etc.
+- Experience in collaboration between business experts and software developers.
 // end::EN[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Kenntnisgruppen sowie Voraussetzungen bitte entsprechend ausformulieren!
-====
-// end::REMARK[]

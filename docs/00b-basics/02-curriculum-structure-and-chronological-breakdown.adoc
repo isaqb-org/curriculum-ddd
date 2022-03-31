@@ -4,14 +4,14 @@
 [cols="<,>", options="header"]
 |===
 | Inhalt | Empfohlene Mindestdauer (min)
-| 1. Thema mit Einleitung | 180
-| 2. Thema über xz | 150
-| 3. Thema mit viel Theorie | 120
-| 4. Thema mit xy und Beispiel | 180
-| 5. Thema mit abc und d | 210
-| 6. Thema mit Abschlussbeispiel | 120
+| 1. Domäne, Modell und Ubiquitous Language | 195
+| 2. Der Weg zum Modell | 240
+| 3. Vom Modell zur Implementierung | 120
+| 4. Das Modell in der Anwendungsarchitektur | 165
+| 5. Modelle schneiden und voneinander abgrenzen | 210
+| 6. Lokale Modellkonsistenz wahren | 90
 | |
-| Summe | 960 (16h)
+| Summe | 1020 (17h)
 
 |===
 
@@ -24,26 +24,15 @@
 |===
 | Content
 | Recommended minimum duration (minutes)
-| 1. Introduction | 180
-| 2. xz | 150
-| 3. Lots of theory | 120
-| 4. xy and example | 180
-| 5. abc und d | 210
-| 6. Final example | 120
+| 1. Domain, model, and ubiquitous language | 195
+| 2. The path to the model | 240
+| 3. From the model to implementation | 120
+| 4. The model in the application architecture | 165
+| 5. Cutting and distinguishing models from one another | 210
+| 6. Maintaining local model consistency | 90
 | |
-| Total | 960 (16h)
+| Total | 1020 (17h)
 
 |===
 
 // end::EN[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Bitte die oben angegebene Tabelle entsprechend anpassen.
-
-= = =
-
-Please adjust the table above according to your curriculum.
-====
-// end::REMARK[]
