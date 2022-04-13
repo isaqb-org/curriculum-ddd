@@ -1,0 +1,3539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.8">
+<title>Curriculum forCertified Professional forSoftware Architecture (CPSA)&#174;Advanced Level: ModuleDDDDomain-Driven Design</title>
+<style>
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ========================================================================== HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined in IE 8/9. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/** Correct `inline-block` display not defined in IE 8/9. */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/** Address styling not present in IE 8/9. */
+[hidden] {
+  display: none;
+}
+
+/* ========================================================================== Base ========================================================================== */
+/** 1. Prevent system color scheme's background color being used in Firefox, IE, and Opera. 2. Prevent system color scheme's text color being used in Firefox, IE, and Opera. 3. Set default font family to sans-serif. 4. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html {
+  background: #fff; /* 1 */
+  color: #000; /* 2 */
+  font-family: sans-serif; /* 3 */
+  -ms-text-size-adjust: 100%; /* 4 */
+  -webkit-text-size-adjust: 100%; /* 4 */
+}
+
+/** Remove default margin. */
+body {
+  margin: 0;
+}
+
+/* ========================================================================== Links ========================================================================== */
+/** Address `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+  outline: thin dotted;
+}
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* ========================================================================== Typography ========================================================================== */
+/** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/** Address styling not present in IE 8/9, Safari 5, and Chrome. */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/** Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b, strong {
+  font-weight: bold;
+}
+
+/** Address styling not present in Safari 5 and Chrome. */
+dfn {
+  font-style: italic;
+}
+
+/** Address differences between Firefox and other browsers. */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/** Address styling not present in IE 8/9. */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/** Correct font family set oddly in Safari 5 and Chrome. */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/** Improve readability of pre-formatted text in all browsers. */
+pre {
+  white-space: pre-wrap;
+}
+
+/** Set consistent quote types. */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/** Address inconsistent and variable font size in all browsers. */
+small {
+  font-size: 80%;
+}
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ========================================================================== Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9. */
+img {
+  border: 0;
+}
+
+/** Correct overflow displayed oddly in IE 9. */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ========================================================================== Figures ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari 5. */
+figure {
+  margin: 0;
+}
+
+/* ========================================================================== Forms ========================================================================== */
+/** Define consistent border, margin, and padding. */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** 1. Correct font family not being inherited in all browsers. 2. Correct font size not being inherited in all browsers. 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
+button, input, select, textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+button, input {
+  line-height: normal;
+}
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+. Correct `select` style inheritance in Firefox 4+ and Opera. */
+button, select {
+  text-transform: none;
+}
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/** 1. Address box sizing set to `content-box` in IE 8/9. 2. Remove excess padding in IE 8/9. */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome. 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome (include `-moz` to future-proof). */
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/** Remove inner padding and search cancel button in Safari 5 and Chrome on OS X. */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/** 1. Remove default vertical scrollbar in IE 8/9. 2. Improve readability and alignment in all browsers. */
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+/* ========================================================================== Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 15px;
+}
+
+body {
+  background: white;
+  color: #174a6a;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: auto;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+}
+
+img, object, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object, embed {
+  height: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+#map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object {
+  max-width: none !important;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.hide {
+  display: none;
+}
+
+.antialiased, body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+select {
+  width: 100%;
+}
+
+p.lead, .paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: 1.23333em;
+  line-height: 1.6;
+}
+
+.subheader, #content #toctitle, .admonitionblock td.content > .title, .exampleblock > .title, .imageblock > .title, .videoblock > .title, .listingblock > .title, .literalblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, .sidebarblock > .title, .tableblock > .title, .verseblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title, .tableblock > caption {
+  line-height: 1.4;
+  color: #777a7b;
+  font-weight: 300;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Typography resets */
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+/* Default Link Styles */
+a {
+  color: #f39200;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover, a:focus {
+  color: #fe670a;
+}
+
+a img {
+  border: none;
+}
+
+/* Default paragraph styles */
+p {
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  text-rendering: optimizeLegibility;
+}
+
+p aside {
+  font-size: 0.93333em;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* Default header styles */
+h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 {
+  font-family: "Roboto", helvetica, arial, freesans, clean, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #263e4d;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+}
+
+h1 small, h2 small, h3 small, #toctitle small, .sidebarblock > .content > .title small, h4 small, h5 small, h6 small {
+  font-size: 60%;
+  color: gray;
+  line-height: 0;
+}
+
+h1 {
+  font-size: 2.33333em;
+}
+
+h2 {
+  font-size: 1.33333em;
+}
+
+h3, #toctitle, .sidebarblock > .content > .title {
+  font-size: 1.0em;
+}
+
+h4 {
+  font-size: 0.86667em;
+}
+
+h5 {
+  font-size: 0.66667em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+hr {
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.33333em 0 1.26667em;
+  height: 0;
+}
+
+/* Helpful Typography Defaults */
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+code {
+  font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
+  font-weight: normal;
+  color: #666666;
+}
+
+/* Lists */
+ul, ol, dl {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  list-style-position: outside;
+  font-family: "Roboto", helvetica, arial, freesans, clean, sans-serif;
+}
+
+ul, ol {
+  margin-left: 0.7em;
+}
+
+/* Unordered Lists */
+ul li ul, ul li ol {
+  margin-left: 1.33333em;
+  margin-bottom: 0;
+  font-size: 1em; /* Override nested font-size change */
+}
+
+ul.square li ul, ul.circle li ul, ul.disc li ul {
+  list-style: inherit;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+
+ul.disc {
+  list-style-type: disc;
+}
+
+ul.no-bullet {
+  list-style: none;
+}
+
+/* Ordered Lists */
+ol li ul, ol li ol {
+  margin-left: 1.33333em;
+  margin-bottom: 0;
+}
+
+/* Definition Lists */
+dl dt {
+  margin-bottom: 0.33333em;
+  font-weight: bold;
+}
+
+dl dd {
+  margin-bottom: 1.33333em;
+}
+
+/* Abbreviations */
+abbr, acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #333333;
+  border-bottom: 1px dotted #dddddd;
+  cursor: help;
+}
+
+abbr {
+  text-transform: none;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 0 0 1em;
+  padding: 0;
+  border-left: none;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.86667em;
+  color: #777a7b;
+}
+
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+
+blockquote cite a, blockquote cite a:visited {
+  color: #777a7b;
+}
+
+blockquote, blockquote p {
+  line-height: 1.4;
+  color: #777a7b;
+}
+
+/* Microformats */
+.vcard {
+  display: inline-block;
+  margin: 0 0 1.33333em 0;
+  border: 1px solid #dddddd;
+  padding: 0.66667em 0.8em;
+}
+
+.vcard li {
+  margin: 0;
+  display: block;
+}
+
+.vcard .fn {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.vevent .summary {
+  font-weight: bold;
+}
+
+.vevent abbr {
+  cursor: auto;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.06667em;
+}
+
+@media only screen and (min-width: 768px) {
+  h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3, #toctitle, .sidebarblock > .content > .title {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1.0em
+  }
+}
+
+/* Print styles.  Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p, h2, h3, #toctitle, .sidebarblock > .content > .title {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3, #toctitle, .sidebarblock > .content > .title {
+    page-break-after: avoid;
+  }
+
+  .hide-on-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .hide-for-print {
+    display: none !important;
+  }
+
+  .show-for-print {
+    display: inherit !important;
+  }
+}
+
+/* Tables */
+table {
+  background: white;
+  margin-bottom: 1.33333em;
+  border: solid 1px #dddddd;
+}
+
+table thead, table tfoot {
+  background: #1D313E;
+  color: white;
+  font-weight: bold;
+}
+
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+  padding: 0.53333em 0.66667em 0.66667em;
+  font-size: 0.93333em;
+  color: white;
+  text-align: left;
+}
+
+table tr th, table tr td {
+  padding: 0.6em 0.66667em;
+  font-size: 0.8em;
+  color: #174a6a;
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  background: #f0f4f8;
+}
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+  display: table-cell;
+  line-height: 1.4;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.clearfix:before, .clearfix:after, .float-group:before, .float-group:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .float-group:after {
+  clear: both;
+}
+
+*:not(pre) > code {
+  font-size: 0.86667em;
+  padding: 1px 5px 1px 5px;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: none;
+}
+
+pre, pre > code {
+  line-height: 1.6;
+  color: white;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+}
+
+kbd.keyseq {
+  color: #666666;
+}
+
+kbd:not(.keyseq) {
+  display: inline-block;
+  color: #333333;
+  font-size: 0.8em;
+  line-height: 1.4;
+  background-color: #F7F7F7;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  margin: -0.15em 0.15em 0 0.15em;
+  padding: 0.2em 0.6em 0.2em 0.5em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+kbd kbd:first-child {
+  margin-left: 0;
+}
+
+kbd kbd:last-child {
+  margin-right: 0;
+}
+
+.menuseq, .menu {
+  color: #1a1a1a;
+}
+
+#header, #content, #footnotes, #footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 82.5em;
+  *zoom: 1;
+  position: relative;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#header:before, #header:after, #content:before, #content:after, #footnotes:before, #footnotes:after, #footer:before, #footer:after {
+  content: " ";
+  display: table;
+}
+
+#header:after, #content:after, #footnotes:after, #footer:after {
+  clear: both;
+}
+
+#header {
+  margin-bottom: 2.66667em;
+}
+
+#header > h1 {
+  color: #263e4d;
+  font-weight: 300;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: -28px;
+  padding-bottom: 32px;
+}
+
+#header span {
+  color: #777a7b;
+}
+
+#header #revnumber {
+  text-transform: capitalize;
+}
+
+#header br + span {
+  padding-left: 3px;
+}
+
+#header br + span:before {
+  content: "\2013 \0020";
+}
+
+#header br + span.author {
+  padding-left: 0;
+}
+
+#header br + span.author:before {
+  content: ", ";
+}
+
+div .details br {
+  display: none
+}
+
+#toc {
+  border-bottom: 0 solid #dddddd;
+  padding-bottom: 1.33333em;
+}
+
+#toc > ul {
+  margin-left: 0.26667em;
+}
+
+#toc ul.sectlevel0 > li > a {
+  font-style: italic;
+}
+
+#toc ul.sectlevel0 ul.sectlevel1 {
+  margin-left: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#toc ul {
+  list-style-type: none;
+}
+
+#toctitle {
+  color: #777a7b;
+}
+
+@media only screen and (min-width: 1280px) {
+  body.toc2 {
+    padding-left: 20em;
+  }
+
+  #toc.toc2 {
+    position: fixed;
+    width: 20em;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #dddddd;
+    border-bottom: 0;
+    z-index: 1000;
+    padding: 1em;
+    height: 100%;
+    overflow: auto;
+  }
+
+  #toc.toc2 #toctitle {
+    margin-top: 0;
+  }
+
+  #toc.toc2 > ul {
+    font-size: .95em;
+  }
+
+  #toc.toc2 ul ul {
+    margin-left: 0;
+    padding-left: 1.33333em;
+  }
+
+  #toc.toc2 ul.sectlevel0 ul.sectlevel1 {
+    padding-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  body.toc2.toc-right {
+    padding-left: 0;
+    padding-right: 20em;
+  }
+
+  body.toc2.toc-right #toc.toc2 {
+    border-right: 0;
+    border-left: 1px solid #dddddd;
+    left: auto;
+    right: 0;
+  }
+}
+
+#content #toc {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.33333em;
+  padding: 1.33333em;
+  background: white;
+  border-width: 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#content #toc > :first-child {
+  margin-top: 0;
+}
+
+#content #toc > :last-child {
+  margin-bottom: 0;
+}
+
+#content #toc a {
+  text-decoration: none;
+}
+
+#content #toctitle {
+  font-weight: bold;
+  font-family: "Roboto", helvetica, arial, freesans, clean, sans-serif;
+  font-size: 1.06667em;
+  padding-left: 0.13333em;
+}
+
+#footer {
+  max-width: 100%;
+  background-color: whitesmoke;
+  padding: 1.33333em;
+}
+
+#footer-text {
+  color: #174a6a;
+  line-height: 1.26;
+}
+
+.sect1 {
+  padding-bottom: 1.33333em;
+}
+
+.sect1 + .sect1 {
+  border-top: 0 solid #dddddd;
+}
+
+#content h1 > a.anchor, h2 > a.anchor, h3 > a.anchor, #toctitle > a.anchor, .sidebarblock > .content > .title > a.anchor, h4 > a.anchor, h5 > a.anchor, h6 > a.anchor {
+  position: absolute;
+  width: 1em;
+  margin-left: -1em;
+  display: block;
+  text-decoration: none;
+  visibility: hidden;
+  text-align: center;
+  font-weight: normal;
+}
+
+#content h1 > a.anchor:before, h2 > a.anchor:before, h3 > a.anchor:before, #toctitle > a.anchor:before, .sidebarblock > .content > .title > a.anchor:before, h4 > a.anchor:before, h5 > a.anchor:before, h6 > a.anchor:before {
+  content: '\00A7';
+  font-size: .85em;
+  vertical-align: text-top;
+  display: block;
+  margin-top: 0.05em;
+}
+
+#content h1:hover > a.anchor, #content h1 > a.anchor:hover, h2:hover > a.anchor, h2 > a.anchor:hover, h3:hover > a.anchor, #toctitle:hover > a.anchor, .sidebarblock > .content > .title:hover > a.anchor, h3 > a.anchor:hover, #toctitle > a.anchor:hover, .sidebarblock > .content > .title > a.anchor:hover, h4:hover > a.anchor, h4 > a.anchor:hover, h5:hover > a.anchor, h5 > a.anchor:hover, h6:hover > a.anchor, h6 > a.anchor:hover {
+  visibility: visible;
+}
+
+#content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link {
+  color: #263e4d;
+  text-decoration: none;
+}
+
+#content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover {
+  color: #262626;
+}
+
+.imageblock, .literalblock, .listingblock, .verseblock, .videoblock {
+  margin-bottom: 1.33333em;
+}
+
+.admonitionblock td.content > .title, .exampleblock > .title, .imageblock > .title, .videoblock > .title, .listingblock > .title, .literalblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, .sidebarblock > .title, .tableblock > .title, .verseblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.tableblock > caption {
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: visible;
+  max-width: 0;
+}
+
+table {
+  width: 100%
+}
+
+table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: inherit;
+}
+
+.admonitionblock > table {
+  border: 0;
+  background: none;
+  width: 100%;
+}
+
+.admonitionblock > table td.icon {
+  text-align: center;
+  width: 80px;
+}
+
+.admonitionblock > table td.icon img {
+  max-width: none;
+}
+
+.admonitionblock > table td.icon .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.admonitionblock > table td.content {
+  padding-left: 1.2em;
+  padding-right: 1.33333em;
+  border-left: 1px solid #dddddd;
+  color: #666666;
+}
+
+.admonitionblock > table td.content > :last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.exampleblock > .content {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.33333em;
+  padding: 1.33333em;
+  background: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.exampleblock > .content > :first-child {
+  margin-top: 0;
+}
+
+.exampleblock > .content > :last-child {
+  margin-bottom: 0;
+}
+
+.exampleblock > .content h1, .exampleblock > .content h2, .exampleblock > .content h3, .exampleblock > .content #toctitle, .sidebarblock.exampleblock > .content > .title, .exampleblock > .content h4, .exampleblock > .content h5, .exampleblock > .content h6, .exampleblock > .content p {
+  color: #333333;
+}
+
+.exampleblock > .content h1, .exampleblock > .content h2, .exampleblock > .content h3, .exampleblock > .content #toctitle, .sidebarblock.exampleblock > .content > .title, .exampleblock > .content h4, .exampleblock > .content h5, .exampleblock > .content h6 {
+  line-height: 1;
+  margin-bottom: 0.66667em;
+}
+
+.exampleblock > .content h1.subheader, .exampleblock > .content h2.subheader, .exampleblock > .content h3.subheader, .exampleblock > .content .subheader#toctitle, .sidebarblock.exampleblock > .content > .subheader.title, .exampleblock > .content h4.subheader, .exampleblock > .content h5.subheader, .exampleblock > .content h6.subheader {
+  line-height: 1.4;
+}
+
+.exampleblock.result > .content {
+  -webkit-box-shadow: 0 1px 8px #eaeaea;
+  box-shadow: 0 1px 8px #eaeaea;
+}
+
+.sidebarblock {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.33333em;
+  padding: 1.33333em;
+  background: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.sidebarblock > :first-child {
+  margin-top: 0;
+}
+
+.sidebarblock > :last-child {
+  margin-bottom: 0;
+}
+
+.sidebarblock h1, .sidebarblock h2, .sidebarblock h3, .sidebarblock #toctitle, .sidebarblock > .content > .title, .sidebarblock h4, .sidebarblock h5, .sidebarblock h6, .sidebarblock p {
+  color: #333333;
+}
+
+.sidebarblock h1, .sidebarblock h2, .sidebarblock h3, .sidebarblock #toctitle, .sidebarblock > .content > .title, .sidebarblock h4, .sidebarblock h5, .sidebarblock h6 {
+  line-height: 1;
+  margin-bottom: 0.66667em;
+}
+
+.sidebarblock h1.subheader, .sidebarblock h2.subheader, .sidebarblock h3.subheader, .sidebarblock .subheader#toctitle, .sidebarblock > .content > .subheader.title, .sidebarblock h4.subheader, .sidebarblock h5.subheader, .sidebarblock h6.subheader {
+  line-height: 1.4;
+}
+
+.sidebarblock > .content > .title {
+  color: #777a7b;
+  margin-top: 0;
+  line-height: 1.4;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cacaca;
+}
+
+.exampleblock > .content > :last-child > :last-child, .exampleblock > .content .olist > ol > li:last-child > :last-child, .exampleblock > .content .ulist > ul > li:last-child > :last-child, .exampleblock > .content .qlist > ol > li:last-child > :last-child, .sidebarblock > .content > :last-child > :last-child, .sidebarblock > .content .olist > ol > li:last-child > :last-child, .sidebarblock > .content .ulist > ul > li:last-child > :last-child, .sidebarblock > .content .qlist > ol > li:last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.literalblock > .content pre, .listingblock > .content pre {
+  background: #333333;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #dddddd;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0.66667em;
+  word-wrap: break-word;
+}
+
+.literalblock > .content pre.nowrap, .listingblock > .content pre.nowrap {
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.literalblock > .content pre > code, .listingblock > .content pre > code {
+  display: block;
+}
+
+@media only screen {
+  .literalblock > .content pre, .listingblock > .content pre {
+    font-size: 0.69333em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .literalblock > .content pre, .listingblock > .content pre {
+    font-size: 0.78em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .literalblock > .content pre, .listingblock > .content pre {
+    font-size: 0.86667em;
+  }
+}
+
+.listingblock > .content {
+  position: relative;
+}
+
+.listingblock:hover code[class*=" language-"]:before {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #999;
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+}
+
+.listingblock:hover code.asciidoc:before {
+  content: "asciidoc";
+}
+
+.listingblock:hover code.clojure:before {
+  content: "clojure";
+}
+
+.listingblock:hover code.css:before {
+  content: "css";
+}
+
+.listingblock:hover code.groovy:before {
+  content: "groovy";
+}
+
+.listingblock:hover code.html:before {
+  content: "html";
+}
+
+.listingblock:hover code.java:before {
+  content: "java";
+}
+
+.listingblock:hover code.javascript:before {
+  content: "javascript";
+}
+
+.listingblock:hover code.python:before {
+  content: "python";
+}
+
+.listingblock:hover code.ruby:before {
+  content: "ruby";
+}
+
+.listingblock:hover code.scss:before {
+  content: "scss";
+}
+
+.listingblock:hover code.xml:before {
+  content: "xml";
+}
+
+.listingblock:hover code.yaml:before {
+  content: "yaml";
+}
+
+.listingblock.terminal pre .command:before {
+  content: attr(data-prompt);
+  padding-right: 0.5em;
+  color: #999;
+}
+
+.listingblock.terminal pre .command:not([data-prompt]):before {
+  content: '$';
+}
+
+table.pyhltable {
+  border: 0;
+  margin-bottom: 0;
+}
+
+table.pyhltable td {
+  vertical-align: top;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+table.pyhltable td.code {
+  padding-left: .75em;
+  padding-right: 0;
+}
+
+.highlight.pygments .lineno, table.pyhltable td:not(.code) {
+  color: #999;
+  padding-left: 0;
+  padding-right: .5em;
+  border-right: 1px solid #dddddd;
+}
+
+.highlight.pygments .lineno {
+  display: inline-block;
+  margin-right: .25em;
+}
+
+table.pyhltable .linenodiv {
+  background-color: transparent !important;
+  padding-right: 0 !important;
+}
+
+.quoteblock {
+  margin: 0 0 1em;
+  padding: 0;
+  border-left: none;
+}
+
+.quoteblock blockquote {
+  margin: 0 0 1em 0;
+  padding: 0 0 0.6em 0;
+  border: 0;
+}
+
+.quoteblock blockquote > .paragraph:last-child p {
+  margin-bottom: 0;
+}
+
+.quoteblock .attribution {
+  margin-top: -.25em;
+  padding-bottom: 0.6em;
+  font-size: 0.86667em;
+  color: #666666;
+}
+
+.quoteblock .attribution br {
+  display: none;
+}
+
+.quoteblock .attribution cite {
+  display: block;
+  margin-bottom: 0.66667em;
+}
+
+table thead th, table tfoot th {
+  font-weight: bold;
+}
+
+table.tableblock.grid-all {
+  border-collapse: separate;
+  border-spacing: 1px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+table.tableblock.frame-topbot, table.tableblock.frame-none {
+  border-left: 0;
+  border-right: 0;
+}
+
+table.tableblock.frame-sides, table.tableblock.frame-none {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+table.tableblock td .paragraph:last-child p, table.tableblock td > p:last-child {
+  margin-bottom: 0;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+
+p.tableblock.header {
+  color: #263e4d;
+  font-weight: bold;
+}
+
+td > div.verse {
+  white-space: pre;
+}
+
+ol {
+  margin-left: 0.96667em;
+}
+
+ul li ol {
+  margin-left: 0.7em;
+}
+
+dl dd {
+  margin-left: 1.125em;
+}
+
+dl dd:last-child, dl dd:last-child > :last-child {
+  margin-bottom: 0;
+}
+
+ol > li p, ul > li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .olist .ulist {
+  margin-bottom: 0.5em;
+}
+
+ul.unstyled, ol.unnumbered, ul.checklist, ul.none {
+  list-style-type: none;
+}
+
+ul.unstyled, ol.unnumbered, ul.checklist {
+  margin-left: 0.66667em;
+}
+
+ul.checklist li > p:first-child > i[class^="icon-check"]:first-child, ul.checklist li > p:first-child > input[type="checkbox"]:first-child {
+  margin-right: 0.25em;
+}
+
+ul.checklist li > p:first-child > input[type="checkbox"]:first-child {
+  position: relative;
+  top: 1px;
+}
+
+ul.inline {
+  margin: 0 auto 0.5em auto;
+  margin-left: -1.46667em;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+ul.inline > li {
+  list-style: none;
+  float: left;
+  margin-left: 1.46667em;
+  display: block;
+}
+
+ul.inline > li > * {
+  display: block;
+}
+
+.unstyled dl dt {
+  font-weight: normal;
+  font-style: normal;
+}
+
+ol.arabic {
+  list-style-type: decimal;
+}
+
+ol.decimal {
+  list-style-type: decimal-leading-zero;
+}
+
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+ol.lowergreek {
+  list-style-type: lower-greek;
+}
+
+.hdlist > table, .colist > table {
+  border: 0;
+  background: none;
+}
+
+.hdlist > table > tbody > tr, .colist > table > tbody > tr {
+  background: none;
+}
+
+td.hdlist1 {
+  padding-right: .8em;
+  font-weight: bold;
+}
+
+td.hdlist1, td.hdlist2 {
+  vertical-align: top;
+}
+
+.literalblock + .colist, .listingblock + .colist {
+  margin-top: -0.5em;
+}
+
+.colist > table tr > td:first-of-type {
+  padding: 0 .8em;
+  line-height: 1;
+}
+
+.colist > table tr > td:last-of-type {
+  padding: 0.26667em 0;
+}
+
+.qanda > ol > li > p > em:only-child {
+  color: #3876b4;
+}
+
+.thumb, .th {
+  line-height: 0;
+  display: inline-block;
+  border: solid 4px white;
+  -webkit-box-shadow: 0 0 0 1px #dddddd;
+  box-shadow: 0 0 0 1px #dddddd;
+}
+
+.imageblock.left, .imageblock[style*="float: left"] {
+  margin: 0.26667em 0.66667em 1.33333em 0;
+}
+
+.imageblock.right, .imageblock[style*="float: right"] {
+  margin: 0.26667em 0 1.33333em 0.66667em;
+}
+
+.imageblock > .title {
+  margin-bottom: 0;
+}
+
+.imageblock.thumb, .imageblock.th {
+  border-width: 6px;
+}
+
+.imageblock.thumb > .title, .imageblock.th > .title {
+  padding: 0 0.13333em;
+}
+
+.image.left, .image.right {
+  margin-top: 0.26667em;
+  margin-bottom: 0.26667em;
+  display: inline-block;
+  line-height: 0;
+}
+
+.image.left {
+  margin-right: 0.66667em;
+}
+
+.image.right {
+  margin-left: 0.66667em;
+}
+
+a.image {
+  text-decoration: none;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+  font-size: 0.93333em;
+}
+
+span.footnote a, span.footnoteref a {
+  text-decoration: none;
+}
+
+#footnotes {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-bottom: 0.66667em;
+}
+
+#footnotes hr {
+  width: 20%;
+  min-width: 6.66667em;
+  margin: -.25em 0 .75em 0;
+  border-width: 1px 0 0 0;
+}
+
+#footnotes .footnote {
+  padding: 0 0.4em;
+  line-height: 1.3;
+  font-size: 0.93333em;
+  margin-left: 1.2em;
+  text-indent: -1.2em;
+  margin-bottom: .2em;
+}
+
+#footnotes .footnote a:first-of-type {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#footnotes .footnote:last-of-type {
+  margin-bottom: 0;
+}
+
+#content #footnotes {
+  margin-top: -0.66667em;
+  margin-bottom: 0;
+  padding: 0.8em 0;
+}
+
+.gist .file-data > table {
+  border: none;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.gist .file-data > table td.line-data {
+  width: 99%;
+}
+
+div.unbreakable {
+  page-break-inside: avoid;
+}
+
+.big {
+  font-size: larger;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.aqua {
+  color: #00bfbf;
+}
+
+.aqua-background {
+  background-color: #00fafa;
+}
+
+.black {
+  color: black;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.blue {
+  color: #0000bf;
+}
+
+.blue-background {
+  background-color: #0000fa;
+}
+
+.fuchsia {
+  color: #bf00bf;
+}
+
+.fuchsia-background {
+  background-color: #fa00fa;
+}
+
+.gray {
+  color: #606060;
+}
+
+.gray-background {
+  background-color: #7d7d7d;
+}
+
+.green {
+  color: #006000;
+}
+
+.green-background {
+  background-color: #007d00;
+}
+
+.lime {
+  color: #00bf00;
+}
+
+.lime-background {
+  background-color: #00fa00;
+}
+
+.maroon {
+  color: #600000;
+}
+
+.maroon-background {
+  background-color: #7d0000;
+}
+
+.navy {
+  color: #000060;
+}
+
+.navy-background {
+  background-color: #00007d;
+}
+
+.olive {
+  color: #606000;
+}
+
+.olive-background {
+  background-color: #7d7d00;
+}
+
+.purple {
+  color: #600060;
+}
+
+.purple-background {
+  background-color: #7d007d;
+}
+
+.red {
+  color: #bf0000;
+}
+
+.red-background {
+  background-color: #fa0000;
+}
+
+.silver {
+  color: #909090;
+}
+
+.silver-background {
+  background-color: #bcbcbc;
+}
+
+.teal {
+  color: #006060;
+}
+
+.teal-background {
+  background-color: #007d7d;
+}
+
+.white {
+  color: #bfbfbf;
+}
+
+.white-background {
+  background-color: #fafafa;
+}
+
+.yellow {
+  color: #bfbf00;
+}
+
+.yellow-background {
+  background-color: #fafa00;
+}
+
+span.icon > [class^="icon-"], span.icon > [class*=" icon-"] {
+  cursor: default;
+}
+
+.admonitionblock td.icon [class^="icon-"]:before {
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.admonitionblock td.icon .icon-note:before {
+  content: "\f05a";
+  color: #4183c4;
+  color: #2e6295;
+}
+
+.admonitionblock td.icon .icon-tip:before {
+  content: "\f0eb";
+  text-shadow: 1px 1px 2px rgba(155, 155, 0, 0.8);
+  color: #111;
+}
+
+.admonitionblock td.icon .icon-warning:before {
+  content: "\f071";
+  color: #bf6900;
+}
+
+.admonitionblock td.icon .icon-caution:before {
+  content: "\f06d";
+  color: #bf3400;
+}
+
+.admonitionblock td.icon .icon-important:before {
+  content: "\f06a";
+  color: #bf0000;
+}
+
+.conum {
+  display: inline-block;
+  color: white !important;
+  background-color: #333333;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  position: relative;
+  top: -2px;
+  letter-spacing: -1px;
+}
+
+.conum * {
+  color: white !important;
+}
+
+.conum + b {
+  display: none;
+}
+
+.conum:after {
+  content: attr(data-value);
+}
+
+.conum:not([data-value]):empty {
+  display: none;
+}
+
+p.lead, .paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: 1em;
+  color: #666666;
+}
+
+h2 {
+  color: #263e4d;
+  border-bottom: 1px solid #dddddd;
+}
+
+#content h1 > a.anchor, h2 > a.anchor, h3 > a.anchor, #toctitle > a.anchor, .sidebarblock > .content > .title > a.anchor, h4 > a.anchor, h5 > a.anchor, h6 > a.anchor {
+  color: #f39200;
+}
+
+#header, #content, #footnotes {
+  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#content ul {
+  list-style-type: none;
+}
+
+#content ul li {
+  background: url('../html-theme/images/isaqb/li-chevron.png') 0 0.4em no-repeat;
+  padding-left: .7em;
+}
+
+.olist.procedure > ol {
+  counter-reset: li;
+  list-style: none;
+  position: relative;
+}
+
+.olist.procedure > ol > li {
+  position: relative;
+  padding: 5px 0 5px 55px;
+  margin-bottom: 5px;
+}
+
+.olist.procedure > ol > li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30px;
+  padding: 0 10px 0 0;
+  color: #999;
+  font-size: 1.46667em;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: right;
+  border-right: 1px solid #ddd;
+}
+
+.quoteblock blockquote {
+  background: url('../html-theme/images/github/blockquote-arrow.png') 0 2px no-repeat;
+  padding-left: 1em;
+}
+
+.sidebarblock > .content > .title {
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  padding: 1em;
+  font-size: 0.8em;
+  background: #eaeaea;
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Curriculum for<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Module<br>DDD<br><br>Domain-Driven Design</h1>
+<div class="details">
+<span id="revnumber"> 2017.1-EN,</span>
+<span id="revdate">20220413</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_list_of_learning_goals">List of Learning Goals</a></li>
+<li><a href="#_introduction_general_information_about_the_isaqb_advanced_level">Introduction: General information about the iSAQB Advanced Level</a>
+<ul class="sectlevel2">
+<li><a href="#_what_is_taught_in_an_advanced_level_module">What is taught in an Advanced Level module?</a></li>
+<li><a href="#_what_can_advanced_level_cpsa_a_graduates_do">What can Advanced Level (CPSA-A) graduates do?</a></li>
+<li><a href="#_requirements_for_cpsa_a_certification">Requirements for CPSA-A certification</a></li>
+</ul>
+</li>
+<li><a href="#_essentials">Essentials</a>
+<ul class="sectlevel2">
+<li><a href="#_what_does_the_module_ddd_convey">What does the module “DDD” convey?</a></li>
+<li><a href="#_curriculum_structure_and_recommended_durations">Curriculum Structure and Recommended Durations</a></li>
+<li><a href="#_duration_teaching_method_and_further_details">Duration, Teaching Method and Further Details</a></li>
+<li><a href="#_prerequisites">Prerequisites</a></li>
+<li><a href="#_structure_of_the_curriculum">Structure of the Curriculum</a></li>
+<li><a href="#_supplementary_information_terms_translations">Supplementary Information, Terms, Translations</a></li>
+</ul>
+</li>
+<li><a href="#_domain_model_and_ubiquitous_language">1. Domain, model and ubiquitous language</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles">1.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals">1.2. Learning Goals</a></li>
+<li><a href="#_references">1.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_the_path_to_the_model">2. The path to the model</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_2">2.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_2">2.2. Learning Goals</a></li>
+<li><a href="#_references_2">2.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_from_the_model_to_the_implementation">3. From the model to the implementation</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_3">3.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_3">3.2. Learning Goals</a></li>
+<li><a href="#_references_3">3.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_the_model_in_the_application_architecture">4. The model in the application architecture</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_4">4.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_4">4.2. Learning Goals</a></li>
+<li><a href="#_references_4">4.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_cutting_and_distinguishing_models_from_one_another">5. Cutting and distinguishing models from one another</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_5">5.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_5">5.2. Learning Goals</a></li>
+<li><a href="#_references_5">5.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_maintaining_local_model_consistency">6. Maintaining local model consistency</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_6">6.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_6">6.2. Learning Goals</a></li>
+<li><a href="#_references_6">6.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_references_7">References</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p><strong>&#169; (Copyright), International Software Architecture Qualification Board e. V.
+(iSAQB<sup>&#174;</sup> e. V.) 2021</strong></p>
+</div>
+<div class="paragraph">
+<p>The curriculum may only be used subject to the following conditions:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You wish to obtain the CPSA Certified Professional for Software Architecture Advanced Level<sup>&#174;</sup> certificate. For the purpose of obtaining the certificate, it shall be permitted to use these text documents and/or curricula by creating working copies for your own computer. If any other use of documents and/or curricula is intended, for instance for their dissemination to third parties, for advertising etc., please write to <a href="mailto:info@isaqb.org">info@isaqb.org</a> to enquire whether this is permitted. A separate license agreement would then have to be entered into.</p>
+</li>
+<li>
+<p>If you are a trainer or training provider, it shall be possible for you to use the documents and/or curricula once you have obtained a usage license.
+Please address any enquiries to <a href="mailto:info@isaqb.org">info@isaqb.org</a>. License agreements with comprehensive provisions for all aspects exist.</p>
+</li>
+<li>
+<p>If you fall neither into category 1 nor category 2, but would like to use these documents and/or curricula nonetheless, please also contact the iSAQB e. V. by writing to <a href="mailto:info@isaqb.org">info@isaqb.org</a>. You will then be informed about the possibility of acquiring relevant licenses through existing license agreements, allowing you to obtain your desired usage authorizations.</p>
+</li>
+</ol>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Important Notice</div>
+<div class="paragraph">
+<p><strong>We stress that, as a matter of principle, this curriculum is protected by copyright.
+The International Software Architecture Qualification Board e. V. (iSAQB<sup>&#174;</sup> e. V.) has exclusive entitlement to these copyrights.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The abbreviation "e. V." is part of the iSAQB&#8217;s official name and stands for "eingetragener Verein" (registered association), which describes its status as a legal entity according to German law.
+For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSAQB without the use of said abbreviation.</p>
+</div>
+<div style="page-break-after: always;"></div>
+<!-- toc disabled -->
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_list_of_learning_goals">List of Learning Goals</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#LG-1-1">LG 1-1: Know and be able to explain the connections between domains, software, and models</a></p>
+</li>
+<li>
+<p><a href="#LG-1-2">LG 1-2: Understand the role of domain-specific terminology in the construction of a ubiquitous language</a></p>
+</li>
+<li>
+<p><a href="#LG-1-3">LG 1-3: Understand the role of domain-specific terminology in the construction of a ubiquitous language</a></p>
+</li>
+<li>
+<p><a href="#LG-1-4">LG 1-4: Know and be able to explain the building blocks of domain-driven design</a></p>
+</li>
+<li>
+<p><a href="#LG-1-5">LG 1-5: Know and be able to explain the connections between the building blocks</a></p>
+</li>
+<li>
+<p><a href="#LG-2-1">LG 2-1: Know and be able to explain the high importance of domain experts in DDD</a></p>
+</li>
+<li>
+<p><a href="#LG-2-2">LG 2-2: Be able to provide support in selecting suitable contact persons</a></p>
+</li>
+<li>
+<p><a href="#LG-2-3">LG 2-3: Be able to communicate with domain experts</a></p>
+</li>
+<li>
+<p><a href="#LG-2-4">LG 2-4: Be able to use modeling techniques when working with domain experts</a></p>
+</li>
+<li>
+<p><a href="#LG-2-5">LG 2-5: Be able to conduct interviews to model a domain</a></p>
+</li>
+<li>
+<p><a href="#LG-2-6">LG 2-6: Be proficient in observation to understand a domain</a></p>
+</li>
+<li>
+<p><a href="#LG-2-7">LG 2-7: Be able to conduct an “Event-Storming” workshop</a></p>
+</li>
+<li>
+<p><a href="#LG-2-8">LG 2-8: Be able to select a suitable modeling approach and discuss it with domain experts</a></p>
+</li>
+<li>
+<p><a href="#LG-3-1">LG 3-1: Be able to extend a domain model with technical building blocks from DDD</a></p>
+</li>
+<li>
+<p><a href="#LG-3-2">LG 3-2: Be able to model interfaces for domain classes</a></p>
+</li>
+<li>
+<p><a href="#LG-3-3">LG 3-3: Know and be able to take into account interactions between an implementation and its model</a></p>
+</li>
+<li>
+<p><a href="#LG-3-4">LG 3-4: Be able to argue why DDD is worthwhile for complex business logic</a></p>
+</li>
+<li>
+<p><a href="#LG-4-1">LG 4-1: Be proficient in selected architecture styles and be able to integrate a domain model</a></p>
+</li>
+<li>
+<p><a href="#LG-4-2">LG 4-2: Be able to formulate correlations and distinctions between DDD, T&amp;M Approach and BDD</a></p>
+</li>
+<li>
+<p><a href="#LG-5-1">LG 5-1: Know symptoms that can occur with excessively large models</a></p>
+</li>
+<li>
+<p><a href="#LG-5-2">LG 5-2: Be able to assess advantages and disadvantages of a cross-team model</a></p>
+</li>
+<li>
+<p><a href="#LG-5-3">LG 5-3: Be able to describe model boundaries of Bounded Contexts in a Context Map</a></p>
+</li>
+<li>
+<p><a href="#LG-5-4">LG 5-4: Be able to reuse core elements of several partial models in a shared kernel</a></p>
+</li>
+<li>
+<p><a href="#LG-5-5">LG 5-5: Be able to use interfaces for customer/supplier teams</a></p>
+</li>
+<li>
+<p><a href="#LG-5-6">LG 5-6: Be able to design a system as an open host service (OHS)</a></p>
+</li>
+<li>
+<p><a href="#LG-5-7">LG 5-7: Be able to use Domain Events as a means of communication between Bounded Contexts</a></p>
+</li>
+<li>
+<p><a href="#LG-6-1">LG 6-1: Understand how Continuous Integration (CI)<sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> contributes towards local model consistency</a></p>
+</li>
+<li>
+<p><a href="#LG-6-2">LG 6-2: Be able to isolate your own model from external influences</a></p>
+</li>
+<li>
+<p><a href="#LG-6-3">LG 6-3: Understand the circumstances in which it is appropriate to divide the model (Separate Ways), taking into account the aspects from section 5.</a></p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction_general_information_about_the_isaqb_advanced_level">Introduction: General information about the iSAQB Advanced Level</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_what_is_taught_in_an_advanced_level_module">What is taught in an Advanced Level module?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The iSAQB Advanced Level offers modular training in three areas of competence with flexibly designable training paths. It takes individual inclinations and priorities into account.</p>
+</li>
+<li>
+<p>The certification is done as an assignment. The assessment and oral exam is conducted by experts appointed by the iSAQB.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_can_advanced_level_cpsa_a_graduates_do">What can Advanced Level (CPSA-A) graduates do?</h3>
+<div class="paragraph">
+<p>CPSA-A graduates can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Independently and methodically design medium to large IT systems</p>
+</li>
+<li>
+<p>In IT systems of medium to high criticality, assume technical and content-related responsibility</p>
+</li>
+<li>
+<p>Conceptualize, design, and document actions to achieve quality requirements and support development teams in the implementation of these actions</p>
+</li>
+<li>
+<p>Control and execute architecture-relevant communication in medium to large development teams</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_requirements_for_cpsa_a_certification">Requirements for CPSA-A certification</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Successful training and certification as a Certified Professional for Software Architecture, Foundation Level<sup>&#174;</sup> (CPSA-F)</p>
+</li>
+<li>
+<p>At least three years of full-time professional experience in the IT sector; collaboration on the design and development of at least two different IT systems</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Exceptions are allowed on application (e.g., collaboration on open source projects)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Training and further education within the scope of iSAQB Advanced Level training courses with a minimum of 70 credit points from at least three different areas of competence</p>
+<div class="ulist">
+<ul>
+<li>
+<p>existing certifications (for example: Sun/Oracle Java architect, Microsoft CSA) can be credited upon application</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Successful completion of the CPSA-A certification exam</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><br>
+<br></p>
+</div>
+<div class="paragraph text-center">
+<p><span class="image"><img src="images/00-preamble/cpsa-a-logo.png" alt="Certified Professional for Software Architecture<sup>&#174;</sup> Advanced Level (CPSA-A)"></span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_essentials">Essentials</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_what_does_the_module_ddd_convey">What does the module “DDD” convey?</h3>
+<div class="paragraph">
+<p>This module presents domain-driven design (DDD) to course participants as a tool to design software as a precise, transparent, and transformable representation of a domain.</p>
+</div>
+<div class="paragraph">
+<p>At the end of the module, course participants will know the essential principles of domain-driven design and will be able to apply them when designing and implementing software systems. They are able to use the newly learned communication skills to establish a uniform language between experts and developers. With the help of the modeling techniques and architecture tools that have been taught, they can incorporate the components of this common, domain-specific language into their software systems.</p>
+</div>
+<div class="paragraph">
+<p>A large software project often requires the involvement of several development teams. This module addresses this challenge and teaches the course participants methods of domain-driven design to handle the growing complexity of a large software project.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_curriculum_structure_and_recommended_durations">Curriculum Structure and Recommended Durations</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Content</th>
+<th class="tableblock halign-right valign-top">Recommended minimum duration (minutes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Domain, model, and ubiquitous language</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">195</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. The path to the model</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">240</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. From the model to implementation</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">120</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. The model in the application architecture</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">165</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Cutting and distinguishing models from one another</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">210</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. Maintaining local model consistency</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-right valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1020 (17h)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_duration_teaching_method_and_further_details">Duration, Teaching Method and Further Details</h3>
+<div class="paragraph">
+<p>The times stated below are recommendations.
+The duration of a training course on the DDD module should be at least 3 days, but may be longer.
+Providers may differ in terms of duration, teaching method, type and structure of the exercises, and the detailed course structure.
+In particular, the curriculum provides no specifications on the nature of the examples and exercises.</p>
+</div>
+<div class="paragraph">
+<p>Licensed training courses for the DDD module contribute the following credit points towards admission to the final Advanced Level certification exam:</p>
+</div>
+<table class="tableblock frame-none grid-rows stripes-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Methodical Competence:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20 Points</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical Competence:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0 Points</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Communicative Competence:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 Points</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_prerequisites">Prerequisites</h3>
+<div class="paragraph">
+<p>Participants <strong>should</strong> have the following prerequisite knowledge:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fundamentals and advanced concepts of object-oriented software development</p>
+</li>
+<li>
+<p>Experience in modeling object-oriented architectures</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Knowledge in the following areas may be <strong>helpful</strong> for understanding some concepts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Knowledge of agile methods of software development, such as Scrum, Kanban, XP, etc.</p>
+</li>
+<li>
+<p>Experience in collaboration between business experts and software developers.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_structure_of_the_curriculum">Structure of the Curriculum</h3>
+<div class="paragraph">
+<p>The individual sections of the curriculum are described according to the following structure:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Terms/principles</strong>: Essential core terms of this topic.</p>
+</li>
+<li>
+<p><strong>Teaching/practice time</strong>: Defines the minimum amount of teaching and practice time that must be spent on this topic or its practice in an accredited training course.</p>
+</li>
+<li>
+<p><strong>Learning goals</strong>: Describes the content to be conveyed including its core terms and principles.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This section therefore also outlines the skills to be acquired in corresponding training courses.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_supplementary_information_terms_translations">Supplementary Information, Terms, Translations</h3>
+<div class="paragraph">
+<p>To the extent necessary for understanding the curriculum, we have added definitions of technical terms to the <a href="https://github.com/isaqb-org/glossary">iSAQB glossary</a> and complemented them by references to (translated) literature.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_domain_model_and_ubiquitous_language">1. Domain, model and ubiquitous language</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 120 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 75 min</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles">1.1. Terms and Principles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Domain, domain model</p>
+</li>
+<li>
+<p>Ubiquitous language</p>
+</li>
+<li>
+<p>Modules</p>
+</li>
+<li>
+<p>Entity, Value Object, Aggregate, Service</p>
+</li>
+<li>
+<p>Factory, Repository</p>
+</li>
+<li>
+<p>Domain Events (Vernon, 2013)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals">1.2. Learning Goals</h3>
+<div class="paragraph">
+<p>This section serves as an introduction to domain-driven design and provides the motivation for its development. The fundamental concepts Domain, Domain Model, and Ubiquitous Language are presented here.
+The course participants also obtain a detailed insight into the various components of domain models and the relationships between them.</p>
+</div>
+<div class="sect3">
+<h4 id="LG-1-1">LG 1-1: Know and be able to explain the connections between domains, software, and models</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can describe the dependency between software and a domain. They understand that software does not exist as an end in itself.</p>
+</li>
+<li>
+<p>The course participants understand domain models as a tool for abstracting expert knowledge.</p>
+</li>
+<li>
+<p>The course participants understand that domain models represent the ideas and relationships of a domain.</p>
+</li>
+<li>
+<p>The course participants can explain the domain model as a tool to align the software with the domain.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-1-2">LG 1-2: Understand the role of domain-specific terminology in the construction of a ubiquitous language</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants understand that a common language for both domain experts and developers assists mutual understanding.</p>
+</li>
+<li>
+<p>The course participants understand the term ubiquity: all stakeholders understand and use a single domain-specific terminology that they have developed for communication within the project.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-1-3">LG 1-3: Understand the role of domain-specific terminology in the construction of a ubiquitous language</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants know that the fundamental terms of a ubiquitous language originate from the domain experts.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-1-4">LG 1-4: Know and be able to explain the building blocks of domain-driven design</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants understand the fundamental building blocks of domain-driven design. o Value Objects represent elementary value types from the domain. They can only
+contain other Value Objects. Value Objects have no identity, but are comparable.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Entities represent things in the domain. They can contain Value Objects and other
+Entities. Entities have an identity.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants understand the additional building blocks of domain-driven design.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Modules</strong> as static grouping mechanisms for code artifacts.</p>
+</li>
+<li>
+<p><strong>Services</strong> encapsulate independent functions that cannot be allocated to individual Entities. They decouple functionality from states and should therefore be stateless. They enable, among other things, domain processes to be documented in a domain model.</p>
+</li>
+<li>
+<p><strong>Aggregates</strong> are used to group Entities. External access exclusively takes place via a globally identifiable Aggregate Root. The Aggregate Root is also responsible for the compliance of invariants within the Aggregate. This achieves a loose coupling when using Aggregates, hides the contained Entities from external access, and facilitates the compliance of invariants. The lifecycle of all contained Entities is thus determined by the lifecycle of the Aggregate Root.</p>
+</li>
+<li>
+<p><strong>Factories</strong> represent creation mechanisms for Entities. They allow potentially complex logic to be outsourced from the constructors of Entities.</p>
+</li>
+<li>
+<p><strong>Repositories</strong> are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third- party systems such as databases or remote services.</p>
+</li>
+<li>
+<p><strong>Domain Events</strong> support the sharing of information about the occurrence of domain- related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern <sup class="footnote" id="_footnote_1">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> to registered clients.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-1-5">LG 1-5: Know and be able to explain the connections between the building blocks</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants are able to create a relationship between the building blocks and combine them in a sensible manner.<sup class="footnote" id="_footnote_2">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references">1.3. References</h3>
+<div class="paragraph">
+<p><a href="#avram">[Avram, A., &amp; Marinescu, F. (2007)]</a>, <a href="#evans">[Evans, E. (2003)]</a>, <a href="#vernon">[Vernon, V. (2013)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_path_to_the_model">2. The path to the model</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 180 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 60 min</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_2">2.1. Terms and Principles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Empowerment of domain experts</p>
+</li>
+<li>
+<p>Forms of collaboration for model analysis</p>
+</li>
+<li>
+<p>Tools for model analysis</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_2">2.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-2-1">LG 2-1: Know and be able to explain the high importance of domain experts in DDD</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can teach domain experts that DDD offers them responsibility and creative possibilities (empowerment).</p>
+</li>
+<li>
+<p>The course participants are able to teach a development team that software must support the existing domain.</p>
+</li>
+<li>
+<p>The course participants understand that knowledge about the domain primarily exists in the minds of the domain experts.</p>
+</li>
+<li>
+<p>The course participants understand that implicit domain knowledge must be revealed and recorded so that it can be modeled.</p>
+</li>
+<li>
+<p>The course participants are able to build trust with domain experts regarding the model as well as working together as equals.</p>
+</li>
+<li>
+<p>The course participants are able to communicate to project sponsors and product owners about the need for active participation from the domain experts.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-2">LG 2-2: Be able to provide support in selecting suitable contact persons</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants know influencing factors concerning the suitability of domain experts and can assess them based on their:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>comprehensive experience and knowledge in their own domain;</p>
+</li>
+<li>
+<p>motivation;</p>
+</li>
+<li>
+<p>availability during and after the project;</p>
+</li>
+<li>
+<p>ability to think abstractly; and</p>
+</li>
+<li>
+<p>flexibility.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-3">LG 2-3: Be able to communicate with domain experts</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants are proficient in different communication models in order to enter into an equitable dialog with domain experts:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>the “Communication Square” or “Four Sides” (German: “Kommunikationsquadrat” or “Vier-Seiten”)</p>
+</li>
+<li>
+<p>Four-Ears (German: “Vier Ohren”)</p>
+</li>
+<li>
+<p>the Inner Team (German: „das Innere Team“)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants understand that the communication between domain experts and
+development teams in DDD is of critical importance.</p>
+</li>
+<li>
+<p>The course participants understand that domain experts may consciously or unconsciously
+possess domain knowledge.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-4">LG 2-4: Be able to use modeling techniques when working with domain experts</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants are proficient in the use of class and object diagrams to depict domain models.</p>
+</li>
+<li>
+<p>The course participants are proficient in scenario-based modeling techniques:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use cases</p>
+</li>
+<li>
+<p>User stories for subsequent modeling of Domain Events</p>
+</li>
+<li>
+<p>Domain Events</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants can create glossaries for the terms of a ubiquitous language.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-5">LG 2-5: Be able to conduct interviews to model a domain</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants understand that interviews are suitable for revealing domain knowledge.</p>
+</li>
+<li>
+<p>The course participants understand that the interviewer also unconsciously influences the conversation.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The selection of questions determines what is discussed</p>
+</li>
+<li>
+<p>The interviewer makes their own assumptions, which the interview partner is not aware of</p>
+</li>
+<li>
+<p>Confirmation bias can lead to misunderstandings</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants are proficient at structuring and conducting an interview relating to a concrete scenario from the domain.</p>
+</li>
+<li>
+<p>The course participants understand that it is helpful to create a model that the interview partner can understand during an interview.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-6">LG 2-6: Be proficient in observation to understand a domain</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can apply the observation techniques of “field observation” and “apprenticing”<sup class="footnote" id="_footnote_3">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> as tools for revealing unconscious domain knowledge:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Field observation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Analysis as a silent observer</p>
+</li>
+<li>
+<p>Working processes are recording in writing</p>
+</li>
+<li>
+<p>In rare cases, questions to the domain experts to verify comprehension</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Apprenticing</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Is an expansion of field observation</p>
+</li>
+<li>
+<p>Following a series of observation cycles, the observers performs a small, but exemplary part of the domain expert&#8217;s work</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-7">LG 2-7: Be able to conduct an “Event-Storming” workshop</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can prepare, host, and follow up on an event-storming workshop (Brandolini, 2013).</p>
+</li>
+<li>
+<p>The course participants understand that event-storming workshops are performed without strict coordination.</p>
+</li>
+<li>
+<p>The course participants understand that event storming focuses on collecting Domain Events.</p>
+</li>
+<li>
+<p>The course participants can structure the disordered information from the workshop.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-8">LG 2-8: Be able to select a suitable modeling approach and discuss it with domain experts</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can identify and address organizational constraints:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Technical and room resources</p>
+</li>
+<li>
+<p>Geographically distributed domain experts</p>
+</li>
+<li>
+<p>Legal constraints for the production of transcripts, audio/video streams, photos, etc.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants can discuss with the domain experts whether the model should be developed iteratively or in advance.</p>
+</li>
+<li>
+<p>The course participants can discuss the consequences of vagueness and misperceptions in the model with domain experts and developers.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_2">2.3. References</h3>
+<div class="paragraph">
+<p><a href="#hruschka">[Hruschka, P. (2014)]</a>, <a href="#schulz2010">[Schulz von Thun, F. (2010)]</a>, <a href="#schulz2013">[Schulz von Thun, F. (2013)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_from_the_model_to_the_implementation">3. From the model to the implementation</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 60 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 60 min</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_3">3.1. Terms and Principles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Cohesion and coupling</p>
+</li>
+<li>
+<p>SOLID</p>
+</li>
+<li>
+<p>Avoidance of cyclical dependencies</p>
+</li>
+<li>
+<p>Law of Demeter</p>
+</li>
+<li>
+<p>CRC cards</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_3">3.2. Learning Goals</h3>
+<div class="paragraph">
+<p>This section teaches methods and approaches to derive the corresponding domain classes from a domain model.</p>
+</div>
+<div class="sect3">
+<h4 id="LG-3-1">LG 3-1: Be able to extend a domain model with technical building blocks from DDD</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants specify additional components for an existing domain model consisting of Entities, Value Objects, and Services:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Factories to create Entities</p>
+</li>
+<li>
+<p>Repositories to manage Entities</p>
+</li>
+<li>
+<p>Aggregates to encapsulate Entities and Value Types</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-2">LG 3-2: Be able to model interfaces for domain classes</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can assess and apply the design principles and heuristics from the Foundation Level to the DDD design.</p>
+</li>
+<li>
+<p>The course participants are proficient in the CRC-Cards technique as a tool for modeling.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-3">LG 3-3: Know and be able to take into account interactions between an implementation and its model</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants understand that changes in the domain-specific terminology or in the model must be followed by corresponding changes in the software.</p>
+</li>
+<li>
+<p>The course participants understand that changes to the implementation of the model, such as due to the refactoring of Services or Repositories, are an indication that the domain model should be updated.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-4">LG 3-4: Be able to argue why DDD is worthwhile for complex business logic</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants know alternative approaches and can explain the advantages of DDD for complex business logic.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Table Module, Transaction Script and Domain Model (Fowler, Patterns of Enterprise Application Architecture, 2002)</p>
+</li>
+<li>
+<p>Smart UI (Evans, 2003)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_3">3.3. References</h3>
+<div class="paragraph">
+<p><a href="#avram">[Avram, A., &amp; Marinescu, F. (2007)]</a>, <a href="#martin">[Martin, R. C. (2002)]</a>, <a href="#lilienthal">[Lilienthal, C. (December 2015)]</a>, <a href="#liebherr">[Liebherr, K., Holland, I., &amp; Riel, A. (1988)]</a>, <a href="#beck">[Beck, K., &amp; Cunningham, W. (1989)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_model_in_the_application_architecture">4. The model in the application architecture</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 105 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 60 min</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_4">4.1. Terms and Principles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Hexagonal Architecture (Cockburn, 2012)</p>
+</li>
+<li>
+<p>Command-Query Responsibility Segregation (Dahan, 2009), (Vernon, 2013)</p>
+</li>
+<li>
+<p>Layered Architecture (Evans, 2003)</p>
+</li>
+<li>
+<p>Dependency Injection (Vernon, 2013)</p>
+</li>
+<li>
+<p>Werkzeug- und Materialansatz (WAM)</p>
+</li>
+<li>
+<p>Behaviour Driven Development (BDD)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_4">4.2. Learning Goals</h3>
+<div class="paragraph">
+<p>This section uses selected examples to teach how a domain model can be integrated into software architectures. On the basis of examples, it teaches the similarities and differences between domain- driven design and two related methods.</p>
+</div>
+<div class="sect3">
+<h4 id="LG-4-1">LG 4-1: Be proficient in selected architecture styles and be able to integrate a domain model</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can design a hexagonal architecture for the domain model.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ports</strong> to the outer sides of the inner hexagon offer interfaces for communication
+between the core of the domain and its environment.</p>
+</li>
+<li>
+<p><strong>Adapters</strong><sup class="footnote" id="_footnote_4">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> connect the ports to specific third-party systems via various
+communication channels, such as REST APIs, SOAP, message queues or database
+connections.</p>
+</li>
+<li>
+<p>The application lies inside the hexagon with the domain model as the core.</p>
+</li>
+<li>
+<p>During internal modeling, the focus lies on implementing domain requirements with
+the help of the domain model.</p>
+</li>
+<li>
+<p>In external modeling, the focus lies on providing domain operations and data via
+platform-independent interfaces.</p>
+</li>
+<li>
+<p>The domain model drives the modeling of external interfaces.</p>
+</li>
+<li>
+<p>Ports use transfer classes instead of Entities from the domain model. The course
+participants understand that this counteracts conflicts between versions at the
+interfaces in the event of changes to the model.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants can use the domain model with the Command Query Responsibility
+Segregation pattern (CQRS).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Division of the domain model into query and command model</p>
+</li>
+<li>
+<p>Repositories and Aggregates for the respective processing of commands or queries o Domain Events as a synchronization tool between query and command model</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants can explain the differences between CQRS, a hexagonal architecture, and a layered architecture to software developers.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-2">LG 4-2: Be able to formulate correlations and distinctions between DDD, T&amp;M Approach and BDD</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants know specifications from BDD and can relate them to the ubiquitous language. They understand that specifications can be formulated with the terms of the ubiquitous language.</p>
+</li>
+<li>
+<p>The course participants understand that BDD formulates requirements with the help of the user interface (outside-in), and DDD expresses requirements via the domain model (inside- out)<sup class="footnote" id="_footnote_5">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p>
+</li>
+<li>
+<p>The course participants can compare the building blocks of DDD with the components of the T&amp;M approach.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_4">4.3. References</h3>
+<div class="paragraph">
+<p><a href="#vernon">[Vernon, V. (2013)]</a>, <a href="#evans">[Evans, E. (2003)]</a>, <a href="#cockburn">[Cockburn, A. (2012)]</a>, <a href="#dahan">[Dahan, U. (9. Dezember 2009)]</a>, <a href="#lilienthal">[Lilienthal, C. (December 2015)]</a>, <a href="#zullighoven">[Züllighoven, H. (1998)]</a>, <a href="#north">[North, D. (3. März 2016)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cutting_and_distinguishing_models_from_one_another">5. Cutting and distinguishing models from one another</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 150 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 60 min</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_5">5.1. Terms and Principles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Modelconsistency</p>
+</li>
+<li>
+<p>Bounded Context, Context Map</p>
+</li>
+<li>
+<p>Shared Kernel, Customer/Supplier Teams, Open Host Service <sup class="footnote" id="_footnote_6">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p>
+</li>
+<li>
+<p>Domain Event</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_5">5.2. Learning Goals</h3>
+<div class="paragraph">
+<p>This section teaches the fundamentals of decomposing a model into several sub-models and making the model manageable using defined model boundaries.
+It also teaches strategies for distributing multiple models and their resulting responsibilities to various teams. Solutions are highlighted that allow interfaces to be created between models.</p>
+</div>
+<div class="sect3">
+<h4 id="LG-5-1">LG 5-1: Know symptoms that can occur with excessively large models</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can identify the following circumstances as symptoms:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Various user groups use the same terms in different ways.</p>
+</li>
+<li>
+<p>The model can no longer be managed by a developer team. o The model appears inconsistent.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-2">LG 5-2: Be able to assess advantages and disadvantages of a cross-team model</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants know Conway&#8217;s Law <sup class="footnote" id="_footnote_7">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup> and the impact that it can have on development teams and software artefacts.</p>
+</li>
+<li>
+<p>The course participants understand that models used by several teams require cross-team communication and coordination (e.g., for deployment).</p>
+</li>
+<li>
+<p>The course participants understand that models need to be partitioned so that several development teams can work independently of one another.</p>
+</li>
+<li>
+<p>The course participants understand that specified model boundaries play an important role in keeping the communication effort low.</p>
+</li>
+<li>
+<p>The course participants know that terms in the domain-specific terminology can have different meanings in different contexts.</p>
+</li>
+<li>
+<p>The course participants know that local model consistency can be maintained independently of other models.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-3">LG 5-3: Be able to describe model boundaries of Bounded Contexts in a Context Map</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can show the relationship between several Bounded Contexts as a Context Map.</p>
+</li>
+<li>
+<p>The course participants understand that every model has a context, even if it is not explicit.</p>
+</li>
+<li>
+<p>The course participants understand that the terms of the ubiquitous language only have meaning within their context.</p>
+</li>
+<li>
+<p>The course participants understand that, when different Bounded Contexts interact, the building blocks of one context need to be translated into the other context.</p>
+</li>
+<li>
+<p>The course participants understand the benefits of the correlation between the model boundaries, the organizational structure, and the source code.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-4">LG 5-4: Be able to reuse core elements of several partial models in a shared kernel</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can design and assess the suitability of a shared kernel for a specific situation.</p>
+</li>
+<li>
+<p>The course participants understand that a shared kernel helps to avoid model translations.</p>
+</li>
+<li>
+<p>The course participants understand that a shared kernel requires a high degree of coordination among the teams involved.</p>
+</li>
+<li>
+<p>The course participants understand that the teams are equally qualified to work on the shared kernel.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-5">LG 5-5: Be able to use interfaces for customer/supplier teams</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can assess whether two teams are located in one customer/supplier constellation.</p>
+</li>
+<li>
+<p>The course participants know the circumstances for the successful collaboration of customer/supplier teams:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Stability and documentation of the interface are important for integration</p>
+</li>
+<li>
+<p>Jointly developed acceptance tests help to stabilize the interface</p>
+</li>
+<li>
+<p>The prerequisite for a functioning relationship is that the supplier has an interest in the customer actually using the interface</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The course participants know that, in a customer relationship, the customer formulates the requirements on the supplier&#8217;s interface.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-6">LG 5-6: Be able to design a system as an open host service (OHS)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants understand that an OHS replaces the domain translation layers of the clients.</p>
+</li>
+<li>
+<p>The course participants can design services for an OHS. They are able to distinguish between essential and specific requirements and take this into account in the design.</p>
+</li>
+<li>
+<p>The course participants understand that a public interface can be extended selectively for specific requirements of individual clients, without impairing the interface of other clients.</p>
+</li>
+<li>
+<p>The course participants understand that an OHS is particularly worthwhile if several customers require a translation layer.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-7">LG 5-7: Be able to use Domain Events as a means of communication between Bounded Contexts</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants understand that Domain Events uncouple the Subscriber from the Publisher.
+o In particular, the course participants understand that, for the Publisher, this means that it is not relevant for him who processes his events.</p>
+</li>
+<li>
+<p>The course participants are able to create Domain Events as a means of communication between Bounded Contexts.</p>
+</li>
+<li>
+<p>The course participants are able to assess opportunities and risks of Domain Events in this context:
+o If events are used despite existing dependencies (e.g., within a Bounded Context), there is a risk that the dependencies will only be hidden, which could lead to control flows that are difficult to understand at runtime.</p>
+</li>
+<li>
+<p>The course participants are able to use an event store <sup class="footnote" id="_footnote_8">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup> to allow Subscribers to reprocess events that were incorrectly processed.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_5">5.3. References</h3>
+<div class="paragraph">
+<p><a href="#evans">[Evans, E. (2003)]</a>, <a href="#avram">[Avram, A., &amp; Marinescu, F. (2007)]</a>, <a href="#conway">[Conway, M. E. (April 1968)]</a>, <a href="#vernon">[Vernon, V. (2013)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_maintaining_local_model_consistency">6. Maintaining local model consistency</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 60 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 30 min</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_6">6.1. Terms and Principles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Anticorruption-Layer</p>
+</li>
+<li>
+<p>Continuous Integration</p>
+</li>
+<li>
+<p>Separate Ways <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_6">6.2. Learning Goals</h3>
+<div class="paragraph">
+<p>This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to outsource parts of the model.</p>
+</div>
+<div class="sect3">
+<h4 id="LG-6-1">LG 6-1: Understand how Continuous Integration (CI)<sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> contributes towards local model consistency</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants know the advantages of performing CI within a Bounded Context and can differentiate this from continuous deployment.</p>
+</li>
+<li>
+<p>The course participants understand that Continuous Integration counteracts the fragmenting of the model by various developers.</p>
+</li>
+<li>
+<p>The course participants understand that CI promotes communication about the model and the understanding of the model by the team.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-6-2">LG 6-2: Be able to isolate your own model from external influences</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can identify the possible influences that a model of a neighboring system can have on their own model.</p>
+</li>
+<li>
+<p>The course participants can apply the Interface Patterns <sup class="footnote" id="_footnote_11">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup> to construct an Anti-Corruption Layer.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-6-3">LG 6-3: Understand the circumstances in which it is appropriate to divide the model (Separate Ways), taking into account the aspects from section 5.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The course participants can contrast the coordination costs of a common model with the overheads for separate models.</p>
+</li>
+<li>
+<p>The course participants understand that a model must be divided along a sensible boundary.</p>
+</li>
+<li>
+<p>The course participants understand that, in these cases, local model consistency is easier to maintain in two partial models.</p>
+</li>
+<li>
+<p>The course participants are able to duplicate the remaining functions or integrate them with each other.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_6">6.3. References</h3>
+<div class="paragraph">
+<p><a href="#evans">[Evans, E. (2003)]</a>, <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references_7">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section contains references that are cited in the curriculum.</p>
+</div>
+<div class="paragraph">
+<p><strong>A</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="avram"></a>[Avram, A., &amp; Marinescu, F. (2007)] Domain-Driven Design Quickly. InfoQ Enterprise Software Development Series.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>B</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="beck"></a>[Beck, K., &amp; Cunningham, W. (1989)]  A laboratory for teaching object oriented thinking. OOPSLA '89 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.</p>
+</li>
+<li>
+<p><a id="brandolini"></a>[Brandolini, A. (18. November 2013)]  Introducing Event Storming. Von <a href="http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html" class="bare">http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html</a> abgerufen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>C</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="cockburn"></a>[Cockburn, A. (2012)] Hexagonal Architecture. Von <a href="http://alistair.cockburn.us/Hexagonal+architecture" class="bare">http://alistair.cockburn.us/Hexagonal+architecture</a> abgerufen</p>
+</li>
+<li>
+<p><a id="conway"></a>[Conway, M. E. (April 1968)] How do Committees Invent? Datamation 14.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>D</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="dahan"></a>[Dahan, U. (9. Dezember 2009)] Clarified CQRS. Von <a href="http://udidahan.com/2009/12/09/clarified-cqrs/" class="bare">http://udidahan.com/2009/12/09/clarified-cqrs/</a> abgerufen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>E</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="evans"></a>[Evans, E. (2003)] Domain-Driven Design: Tacking Complexity In the Heart of Software. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>F</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="fowler2002"></a>[Fowler, M. (November 2002)] Patterns of Enterprise Application Architecture. Addison Wesley.</p>
+</li>
+<li>
+<p><a id="fowler2011"></a>[Fowler, M. (14. Juli 2011)] CQRS. Von <a href="http://martinfowler.com/bliki/CQRS.html" class="bare">http://martinfowler.com/bliki/CQRS.html</a> abgerufen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>G</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="gamma"></a>[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)] Design Patterns. Elements of Reusable Object-Oriented Software. Addison-Wesley Professional Computing Series.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>H</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="hruschka"></a>[Hruschka, P. (2014)] Business Analysis und Requirements Engineering. Carl Hanser, München.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>L</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="liebherr"></a>[Liebherr, K., Holland, I., &amp; Riel, A. (1988)] Object-oriented programming: an objective sense of style. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.</p>
+</li>
+<li>
+<p><a id="lilienthal"></a>[Lilienthal, C. (December 2015)] Langlebige Software-Architekturen. dpunkt.verlag.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>M</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="martin"></a>[Martin, R. C. (2002)] Agile Software Development, Principles, Patterns, and Practices. Prentice Hall Computer.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>N</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="north"></a>[North, D. (3. März 2016)] Introducing BDD . Von <a href="http://dannorth.net/introducing-bdd/" class="bare">http://dannorth.net/introducing-bdd/</a> abgerufen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>S</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="schulz2010"></a>[Schulz von Thun, F. (2010)] Miteinander Reden: 1. Rowohlt Taschenbuch Verlag.</p>
+</li>
+<li>
+<p><a id="schulz2013"></a>[Schulz von Thun, F. (2013)] Miteinander Reden: 3. Rowohlt Taschenbuch Verlag.</p>
+</li>
+<li>
+<p><a id="stenberg"></a>[Stenberg, J. (24. Februar 2015)] Behaviour-Driven Development Combined with Domain-Driven Design. Von <a href="http://www.infoq.com/news/2015/02/bdd-ddd" class="bare">http://www.infoq.com/news/2015/02/bdd-ddd</a> abgerufen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>V</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="vernon"></a>[Vernon, V. (2013)] Implementing Domain-Driven Design. Addison-Wesley Longman Publishing Co., Inc.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Z</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="zullighoven"></a>[Züllighoven, H. (1998)] Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz. dpunkt.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Cf.: Continuous Integration <a href="#evans">[evans]</a>
+</div>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Cf.: Continuous Integration <a href="#evans">[Evans, E. (2003)]</a>
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. Cf.: Observer <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. Cf.: Overview on page 65 <a href="#evans">[Evans, E. (2003)]</a>
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. Cf.: Chapter 10 <a href="#hruschka">[Hruschka, P. (2014)]</a>
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. Cf.: Adapter <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. Cf.: <a href="#stenberg">[Stenberg, J. (24. Februar 2015)]</a>
+</div>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. Cf.: Overview on page 388 <a href="#evans">[Evans, E. (2003)]</a>
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. Cf.: <a href="#conway">[Conway, M. E. (April 1968)]</a>
+</div>
+<div class="footnote" id="_footnotedef_9">
+<a href="#_footnoteref_9">9</a>. Cf.: page 539 <a href="#vernon">[Vernon, V. (2013)]</a>
+</div>
+<div class="footnote" id="_footnotedef_10">
+<a href="#_footnoteref_10">10</a>. Cf.: <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ 2017.1-EN<br>
+Last updated 2022-04-13 11:41:01 UTC
+</div>
+</div>
+</body>
+</html>
