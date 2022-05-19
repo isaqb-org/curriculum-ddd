@@ -1,30 +1,30 @@
 === {learning-goals}
 
 // tag::DE[]
-Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodell die entsprechenden fachlichen Klassen abzuleiten.
+Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodell die entsprechenden fachlichen Klassen abzuleiten.
 
 [[LZ-3-1]]
-==== LZ 3-1: Ein Domänenmodell um technisch motivierte Bausteine von DDD erweitern können
-* Die TN können für ein vorliegendes Domänenmodell bestehend aus Entities, Value Objects und Services weitere Bausteine bestimmen:
+==== LZ 3-1: Ein Domänenmodell um technisch motivierte Bausteine von DDD erweitern können
+* Die TN können für ein vorliegendes Domänenmodell bestehend aus Entities, Value Objects und Services weitere Bausteine bestimmen:
 ** Factories zur Erzeugung von Entities
-** Repositories für die Verwaltung von Entities
+** Repositories für die Verwaltung von Entities
 ** Aggregates, um Entities und Value Types zu kapseln
 
 [[LZ-3-2]]
-==== LZ 3-2: Schnittstellen für fachliche Klassen modellieren können
-* Die TN können die Entwurfsprinzipien und Heuristiken aus dem Foundation Level für den DDD-Entwurf einschätzen und anwenden.
+==== LZ 3-2: Schnittstellen für fachliche Klassen modellieren können
+* Die TN können die Entwurfsprinzipien und Heuristiken aus dem Foundation Level für den DDD-Entwurf einschätzen und anwenden.
 * Die TN beherrschen die Technik CRC-Karten als Hilfsmittel bei der Modellierung.
 
 
 [[LZ-3-3]]
-==== LZ 3-3: Wechselwirkungen zwischen einer Implementation und ihrem Modell kennen und berücksichtigen können
-* Die TN verstehen, dass Veränderungen in der Fachsprache oder dem Modell entsprechende Veränderungen in der Software folgen müssen.
-* Die TN verstehen, dass Änderungen an der Implementierung des Modells, beispielsweise durch Refactorings von Services oder Repositories, ein Hinweis darauf sind, dass das Domänenmodell aktualisieren werden sollte.
+==== LZ 3-3: Wechselwirkungen zwischen einer Implementation und ihrem Modell kennen und berücksichtigen können
+* Die TN verstehen, dass Veränderungen in der Fachsprache oder dem Modell entsprechende Veränderungen in der Software folgen müssen.
+* Die TN verstehen, dass änderungen an der Implementierung des Modells, beispielsweise durch Refactorings von Services oder Repositories, ein Hinweis darauf sind, dass das Domänenmodell aktualisieren werden sollte.
 
 
 [[LZ-3-4]]
-==== LZ 3-4: Argumentieren können, wieso sich DDD bei komplexer Geschäftslogik lohnt
-* Die TN kennen alternative Ansätze und können die Vorteile von DDD bei komplexer Geschäftslogik vermitteln.
+==== LZ 3-4: Argumentieren können, wieso sich DDD bei komplexer Geschäftslogik lohnt
+* Die TN kennen alternative Ansätze und können die Vorteile von DDD bei komplexer Geschäftslogik vermitteln.
 ** Table Module, Transaction Script und Domain Model (Fowler, Patterns of Enterprise Application Architecture, 2002)
 ** Smart UI (Evans, 2003)
 

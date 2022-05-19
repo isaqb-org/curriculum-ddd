@@ -3,12 +3,12 @@
 
 Teilnehmerinnen und Teilnehmer **sollten** folgende Kenntnisse und/oder Erfahrung mitbringen:
 
-- Grundlagen und weiterführende Konzepte der objektorientierten Software-Entwicklung
+- Grundlagen und weiterführende Konzepte der objektorientierten Software-Entwicklung
 - Erfahrungen bei der Modellierung von objektorientierten Architekturen
 
 **Hilfreich** für das Verständnis einiger Konzepte sind darüber hinaus:
 
-- Wissen über agile Methoden der Software-Entwicklung, wie z. B. Scrum, Kanban, XP, etc. 
+- Wissen über agile Methoden der Software-Entwicklung, wie z. B. Scrum, Kanban, XP, etc.
 - Erfahrung bei der Zusammenarbeit von Fachbereich und Software-Entwicklern.
 
 // end::DE[]

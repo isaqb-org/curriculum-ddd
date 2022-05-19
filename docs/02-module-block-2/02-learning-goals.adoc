@@ -1,86 +1,86 @@
 === {learning-goals}
 
 // tag::DE[]
-In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten ein Domänenmodell erstellen und verfeinern können.
+In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten ein Domänenmodell erstellen und verfeinern können.
 
 [[LZ-2-1]]
-==== LZ 2-1: Den hohen Stellenwert von Domänen-Experten in DDD kennen und erläutern können
-* Die TN können Domänen-Experten vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).
-* Die TN sind in der Lage, einem Entwicklungsteam zu vermitteln, dass Software die vorhandene Domäne unterstützen muss.
-* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänen-Experten vorhanden ist.
-* Die TN verstehen, dass implizites Domänen-Wissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
-* Die TN sind in der Lage, Vertrauen bei Domänen-Experten in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
-* Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänen-Experten vermitteln.
+==== LZ 2-1: Den hohen Stellenwert von Domänen-Experten in DDD kennen und erläutern können
+* Die TN können Domänen-Experten vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).
+* Die TN sind in der Lage, einem Entwicklungsteam zu vermitteln, dass Software die vorhandene Domäne unterstützen muss.
+* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänen-Experten vorhanden ist.
+* Die TN verstehen, dass implizites Domänen-Wissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
+* Die TN sind in der Lage, Vertrauen bei Domänen-Experten in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
+* Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänen-Experten vermitteln.
 
 [[LZ-2-2]]
-==== LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner unterstützen können
-* Die TN kennen Einflussfaktoren auf die Eignung von Domänen-Experten und können diese einschätzen:
-** Umfassende Erfahrung und Wissen in der eigenen Domäne 
+==== LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner unterstützen können
+* Die TN kennen Einflussfaktoren auf die Eignung von Domänen-Experten und können diese einschätzen:
+** Umfassende Erfahrung und Wissen in der eigenen Domäne
 ** Motivation
-** Zeitliche Verfügbarkeit während und nach dem Projekt
-** Abstraktionsvermögen
-** Flexibilität
+** Zeitliche Verfügbarkeit während und nach dem Projekt
+** Abstraktionsvermögen
+** Flexibilität
 
 
 [[LZ-2-3]]
-==== LZ 2-3: Mit Domänen-Experten kommunizieren können
-* Die TN beherrschen Modelle um mit Domänen-Experten in einen gleichberechtigten Dialog zu treten:
+==== LZ 2-3: Mit Domänen-Experten kommunizieren können
+* Die TN beherrschen Modelle um mit Domänen-Experten in einen gleichberechtigten Dialog zu treten:
 ** Das Kommunikationsquadrat 
 ** Vier-Ohren-Modell
 ** Das innere Team
 * Die TN verstehen, dass der Kommunikation zwischen Fachbereichen und Entwicklungsteams in DDD eine zentrale Bedeutung zukommt.
-* Die TN verstehen, dass Domänen-Experten bewusst und unbewusst über Domänenwissen verfügen.
+* Die TN verstehen, dass Domänen-Experten bewusst und unbewusst über Domänenwissen verfügen.
 
 
 [[LZ-2-4]]
-==== LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänen-Experten einsetzen können
-* Die TN beherrschen die Verwendung von Klassen- und Objektdiagrammen zur Darstellung von Domänenmodellen.
+==== LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänen-Experten einsetzen können
+* Die TN beherrschen die Verwendung von Klassen- und Objektdiagrammen zur Darstellung von Domänenmodellen.
 * Die TN beherrschen szenariobasierte Modellierungstechniken: 
 ** Use-Cases
-** User-Stories zu späteren Modellierung von Domain Events
+** User-Stories zu späteren Modellierung von Domain Events
 ** Domain Events
-* Die TN können Glossare für die Begriffe einer Ubiquitous Language anlegen.
+* Die TN können Glossare für die Begriffe einer Ubiquitous Language anlegen.
 
 
 [[LZ-2-5]]
-==== LZ 2-5:  Interviews als Mittel zur Modellierung führen können
-* Die TN verstehen, dass Interviews geeignet sind, um bewusstes Domänenwissen offenzulegen.
-* Die TN verstehen, dass der Interviewer das Gespräch auch unbewusst beeinflusst.
+==== LZ 2-5:  Interviews als Mittel zur Modellierung führen können
+* Die TN verstehen, dass Interviews geeignet sind, um bewusstes Domänenwissen offenzulegen.
+* Die TN verstehen, dass der Interviewer das Gespräch auch unbewusst beeinflusst.
 ** die Auswahl der Fragen bestimmt, was zur Sprache kommt
 ** der Interviewer hat eigenen Annahmen, die der Interview-Partner nicht kennt 
-** durch den Bestätigungsfehler können Missverständnisse entstehen
-* Die TN beherrschen es, ein Interview entlang eines konkreten Szenarios aus der Domäne zu strukturieren und durchzuführen.
-* Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, welches der Interview-Partner nachvollziehen kann.
+** durch den Bestätigungsfehler können Missverständnisse entstehen
+* Die TN beherrschen es, ein Interview entlang eines konkreten Szenarios aus der Domäne zu strukturieren und durchzuführen.
+* Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, welches der Interview-Partner nachvollziehen kann.
 
 
 [[LZ-2-6]]
 ==== LZ 2-6: Beobachtung als Mittel zur Modellierung beherrschen
-* Die TN können die Beobachtungstechniken "Feldbeobachtung" und "Apprenticing"footnote:3[Vgl.: Kapitel 10 <<hruschka>>] als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:
+* Die TN können die Beobachtungstechniken "Feldbeobachtung" und "Apprenticing"footnote:3[Vgl.: Kapitel 10 <<hruschka>>] als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:
 ** Feldbeobachtung
 *** Analyse als stiller Beobachter
-*** Arbeitsabläufe werden schriftlich erfasst
-*** Verständnisfragen an den Domänen-Experten in seltenen Fällen 
+*** Arbeitsabläufe werden schriftlich erfasst
+*** Verständnisfragen an den Domänen-Experten in seltenen Fällen
 ** Apprenticing
 *** Ist eine Erweiterung der Feldbeobachtung
-*** Nach einer Reihe von Beobachtungsdurchläufen übernehmen die Beobachter exemplarisch einen kleinen Teil der Arbeit des Domänen-Experten
+*** Nach einer Reihe von Beobachtungsdurchläufen übernehmen die Beobachter exemplarisch einen kleinen Teil der Arbeit des Domänen-Experten
 
 
 [[LZ-2-7]]
-==== LZ 2-7: Einen Event-Storming-Workshop durchführen können
-* Die TN können einen Event-Storming-Workshop (Brandolini, 2013) vorbereiten, moderieren, und nachbereiten.
+==== LZ 2-7: Einen Event-Storming-Workshop durchführen können
+* Die TN können einen Event-Storming-Workshop (Brandolini, 2013) vorbereiten, moderieren, und nachbereiten.
 * Die TN verstehen, dass Event-Storming-Workshops ohne strenge Koordination stattfinden.
 * Die TN verstehen, dass Event Storming sich auf die Erhebung von Domain Events konzentriert.
-* Die TN können die ungeordnete Information aus dem Workshop strukturieren.
+* Die TN können die ungeordnete Information aus dem Workshop strukturieren.
 
 
 [[LZ-2-8]]
-==== LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänen-Experten diskutieren können
-* Die TN können organisatorische Rahmenbedingungen ermitteln und berücksichtigen:
-** Technische und räumliche Ressourcen
-** Räumliche Verteilung der Domänen-Experten
-** Juristische Rahmenbedingungen für das Anfertigen von Mitschriften, Audio/Video-Streams, Fotos, etc.
-* Die TN können mit den Domänen-Experten diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.
-* Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Experten und Entwicklern diskutieren.
+==== LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänen-Experten diskutieren können
+* Die TN können organisatorische Rahmenbedingungen ermitteln und berücksichtigen:
+** Technische und räumliche Ressourcen
+** Räumliche Verteilung der Domänen-Experten
+** Juristische Rahmenbedingungen für das Anfertigen von Mitschriften, Audio/Video-Streams, Fotos, etc.
+* Die TN können mit den Domänen-Experten diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.
+* Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Experten und Entwicklern diskutieren.
 
 
 // end::DE[]

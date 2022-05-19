@@ -66,7 +66,7 @@ ATTENTION: labels have to be non-numeric.
 
 **H**
 
-- [[[hruschka,Hruschka, P. (2014)]]] Business Analysis und Requirements Engineering. Carl Hanser, München.
+- [[[hruschka,Hruschka, P. (2014)]]] Business Analysis und Requirements Engineering. Carl Hanser, München.
 
 **L**
 
@@ -79,7 +79,7 @@ ATTENTION: labels have to be non-numeric.
 
 **N**
 
-- [[[north,North, D. (3. März 2016)]]] Introducing BDD . Von http://dannorth.net/introducing-bdd/ abgerufen
+- [[[north,North, D. (3. März 2016)]]] Introducing BDD . Von http://dannorth.net/introducing-bdd/ abgerufen
 
 **S**
 
