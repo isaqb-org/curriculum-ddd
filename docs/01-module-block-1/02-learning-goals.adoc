@@ -1,8 +1,8 @@
 === {learning-goals}
 
 // tag::DE[]
-Dieser Block dient der Motivation und Einführung in Domain Driven Design. Die grundlegenden Kon- zepte Domäne, Domänenmodell und Ubiquitous Language werden hier vermittelt.
-Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen Bausteine von Domä- nenmodellen und die dazwischenliegenden Beziehungen.
+Dieser Block dient der Motivation und Einführung in Domain Driven Design. Die grundlegenden Konzepte Domäne, Domänenmodell und Ubiquitous Language werden hier vermittelt.
+Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen Bausteine von Domänenmodellen und die dazwischenliegenden Beziehungen.
 
 [[LZ-1-1]]
 ==== LZ 1-1: Die Zusammenhänge zwischen Domäne, Software und Modell kennen und erläutern können
@@ -18,18 +18,18 @@ Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen 
 
 [[LZ-1-3]]
 ==== LZ 1-3: Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
-* Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language direkt der Fach- sprache der Domänen-Experten entspringen.
+* Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language direkt der Fachsprache der Domänen-Experten entspringen.
 
 [[LZ-1-4]]
 ==== LZ 1-4: Die Bausteine von Domain Driven Design kennen und erklären können
 * Die TN verstehen die grundlegenden Bausteine von Domain Driven Design.
 ** Value Objects stellen elementare Wert-Typen aus der fachlichen Welt dar. Sie können nur andere Value Objects enthalten. Value Objects haben keine Identität, sind jedoch
 vergleichbar.
-** Entities repräsentieren Dinge der fachlichen Welt. Sie können Value Objects und an- dere Entities enthalten. Entities haben eine Identität.
+** Entities repräsentieren Dinge der fachlichen Welt. Sie können Value Objects und andere Entities enthalten. Entities haben eine Identität.
 * Die TN verstehen die weiterführenden Bausteine von Domain Driven Design.
 ** **Modules** als statische Gruppierungsmechanismen für Code-Artefakte.
-** **Services** kapseln eigenständige Funktionen, die sich nicht einzelnen Entities zuord- nen lassen. Sie entkoppeln Funktionalität von Zuständen, und sollten deswegen selbst zustandslos sein. Sie ermöglichen unter anderem das Erfassen von fachlichen Prozes- sen in einem Domänenmodell.
-** **Aggregates** dienen der Gruppierung von Entities. Der äußere Zugriff geschieht aus- schließlich über ein global identifizierbares Aggregate Root. Das Aggregate Root ist zudem für die Einhaltung von Invarianten innerhalb des Aggregates verantwortlich. Dies erzielt eine lose Kopplung in der Benutzung von Aggregates, versteckt die ent- haltenen Entities vor äußerem Zugriff und erleichtert so das Einhalten von Invarianten. Der Lebenszyklus aller enthaltenen Entities wird durch den Lebenszyklus des Aggregate Roots bestimmt.
+** **Services** kapseln eigenständige Funktionen, die sich nicht einzelnen Entities zuordnen lassen. Sie entkoppeln Funktionalität von Zuständen, und sollten deswegen selbst zustandslos sein. Sie ermöglichen unter anderem das Erfassen von fachlichen Prozessen in einem Domänenmodell.
+** **Aggregates** dienen der Gruppierung von Entities. Der äußere Zugriff geschieht ausschließlich über ein global identifizierbares Aggregate Root. Das Aggregate Root ist zudem für die Einhaltung von Invarianten innerhalb des Aggregates verantwortlich. Dies erzielt eine lose Kopplung in der Benutzung von Aggregates, versteckt die enthaltenen Entities vor äußerem Zugriff und erleichtert so das Einhalten von Invarianten. Der Lebenszyklus aller enthaltenen Entities wird durch den Lebenszyklus des Aggregate Roots bestimmt.
 ** **Factories** stellen Erzeugungsmechanismen für Entities dar. Mit ihnen lässt sich potenziell komplexe Logik aus den Konstruktoren von Entities auslagern.
 ** **Repositories** dienen der Bestandsverwaltung von Entities zur Laufzeit. Das Ermitteln und Herausgeben einer Referenz auf ein Entity oder Aggregate zu einem eindeutigen Identifikator fällt in ihren Aufgabenbereich. Hinter ihnen lassen sich Schnittstellen zu Drittsystemen wie Datenbanken oder entfernten Services verbergen.
 ** **Domain Events** unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern footnote:1[Vgl.: Observer <<gamma>>] an angemeldete Klienten propagiert.
@@ -73,8 +73,8 @@ Entities. Entities have an identity.
 ** **Services** encapsulate independent functions that cannot be allocated to individual Entities. They decouple functionality from states and should therefore be stateless. They enable, among other things, domain processes to be documented in a domain model.
 ** **Aggregates** are used to group Entities. External access exclusively takes place via a globally identifiable Aggregate Root. The Aggregate Root is also responsible for the compliance of invariants within the Aggregate. This achieves a loose coupling when using Aggregates, hides the contained Entities from external access, and facilitates the compliance of invariants. The lifecycle of all contained Entities is thus determined by the lifecycle of the Aggregate Root.
 ** **Factories** represent creation mechanisms for Entities. They allow potentially complex logic to be outsourced from the constructors of Entities.
-** **Repositories** are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third- party systems such as databases or remote services.
-** **Domain Events** support the sharing of information about the occurrence of domain- related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern footnote:1[Cf.: Observer <<gamma>>] to registered clients.
+** **Repositories** are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third-party systems such as databases or remote services.
+** **Domain Events** support the sharing of information about the occurrence of domain-related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern footnote:1[Cf.: Observer <<gamma>>] to registered clients.
 
 [[LG-1-5]]
 ==== LG 1-5: Know and be able to explain the connections between the building blocks
