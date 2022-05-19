@@ -1,7 +1,7 @@
 === {learning-goals}
 
 // tag::DE[]
-Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodell die entspre- chenden fachlichen Klassen abzuleiten.
+Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodell die entsprechenden fachlichen Klassen abzuleiten.
 
 [[LZ-3-1]]
 ==== LZ 3-1: Ein Domänenmodell um technisch motivierte Bausteine von DDD erweitern können
@@ -25,7 +25,7 @@ tigen können
 
 [[LZ-3-4]]
 ==== LZ 3-4: Argumentieren können, wieso sich DDD bei komplexer Geschäftslogik lohnt
-* Die TN kennen alternative Ansätze und können die Vorteile von DDD bei komplexer Ge- schäftslogik vermitteln.
+* Die TN kennen alternative Ansätze und können die Vorteile von DDD bei komplexer Geschäftslogik vermitteln.
 ** Table Module, Transaction Script und Domain Model (Fowler, Patterns of Enterprise Application Architecture, 2002)
 ** Smart UI (Evans, 2003)
 

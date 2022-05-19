@@ -2,26 +2,26 @@
 
 
 // tag::DE[]
-Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt wer- den kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.
+Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt werden kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.
 
 [[LZ-6-1]]
 ==== LZ 6-1: Verstehen, wie Continuous Integration(CI)footnote:10[Vgl.: Continuous Integration <<evans>>] zu lokaler Modellkonsistenz beiträgt
 * Die TN kennen die Vorteile davon, CI innerhalb eines Bounded Contexts stattfinden zu lassen, und können dies von Continuous Deployment abgrenzen.
-* Die TN verstehen, dass Continuous Integration einer Fragmentierung des Modells durch ver- schiedene Entwickler entgegenwirkt.
-* Die TN verstehen, dass CI die Kommunikation über das Modell und das Verständnis des Mo- dells durch das Team fördert.
+* Die TN verstehen, dass Continuous Integration einer Fragmentierung des Modells durch verschiedene Entwickler entgegenwirkt.
+* Die TN verstehen, dass CI die Kommunikation über das Modell und das Verständnis des Modells durch das Team fördert.
 
 
 [[LZ-6-2]]
 ==== LZ 6-2: Das eigene Modell von äußeren Einflüssen isolieren können
 * Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.
-* Die TN können die Schnittstellen-Patterns footnote:11[Vgl.: <<gamma>>] einsetzen, um ein Anticorruption Layer zu kon- struieren.
+* Die TN können die Schnittstellen-Patterns footnote:11[Vgl.: <<gamma>>] einsetzen, um ein Anticorruption Layer zu konstruieren.
 
 
 [[LZ-6-3]]
 ==== LZ 6-3: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways), unter Berücksichtigung der Aspekte aus Block 5
 * Die TN können die Koordinierungs-Kosten eines gemeinsamen Modells dem Overhead bei getrennten Modellen gegenüberstellen.
-* Die TN verstehen, dass die Aufteilung eines Modells entlang einer sinnvollen Grenze gesche- hen muss.
-* Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leich- ter zu wahren ist.
+* Die TN verstehen, dass die Aufteilung eines Modells entlang einer sinnvollen Grenze geschehen muss.
+* Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leichter zu wahren ist.
 * Die TN sind in der Lage, die verbleibenden Funktionen können zu duplizieren oder miteinander zu integrieren.
 
 // end::DE[]

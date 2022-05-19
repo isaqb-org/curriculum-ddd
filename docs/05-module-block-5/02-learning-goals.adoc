@@ -15,11 +15,11 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 [[LZ-5-2]]
 ==== LZ 5-2: Vor- und Nachteile eines Team-Übergreifenden Modells abwägen können
 * Die TN kennen Conway's Law footnote:7[Cf.: <<conway>>] und können es auf die (Kommunikations-)Struktur von Entwicklungs-Teams und Software-Artefakten anwenden.
-* Die TN verstehen, dass von mehreren Teams genutzte Modelle teamübergreifende Kommu- nikation und Koordination (z. B. beim Deployment) erfordern.
+* Die TN verstehen, dass von mehreren Teams genutzte Modelle teamübergreifende Kommunikation und Koordination (z. B. beim Deployment) erfordern.
 * Die TN verstehen, dass Modelle aufgeteilt werden müssen, damit mehrere Entwicklungsteams unabhängig voneinander arbeiten können.
-* Die TN verstehen, dass definierte Modellgrenzen eine wichtige Rolle dabei spielen, den Kom- munikationsaufwand gering zu halten.
-* Die TN wissen, dass Begriffe der Fachsprache in verschiedenen Kontexten verschiedene Be- deutungen haben können.
-* Die TN wissen, dass lokale Modellkonsistenz unabhängig von anderen Modellen aufrecht- erhalten werden kann.
+* Die TN verstehen, dass definierte Modellgrenzen eine wichtige Rolle dabei spielen, den Kommunikationsaufwand gering zu halten.
+* Die TN wissen, dass Begriffe der Fachsprache in verschiedenen Kontexten verschiedene Bedeutungen haben können.
+* Die TN wissen, dass lokale Modellkonsistenz unabhängig von anderen Modellen aufrechterhalten werden kann.
 
 [[LZ-5-3]]
 ==== LZ 5-3: Modellgrenzen von Bounded Contexts in einer Context Map beschreiben können
@@ -38,12 +38,12 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 
 [[LZ-5-5]]
 ==== LZ 5-5: Schnittstellen bei Customer/Supplier Teams einsetzen können
-* Die TN können beurteilen, ob zwei Teams sich in einer Customer/Supplier-Konstellation be- finden.
-* Die TN kennen die Rahmenbedingungen für die erfolgreiche Zusammenarbeit von Custo- mer/Supplier Teams:
+* Die TN können beurteilen, ob zwei Teams sich in einer Customer/Supplier-Konstellation befinden.
+* Die TN kennen die Rahmenbedingungen für die erfolgreiche Zusammenarbeit von Customer/Supplier Teams:
 ** Stabilität und Dokumentation der Schnittstelle sind wichtig für die Integration
 ** Gemeinsam entwickelte Akzeptanztests helfen, die Schnittstelle zu stabilisieren
 ** Voraussetzung für eine funktionierende Kunde/Anbieter-Beziehung ist ein Interesse des Anbieters an der Nutzung durch den Kunden
-* Die TN wissen, dass in einer Kundenbeziehung der Kunde die Anforderungen an die Schnitt- stelle des Anbieters formuliert.
+* Die TN wissen, dass in einer Kundenbeziehung der Kunde die Anforderungen an die Schnittstelle des Anbieters formuliert.
 
 [[LZ-5-6]]
 ==== LZ 5-6: Ein System als Open Host Service (OHS) konzipieren können
@@ -60,7 +60,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 * Die TN sind in der Lage Domain Events als Kommunikationsmittel zwischen Bounded Contexts zu entwerfen.
 * Die TN sind in der Lage, Chancen und Risiken von Domain Events in diesem Zusammenhang abzuwägen:
 ** Wenn Events trotz vorhandener Abhängigkeiten (z. B. innerhalb eines Bounded Contexts) eingesetzt werden, besteht das Risiko, dass dadurch die Abhängigkeiten nur versteckt werden und zur Laufzeit zu schwer nachvollziehbaren Kontrollflüssen führen.
-* Die TN sind in der Lage einen Event Store footnote:8[Vgl.: Seite 539 <<vernon>>] einzusetzen, um es den Subscribern zu ermögli- chen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
+* Die TN sind in der Lage einen Event Store footnote:8[Vgl.: Seite 539 <<vernon>>] einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
 
 
 // end::DE[]

@@ -5,12 +5,12 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten 
 
 [[LZ-2-1]]
 ==== LZ 2-1: Den hohen Stellenwert von Domänen-Experten in DDD kennen und erläutern können
-* Die TN können Domänen-Experten vermitteln, dass DDD ihnen Verantwortung und Gestal- tungsmöglichkeiten bietet (Empowerment).
+* Die TN können Domänen-Experten vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).
 * Die TN sind in der Lage, einem Entwicklungsteam zu vermitteln, dass Software die vorhandene Domäne unterstützen muss.
-* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domä- nen-Experten vorhanden ist.
+* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänen-Experten vorhanden ist.
 * Die TN verstehen, dass implizites Domänen-Wissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
-* Die TN sind in der Lage, Vertrauen bei Domänen-Experten in das Modell und in die gleichbe- rechtigte Zusammenarbeit zu schaffen.
-* Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestal- tung durch die Domänen-Experten vermitteln.
+* Die TN sind in der Lage, Vertrauen bei Domänen-Experten in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
+* Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänen-Experten vermitteln.
 
 [[LZ-2-2]]
 ==== LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner unterstützen können
@@ -44,13 +44,13 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten 
 
 [[LZ-2-5]]
 ==== LZ 2-5:  Interviews als Mittel zur Modellierung führen können
-* Die TN verstehen, dass Interviews geeignet sind, um bewusstes Domänenwissen offenzule- gen.
+* Die TN verstehen, dass Interviews geeignet sind, um bewusstes Domänenwissen offenzulegen.
 * Die TN verstehen, dass der Interviewer das Gespräch auch unbewusst beeinflusst.
 ** die Auswahl der Fragen bestimmt, was zur Sprache kommt
 ** der Interviewer hat eigenen Annahmen, die der Interview-Partner nicht kennt 
 ** durch den Bestätigungsfehler können Missverständnisse entstehen
 * Die TN beherrschen es, ein Interview entlang eines konkreten Szenarios aus der Domäne zu strukturieren und durchzuführen.
-* Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, wel- ches der Interview-Partner nachvollziehen kann.
+* Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, welches der Interview-Partner nachvollziehen kann.
 
 
 [[LZ-2-6]]
@@ -80,7 +80,7 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten 
 ** Räumliche Verteilung der Domänen-Experten
 ** Juristische Rahmenbedingungen für das Anfertigen von Mitschriften, Audio/Video-Streams, Fotos, etc.
 * Die TN können mit den Domänen-Experten diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.
-* Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Exper- ten und Entwicklern diskutieren.
+* Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Experten und Entwicklern diskutieren.
 
 
 // end::DE[]
