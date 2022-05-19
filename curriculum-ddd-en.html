@@ -1898,7 +1898,7 @@ h2 {
 <h1>Curriculum for<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Module<br>DDD<br><br>Domain-Driven Design</h1>
 <div class="details">
 <span id="revnumber"> 2017.1-EN,</span>
-<span id="revdate">20220413</span>
+<span id="revdate">20220519</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -2094,7 +2094,7 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 <p><a href="#LG-5-7">LG 5-7: Be able to use Domain Events as a means of communication between Bounded Contexts</a></p>
 </li>
 <li>
-<p><a href="#LG-6-1">LG 6-1: Understand how Continuous Integration (CI)<sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> contributes towards local model consistency</a></p>
+<p><a href="#LG-6-1">LG 6-1: Understand how Continuous Integration (CI) <sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> contributes towards local model consistency</a></p>
 </li>
 <li>
 <p><a href="#LG-6-2">LG 6-2: Be able to isolate your own model from external influences</a></p>
@@ -2465,10 +2465,10 @@ Entities. Entities have an identity.</p>
 <p><strong>Factories</strong> represent creation mechanisms for Entities. They allow potentially complex logic to be outsourced from the constructors of Entities.</p>
 </li>
 <li>
-<p><strong>Repositories</strong> are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third- party systems such as databases or remote services.</p>
+<p><strong>Repositories</strong> are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third-party systems such as databases or remote services.</p>
 </li>
 <li>
-<p><strong>Domain Events</strong> support the sharing of information about the occurrence of domain- related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern <sup class="footnote" id="_footnote_1">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> to registered clients.</p>
+<p><strong>Domain Events</strong> support the sharing of information about the occurrence of domain-related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern <sup class="footnote" id="_footnote_1">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> to registered clients.</p>
 </li>
 </ul>
 </div>
@@ -2940,7 +2940,7 @@ possess domain knowledge.</p>
 <div class="sect2">
 <h3 id="_learning_goals_4">4.2. Learning Goals</h3>
 <div class="paragraph">
-<p>This section uses selected examples to teach how a domain model can be integrated into software architectures. On the basis of examples, it teaches the similarities and differences between domain- driven design and two related methods.</p>
+<p>This section uses selected examples to teach how a domain model can be integrated into software architectures. On the basis of examples, it teaches the similarities and differences between domain-driven design and two related methods.</p>
 </div>
 <div class="sect3">
 <h4 id="LG-4-1">LG 4-1: Be proficient in selected architecture styles and be able to integrate a domain model</h4>
@@ -3009,7 +3009,7 @@ Segregation pattern (CQRS).</p>
 <p>The course participants know specifications from BDD and can relate them to the ubiquitous language. They understand that specifications can be formulated with the terms of the ubiquitous language.</p>
 </li>
 <li>
-<p>The course participants understand that BDD formulates requirements with the help of the user interface (outside-in), and DDD expresses requirements via the domain model (inside- out)<sup class="footnote" id="_footnote_5">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p>
+<p>The course participants understand that BDD formulates requirements with the help of the user interface (outside-in), and DDD expresses requirements via the domain model (inside-out)<sup class="footnote" id="_footnote_5">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p>
 </li>
 <li>
 <p>The course participants can compare the building blocks of DDD with the components of the T&amp;M approach.</p>
@@ -3206,15 +3206,27 @@ It also teaches strategies for distributing multiple models and their resulting 
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants understand that Domain Events uncouple the Subscriber from the Publisher.
-o In particular, the course participants understand that, for the Publisher, this means that it is not relevant for him who processes his events.</p>
+<p>The course participants understand that Domain Events uncouple the Subscriber from the Publisher.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In particular, the course participants understand that, for the Publisher, this means that it is not relevant for him who processes his events.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>The course participants are able to create Domain Events as a means of communication between Bounded Contexts.</p>
 </li>
 <li>
-<p>The course participants are able to assess opportunities and risks of Domain Events in this context:
-o If events are used despite existing dependencies (e.g., within a Bounded Context), there is a risk that the dependencies will only be hidden, which could lead to control flows that are difficult to understand at runtime.</p>
+<p>The course participants are able to assess opportunities and risks of Domain Events in this context:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If events are used despite existing dependencies (e.g., within a Bounded Context), there is a risk that the dependencies will only be hidden, which could lead to control flows that are difficult to understand at runtime.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>The course participants are able to use an event store <sup class="footnote" id="_footnote_8">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup> to allow Subscribers to reprocess events that were incorrectly processed.</p>
@@ -3269,7 +3281,7 @@ o If events are used despite existing dependencies (e.g., within a Bounded Conte
 <p>This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to outsource parts of the model.</p>
 </div>
 <div class="sect3">
-<h4 id="LG-6-1">LG 6-1: Understand how Continuous Integration (CI)<sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> contributes towards local model consistency</h4>
+<h4 id="LG-6-1">LG 6-1: Understand how Continuous Integration (CI) <sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> contributes towards local model consistency</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -3532,7 +3544,7 @@ o If events are used despite existing dependencies (e.g., within a Bounded Conte
 <div id="footer">
 <div id="footer-text">
  2017.1-EN<br>
-Last updated 2022-04-13 11:41:01 UTC
+Last updated 2022-05-19 14:46:41 UTC
 </div>
 </div>
 </body>
