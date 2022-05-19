@@ -5,7 +5,7 @@
 Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt werden kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.
 
 [[LZ-6-1]]
-==== LZ 6-1: Verstehen, wie Continuous Integration(CI)footnote:10[Vgl.: Continuous Integration <<evans>>] zu lokaler Modellkonsistenz beiträgt
+==== LZ 6-1: Verstehen, wie Continuous Integration (CI) footnote:10[Vgl.: Continuous Integration <<evans>>] zu lokaler Modellkonsistenz beiträgt
 * Die TN kennen die Vorteile davon, CI innerhalb eines Bounded Contexts stattfinden zu lassen, und können dies von Continuous Deployment abgrenzen.
 * Die TN verstehen, dass Continuous Integration einer Fragmentierung des Modells durch verschiedene Entwickler entgegenwirkt.
 * Die TN verstehen, dass CI die Kommunikation über das Modell und das Verständnis des Modells durch das Team fördert.
@@ -30,7 +30,7 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Mode
 This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to outsource parts of the model.
 
 [[LG-6-1]]
-==== LG 6-1: Understand how Continuous Integration (CI)footnote:10[Cf.: Continuous Integration <<evans>>] contributes towards local model consistency
+==== LG 6-1: Understand how Continuous Integration (CI) footnote:10[Cf.: Continuous Integration <<evans>>] contributes towards local model consistency
 * The course participants know the advantages of performing CI within a Bounded Context and can differentiate this from continuous deployment.
 * The course participants understand that Continuous Integration counteracts the fragmenting of the model by various developers.
 * The course participants understand that CI promotes communication about the model and the understanding of the model by the team.
