@@ -2,7 +2,7 @@
 
 // tag::DE[]
 Dieser Block dient der Motivation und Einführung in Domain Driven Design. Die grundlegenden Konzepte Domäne, Domänenmodell und Ubiquitous Language werden hier vermittelt.
-Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen Bausteine von Domä- nenmodellen und die dazwischenliegenden Beziehungen.
+Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen Bausteine von Domänenmodellen und die dazwischenliegenden Beziehungen.
 
 [[LZ-1-1]]
 ==== LZ 1-1: Die Zusammenhänge zwischen Domäne, Software und Modell kennen und erläutern können
