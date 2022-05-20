@@ -11,7 +11,7 @@
 |===
 
 === Begriffe und Konzepte
-- Empowerment der Domänen-Experten
+- Empowerment der Domänen-Experten
 - Kollaborationsformen zur Modell-Erhebung
 - Werkzeuge zur Modell-Erhebung
 

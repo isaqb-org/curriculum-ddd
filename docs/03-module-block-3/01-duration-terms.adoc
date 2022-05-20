@@ -5,7 +5,7 @@
 
 === Begriffe und Konzepte
 
-* Kohäsion und Kopplung 
+* Kohäsion und Kopplung
 * SOLID
 * Zyklenfreiheit
 * Law of Demeter 

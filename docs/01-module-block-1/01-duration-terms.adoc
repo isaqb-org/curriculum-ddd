@@ -10,7 +10,7 @@
 |===
 
 === Begriffe und Konzepte
-- Domäne (engl.: domain), Domänenmodell (engl.: domain model) 
+- Domäne (engl.: domain), Domänenmodell (engl.: domain model)
 - Ubiquitous Language
 - Module
 - Entity, Value Object, Aggregate, Service

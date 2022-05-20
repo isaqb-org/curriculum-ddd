@@ -1,29 +1,29 @@
 === {learning-goals}
 
 // tag::DE[]
-Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Software-Architekturen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Domain Driven Design und zwei verwandten Methoden.
+Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Software-Architekturen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Domain Driven Design und zwei verwandten Methoden.
 
 [[LZ-4-1]]
-==== LZ 4-1: Ausgewählte Architekturstile beherrschen und ein Domänenmodell integrieren können
-* Die TN können um das Domänenmodell eine hexagonale Architektur entwerfen.
+==== LZ 4-1: Ausgewählte Architekturstile beherrschen und ein Domänenmodell integrieren können
+* Die TN können um das Domänenmodell eine hexagonale Architektur entwerfen.
 ** **Ports** an den Außenseiten des inneren Hexagons bieten Schnittstellen zur Kommunikation zwischen fachlichem Kern und seiner Umgebung.
-** **Adapter**footnote:4[Vgl.: Adapter <<gamma>>] verbinden die Ports mit konkreten Drittsystemen über verschiedene Kommunikationskanäle wie REST-APIs, SOAP, Message Queues oder Db-Connections.
-** Die Applikation liegt im Inneren des Hexagons mit dem Domänenmodell als Kern.
-** Bei der inneren Modellierung liegt der Fokus auf der Realisierung fachlicher Anforderungen mit Hilfe des Domänenmodells.
-** In der äußeren Modellierung liegt der Fokus auf der Bereitstellung fachlicher Operationen und Daten über plattformunabhängige Schnittstellen.
-** Das Domänenmodell treibt die Modellierung externer Schnittstellen.
-** Ports verwenden Transfer-Klassen anstatt Entities aus dem Domänenmodell. Die TN verstehen, dass dies Versionskonflikte an den Schnittstellen bei Änderungen des Modells entgegenwirkt.
-* Die TN können das Domänenmodell mit dem Command-Query Responsibility Segregation Pattern (CQRS) einsetzen.
-** Aufteilen des Domänenmodells in Query- und Command Model
-** Repositories und Aggregrates für die jeweilige Verarbeitung von Commands oder Queries
+** **Adapter**footnote:4[Vgl.: Adapter <<gamma>>] verbinden die Ports mit konkreten Drittsystemen über verschiedene Kommunikationskanäle wie REST-APIs, SOAP, Message Queues oder Db-Connections.
+** Die Applikation liegt im Inneren des Hexagons mit dem Domänenmodell als Kern.
+** Bei der inneren Modellierung liegt der Fokus auf der Realisierung fachlicher Anforderungen mit Hilfe des Domänenmodells.
+** In der äußeren Modellierung liegt der Fokus auf der Bereitstellung fachlicher Operationen und Daten über plattformunabhängige Schnittstellen.
+** Das Domänenmodell treibt die Modellierung externer Schnittstellen.
+** Ports verwenden Transfer-Klassen anstatt Entities aus dem Domänenmodell. Die TN verstehen, dass dies Versionskonflikte an den Schnittstellen bei änderungen des Modells entgegenwirkt.
+* Die TN können das Domänenmodell mit dem Command-Query Responsibility Segregation Pattern (CQRS) einsetzen.
+** Aufteilen des Domänenmodells in Query- und Command Model
+** Repositories und Aggregrates für die jeweilige Verarbeitung von Commands oder Queries
 ** Domain Events als Synchronisationsmittel zwischen Query- und Command Model
-* Die TN können Software-Entwicklern die Unterschiede von CQRS, einer hexagonalen Architektur und einer Schichtenarchitektur vermitteln.
+* Die TN können Software-Entwicklern die Unterschiede von CQRS, einer hexagonalen Architektur und einer Schichtenarchitektur vermitteln.
 
 [[LZ-4-2]]
-==== LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD, WAM und BDD formulieren können
-* Die TN kennen Spezifikationen aus BDD und können sie mit der Ubiquitous Language in Zusammenhang bringen. Sie verstehen, dass sich Spezifikationen mit den Wörtern der UL formulieren lassen.
-* Die TN verstehen, dass BDD Anforderungen mithilfe der Benutzungsschnittstelle formuliert (Outside-In), und DDD Anforderungen dies über das Domänenmodell ausdrückt (Inside-Out)footnote:5[Vgl.: <<stenberg>>]
-* Die TN können die Bausteine von DDD mit den Bausteinen von WAM vergleichen.
+==== LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD, WAM und BDD formulieren können
+* Die TN kennen Spezifikationen aus BDD und können sie mit der Ubiquitous Language in Zusammenhang bringen. Sie verstehen, dass sich Spezifikationen mit den Wörtern der UL formulieren lassen.
+* Die TN verstehen, dass BDD Anforderungen mithilfe der Benutzungsschnittstelle formuliert (Outside-In), und DDD Anforderungen dies über das Domänenmodell ausdrückt (Inside-Out)footnote:5[Vgl.: <<stenberg>>]
+* Die TN können die Bausteine von DDD mit den Bausteinen von WAM vergleichen.
 
 // end::DE[]
 

@@ -4,7 +4,7 @@
 
 
 // tag::DE[]
-== Domäne, Modell und Ubiquitous Language
+== Domäne, Modell und Ubiquitous Language
 // end::DE[]
 
 // tag::EN[]
