@@ -83,6 +83,15 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 * Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Experten und Entwicklern diskutieren.
 
 
+[[LZ-2-9]]
+==== LZ 2-9: Agilität als Fundament von DDD verstehen
+* TN können DDD zu Werten und Prinzipien aus dem Agilen Manifest in Beziehung setzen
+* TN haben verstanden, dass DDD auf einen evolutionären Entwurf setzt:
+** Ein Modell entwickelt sich immer weiter
+** Tragfähige Modelle entstehen durch exploratives Vorgehen
+
+
+
 // end::DE[]
 
 // tag::EN[]
@@ -170,6 +179,12 @@ possess domain knowledge.
 * The course participants can discuss the consequences of vagueness and misperceptions in the model with domain experts and developers.
 
 
+[[LG-2-9]]
+==== LG 2-9: Understand agility as a foundation of DDD
+* Participants can relate DDD to the values and principles from the Agile Manifesto.
+* Participants have understood that DDD relies on an evolutionary design:
+** A model is always evolving
+** Sustainable models are created through an exploratory approach.
 // end::EN[]
 
 // tag::REMARK[]

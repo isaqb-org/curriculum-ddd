@@ -40,6 +40,7 @@ ATTENTION: labels have to be non-numeric.
 **B**
 
 - [[[beck,Beck, K., & Cunningham, W. (1989)]]]  A laboratory for teaching object oriented thinking. OOPSLA '89 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
+- [[[beck2001,Beck, K. et al. (2001)]]] Manifesto for Agile Software Development. Von https://agilemanifesto.org. abgerufen
 - [[[brandolini,Brandolini, A. (18. November 2013)]]]  Introducing Event Storming. Von http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html abgerufen
 
 **C**
