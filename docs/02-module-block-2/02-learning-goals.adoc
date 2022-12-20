@@ -66,11 +66,16 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 
 
 [[LZ-2-7]]
-==== LZ 2-7: Einen Event-Storming-Workshop durchführen können
-* Die TN können einen Event-Storming-Workshop (Brandolini, 2013) vorbereiten, moderieren, und nachbereiten.
-* Die TN verstehen, dass Event-Storming-Workshops ohne strenge Koordination stattfinden.
-* Die TN verstehen, dass Event Storming sich auf die Erhebung von Domain Events konzentriert.
-* Die TN können die ungeordnete Information aus dem Workshop strukturieren.
+==== LZ 2-7: Einen Überblick über Collaborative Modeling, seine Methoden und seinen Zusammenhang mit DDD bekommen
+* Die TN wissen, dass es verschiedene Methoden gibt, z. B.:
+** EventStorming (Brandolini, 2021)
+** Domain Storytelling (Hofer, Schwentner 2022)
+** User Story Mapping (Patton, 2015)
+* Die TN verstehen die gemeinsamen Werte der verschiedenen Methoden:
+** Gemeinsames Verständnis erarbeiten durch enge Zusammenarbeit unterschiedlicher Stakeholder: Fachexperte, Entwickler und weitere.
+** Leichtgewichtige Methodik, deren Elemente in fünf Minuten soweit erklärt sind, dass man starten kann.
+** Fokus auf Verhalten, nicht nur auf Struktur/Daten (nicht nur Substantive, sondern auch Verben).
+* TN verstehen, dass Collaborative Modeling auch unabhängig von DDD verwenden werden kann.
 
 
 [[LZ-2-8]]
@@ -84,12 +89,19 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 
 
 [[LZ-2-9]]
-==== LZ 2-9: Agilität als Fundament von DDD verstehen
+==== LZ 2-9: Einen Collaborative Modeling-Workshop durchführen können
+* Die TN können einen Workshop in mindestens einer der o. g. Methoden vorbereiten, moderieren, und nachbereiten.
+* TN sind in der Lage, passende TN zum Workshop einzuladen.
+* Die TN können die ungeordnete Information aus dem Workshop strukturieren.
+* Die TN wissen, dass online und on-premise unterschiedlich vorgegangen werden muss.
+
+
+[[LZ-2-10]]
+==== LZ 2-10: Agilität als Fundament von DDD verstehen
 * TN können DDD zu Werten und Prinzipien aus dem Agilen Manifest in Beziehung setzen
 * TN haben verstanden, dass DDD auf einen evolutionären Entwurf setzt:
-** Ein Modell entwickelt sich immer weiter
-** Tragfähige Modelle entstehen durch exploratives Vorgehen
-
+** Ein Modell entwickelt sich immer weiter.
+** Tragfähige Modelle entstehen durch exploratives Vorgehen.
 
 
 // end::DE[]
@@ -161,12 +173,16 @@ possess domain knowledge.
 
 
 [[LG-2-7]]
-==== LG 2-7: Be able to conduct an “Event-Storming” workshop
-* The course participants can prepare, host, and follow up on an event-storming workshop (Brandolini, 2013).
-* The course participants understand that event-storming workshops are performed without strict coordination.
-* The course participants understand that event storming focuses on collecting Domain Events.
-* The course participants can structure the disordered information from the workshop.
-
+==== LG 2-7: Get an overview of Collaborative Modeling, its methods, and how it relates to DDD.
+* The participants know that there are different methods, e.g.:
+** EventStorming (Brandolini, 2021).
+** Domain Storytelling (Hofer, Schwentner 2022).
+** User Story Mapping (Patton, 2015).
+* Participants understand the common values of the different methods:
+** Develop common understanding through close collaboration of different stakeholders: domain experts, developers, and others.
+** Lightweight methodology whose elements can be explained in five minutes to get started.
+** Focus on behavior, not only on structure/data (not only nouns, but also verbs).
+* Participants understand that Collaborative Modeling can be used independently of DDD.
 
 
 [[LG-2-8]]
@@ -180,7 +196,15 @@ possess domain knowledge.
 
 
 [[LG-2-9]]
-==== LG 2-9: Understand agility as a foundation of DDD
+==== LG 2-9: Be able to conduct a collaborative modeling workshop
+* Participants are able to prepare, facilitate and follow up a workshop in at least one of the above mentioned methods.
+* Participants are able to invite suitable participants to the workshop.
+* Participants are able to structure the unorganized information from the workshop.
+* The participants know that online and on-premise must be approached differently.
+
+
+[[LG-2-10]]
+==== LG 2-10: Understand agility as a foundation of DDD
 * Participants can relate DDD to the values and principles from the Agile Manifesto.
 * Participants have understood that DDD relies on an evolutionary design:
 ** A model is always evolving
