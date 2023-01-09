@@ -84,8 +84,6 @@ ATTENTION: labels have to be non-numeric.
 
 **S**
 
-- [[[schulz2010,Schulz von Thun, F. (2010)]]] Miteinander Reden: 1. Rowohlt Taschenbuch Verlag.
-- [[[schulz2013,Schulz von Thun, F. (2013)]]] Miteinander Reden: 3. Rowohlt Taschenbuch Verlag.
 - [[[stenberg,Stenberg, J. (24. Februar 2015)]]] Behaviour-Driven Development Combined with Domain-Driven Design. Von http://www.infoq.com/news/2015/02/bdd-ddd abgerufen
 
 **V**
