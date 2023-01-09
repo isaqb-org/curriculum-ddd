@@ -69,6 +69,11 @@ ATTENTION: labels have to be non-numeric.
 
 - [[[hruschka,Hruschka, P. (2014)]]] Business Analysis und Requirements Engineering. Carl Hanser, München.
 
+**K**
+
+- [[[kuhl,Kühl, S. & Muster, J. (2018)]]] *Designing Organizations: A Very Brief Introduction*. Organizational Dialogue Press.
+
+
 **L**
 
 - [[[liebherr,Liebherr, K., Holland, I., & Riel, A. (1988)]]] Object-oriented programming: an objective sense of style. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
@@ -76,20 +81,34 @@ ATTENTION: labels have to be non-numeric.
 
 **M**
 
+- [[[mannsrising2015,Manns, M. L.  und Rising, L.  (2015)]]]. *More Fearless Change*. Boston: Addison-Wesley.
 - [[[martin,Martin, R. C. (2002)]]] Agile Software Development, Principles, Patterns, and Practices. Prentice Hall Computer.
 
 **N**
 
 - [[[north,North, D. (3. März 2016)]]] Introducing BDD . Von http://dannorth.net/introducing-bdd/ abgerufen
 
+**O**
+
+- [[[osterwalder2010,Osterwalder, A. & Pigneur, Y. (2010)]]] *Business Model Generation*. Wiley.
+- [[[osterwalder2013,Osterwalder, A. (2013)]]] *Value Proposition Design: How to Create Products and Services Customers Want*. Wiley.
+
+**P** 
+ - [[[patton,Patton, J. (2014)]]] *User Story Mapping: Discover the Whole Story, Build the Right Product*. Sebastopol, CA: O’Reilly.
+
 **S**
 
+- [[[SkeltonPais2019,Matthew Skelton, Manuel Pais]]] *Team Topologies: Organizing Business and Technology Teams for Fast Flow*. Portland, OR: IT Revolution, 2019.
 - [[[stenberg,Stenberg, J. (24. Februar 2015)]]] Behaviour-Driven Development Combined with Domain-Driven Design. Von http://www.infoq.com/news/2015/02/bdd-ddd abgerufen
 
 **V**
 
-- [[[vernon,Vernon, V. (2013)]]] Implementing Domain-Driven Design. Addison-Wesley Longman Publishing Co., Inc.
+- [[[vernon,Vernon, V. (2013)]]] *Implementing Domain-Driven Design*. Addison-Wesley 2013.
+- [[[vernon,Vernon, V. (2016)]]] *Domain-Driven Design Distilled*. Addison-Wesley.
+- [[[vernon,Vernon, V. (2017)]]] *Domain-Driven Design kompakt*. dPunkt.
 
 **Z**
 
-- [[[zullighoven,Züllighoven, H. (1998)]]] Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz. dpunkt.
+- [[[zullighoven,Züllighoven, H. (1998)]]] *Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz*. dpunkt.
+
+

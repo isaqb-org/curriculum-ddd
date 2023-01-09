@@ -1,0 +1,62 @@
+// tag::DE[]
+|===
+| Dauer: frei | Übungszeit: frei
+|===
+
+Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vom Trainer nach Bedarf auch gelehrt werden können.
+
+=== Begriffe, Konzepte, mögliche Ideen
+* Implementierung:
+** Ein konkretes Implementationsbeispiel zeigen
+** CRC Cards
+* Architektur:
+** Event Sourcing
+** CQRS
+* Organisation und Strategie:
+** Team Topologies
+** Wardley Mapping
+** Systemische Organisationstheorie
+** Business Model Canvas & Value Proposition
+* Kommunikation:
+** Wie überzeuge ich Kollegen und Chefinnen von DDD?
+
+
+// end::DE[]
+
+// tag::EN[]
+|===
+| Duration: free | Practice time: free
+|===
+
+Around DDD there are many topics that are related and can also be taught by the trainer as needed.
+
+=== Terms, Principles, possible Ideas
+* Implementation:
+** Demonstrate a concrete implementation example
+** CRC Cards
+* Architecture:
+** Event Sourcing
+** CQRS
+* Organization and strategy:
+** Team Topologies
+** Wardley Mapping
+** System approaches for organizations
+** Business Model Canvas & Value Proposition
+* Communication:
+** How to win colleagues and managers for DDD?
+
+// end::EN[]
+
+// tag::REMARK[]
+[NOTE]
+====
+Überschrift in 00-structure.adoc ersetzen
+====
+// end::REMARK[]
+
+// tag::REMARK[]
+[NOTE]
+====
+Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
+====
+// end::REMARK[]

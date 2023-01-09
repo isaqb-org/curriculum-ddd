@@ -71,6 +71,8 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 ** EventStorming (Brandolini, 2021)
 ** Domain Storytelling (Hofer, Schwentner 2022)
 ** User Story Mapping (Patton, 2015)
+** Impact Mapping (Adzic)
+** Example Mapping (Wynne)
 * Die TN verstehen die gemeinsamen Werte der verschiedenen Methoden:
 ** Gemeinsames Verständnis erarbeiten durch enge Zusammenarbeit unterschiedlicher Stakeholder: Fachexperte, Entwickler und weitere.
 ** Leichtgewichtige Methodik, deren Elemente in fünf Minuten soweit erklärt sind, dass man starten kann.

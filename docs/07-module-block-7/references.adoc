@@ -1,0 +1,24 @@
+=== {references}
+
+<<beck>>, <<dahan>, <<fowler2011>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<kuhl2018>>
+
+// tag::REMARK[]
+[NOTE]
+====
+Eine Quelle wird über `<<label>>` referenziert. Dieses muss in `99-references/00-references.adoc` definiert sein.
+
+= = =
+
+A reference source is referenced via `<<label>>`. The label has to be defined in `99-references/00-references.adoc`.
+====
+// end::REMARK[]
+
+
+
+TODO: Quellen für
+
+** Event Sourcing
+** Wardley Mapping
+** System approaches for organizations
+** Business Model Canvas & Value Proposition
+
