@@ -5,7 +5,6 @@
 
 === Begriffe und Konzepte
 * Anticorruption-Layer 
-* Continuous Integration 
 * Separate Ways footnote:6[]
 
 // end::DE[]
@@ -17,7 +16,6 @@
 
 === Terms and Principles
 * Anticorruption-Layer 
-* Continuous Integration 
 * Separate Ways footnote:6[]
 
 // end::EN[]
