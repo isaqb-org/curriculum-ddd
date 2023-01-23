@@ -3,7 +3,7 @@
 // ====================================================
 
 // tag::DE[]
-== Modelle schneiden und voneinander abgrenzen
+== Strategic Design 1: Modelle schneiden und voneinander abgrenzen
 // end::DE[]
 
 // tag::EN[]

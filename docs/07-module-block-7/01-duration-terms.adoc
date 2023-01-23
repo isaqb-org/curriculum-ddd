@@ -6,6 +6,9 @@
 Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vom Trainer nach Bedarf auch gelehrt werden können.
 
 === Begriffe, Konzepte, mögliche Ideen
+* Tools:
+** Bounded Context Canvas
+** User Story Mapping
 * Implementierung:
 ** Ein konkretes Implementationsbeispiel zeigen
 ** CRC Cards

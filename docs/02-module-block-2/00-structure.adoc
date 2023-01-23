@@ -3,7 +3,7 @@
 // ====================================================
 
 // tag::DE[]
-== Der Weg zum Modell
+== Knowledge Crunching: Der Weg zum Modell
 // end::DE[]
 
 // tag::EN[]

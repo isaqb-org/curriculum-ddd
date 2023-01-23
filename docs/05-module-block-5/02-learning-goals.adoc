@@ -22,38 +22,29 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 * Die TN wissen, dass lokale Modellkonsistenz unabhängig von anderen Modellen aufrechterhalten werden kann.
 
 [[LZ-5-3]]
-==== LZ 5-3: Modellgrenzen von Bounded Contexts in einer Context Map beschreiben können
+==== LZ 5-3: Vom Problem- zum Lösungsraum kommen können
+* Die TN kennen die Begriffe "Problem-" und "Lösungsraum" und den Unterschied.
+* Die TN verstehen im Lösungsraum "Modell" und "Design" und wie sie entstehen.
+* Die TN verstehen, wie im Problemraum die Domäne verstanden und in Subdomänen aufgeteilt werden kann.
+* Die TN verstehen, dass in jeder Subdomäne ein eigener Dialekt der Ubiquitous Language gesprochen wird.
+* Die TN verstehen, wie Bounded Contexts aus Subdomänen abgeleitet werden können.
+
+[[LZ-5-4]]
+==== LZ 5-4: Den Kern herausdestilieren
+* Die TN wissen, dass man große Systeme nicht in allen Bereichen gleich gut designen kann und es deshalb wichtig ist, zu wissen, in welchen Bereichen mehr Wert auf das Design gelegt werden muss.
+* Die TN kennen die Begriffe core, generic, supporting subdomain.
+
+[[LZ-5-5]]
+==== LZ 5-5: Modellgrenzen von Bounded Contexts in einer Context Map beschreiben können
 * Die TN können die Beziehungen zwischen mehreren Bounded Contexts als Context Map abbilden.
 * Die TN verstehen, dass jedes Modell einen Kontext hat, auch wenn er nicht explizit ist.
 * Die TN verstehen, dass die Begriffe der Ubiquitous Language nur innerhalb ihres Kontexts eine Bedeutung haben.
 * Die TN verstehen, dass bei der Interaktion von verschiedenen Bounded Contexts die Bausteine der jeweiligen Kontexte ineinander übersetzt werden müssen.
 * Die TN verstehen, die Vorteile der Korrelation zwischen den Modellgrenzen, der Organisationsstruktur und des Sourcecodes.
 
-[[LZ-5-4]]
-==== LZ 5-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können
-* Die TN können die Angemessenheit eines Shared Kernels in einer konkreten Situation bewerten und ihn entwerfen.
-* Die TN verstehen, dass ein Shared Kernel hilft, Modell-übersetzungen zu vermeiden.
-* Die TN verstehen, dass ein Shared Kernel ein großes Maß an Koordination der beteiligten Teams erfordert.
-* Die TN verstehen, dass die Teams bei der Arbeit am Shared Kernel gleichberechtigt sind.
-
-[[LZ-5-5]]
-==== LZ 5-5: Schnittstellen bei Customer/Supplier Teams einsetzen können
-* Die TN können beurteilen, ob zwei Teams sich in einer Customer/Supplier-Konstellation befinden.
-* Die TN kennen die Rahmenbedingungen für die erfolgreiche Zusammenarbeit von Customer/Supplier Teams:
-** Stabilität und Dokumentation der Schnittstelle sind wichtig für die Integration
-** Gemeinsam entwickelte Akzeptanztests helfen, die Schnittstelle zu stabilisieren
-** Voraussetzung für eine funktionierende Kunde/Anbieter-Beziehung ist ein Interesse des Anbieters an der Nutzung durch den Kunden
-* Die TN wissen, dass in einer Kundenbeziehung der Kunde die Anforderungen an die Schnittstelle des Anbieters formuliert.
 
 [[LZ-5-6]]
-==== LZ 5-6: Ein System als Open Host Service (OHS) konzipieren können
-* Die TN verstehen, dass ein OHS die fachlichen übersetzungs-Schichten der Klienten ersetzt.
-* Die TN können Services für einen OHS entwerfen. Sie sind in der Lage, essentielle Anforderungen von spezifischen zu unterscheiden und im Entwurf zu berücksichtigen.
-* Die TN verstehen, dass eine öffentliche Schnittstelle punktuell für besondere Anforderungen einzelner Klienten erweitert werden kann, ohne die Schnittstelle der anderen Klienten zu beeinträchtigen.
-* Die TN verstehen, dass sich ein OHS besonders lohnt, wenn mehrere Kunden eine übersetzungs-Schicht benötigen.
-
-[[LZ-5-7]]
-==== LZ 5-7: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können
+==== LZ 5-6: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können
 * Die TN verstehen, dass Domain Events den Subscriber vom Publisher entkoppeln.
 ** Insbesondere verstehen die TN, dass dies für den Publisher bedeutet, dass es für ihn nicht relevant ist, wer seine Events verarbeitet.
 * Die TN sind in der Lage Domain Events als Kommunikationsmittel zwischen Bounded Contexts zu entwerfen.
@@ -84,38 +75,28 @@ It also teaches strategies for distributing multiple models and their resulting 
 * The course participants know that local model consistency can be maintained independently of other models.
 
 [[LG-5-3]]
-==== LG 5-3: Be able to describe model boundaries of Bounded Contexts in a Context Map
+==== LG 5-3: Be able to move on from problem to solution space
+* The participants know the terms "problem space" and "solution space" and the difference.
+* The participants understand in the solution space "model" and "design" and how tio build them.
+* The participants understand how in the problem space the domain can be understood and divided into subdomains.
+* Participants understand that each subdomain has its own dialect of the ubiquitous language.
+* The participants understand how bounded contexts can be derived from subdomains.
+
+[[LG-5-4]]
+==== LG 5-4: Distill the core
+* The participants know that large systems cannot be designed equally well in all areas and that it is therefore important to know in which areas more emphasis must be placed on the design.
+* The participants know the terms core, generic, supporting subdomain.
+
+[[LG-5-5]]
+==== LG 5-5: Be able to describe model boundaries of Bounded Contexts in a Context Map
 * The course participants can show the relationship between several Bounded Contexts as a Context Map.
 * The course participants understand that every model has a context, even if it is not explicit.
 * The course participants understand that the terms of the ubiquitous language only have meaning within their context.
 * The course participants understand that, when different Bounded Contexts interact, the building blocks of one context need to be translated into the other context.
 * The course participants understand the benefits of the correlation between the model boundaries, the organizational structure, and the source code.
 
-[[LG-5-4]]
-==== LG 5-4: Be able to reuse core elements of several partial models in a shared kernel
-* The course participants can design and assess the suitability of a shared kernel for a specific situation.
-* The course participants understand that a shared kernel helps to avoid model translations.
-* The course participants understand that a shared kernel requires a high degree of coordination among the teams involved.
-* The course participants understand that the teams are equally qualified to work on the shared kernel.
-
-[[LG-5-5]]
-==== LG 5-5: Be able to use interfaces for customer/supplier teams
-* The course participants can assess whether two teams are located in one customer/supplier constellation.
-* The course participants know the circumstances for the successful collaboration of customer/supplier teams:
-** Stability and documentation of the interface are important for integration
-** Jointly developed acceptance tests help to stabilize the interface
-** The prerequisite for a functioning relationship is that the supplier has an interest in the customer actually using the interface
-* The course participants know that, in a customer relationship, the customer formulates the requirements on the supplier's interface.
-
 [[LG-5-6]]
-==== LG 5-6: Be able to design a system as an open host service (OHS)
-* The course participants understand that an OHS replaces the domain translation layers of the clients.
-* The course participants can design services for an OHS. They are able to distinguish between essential and specific requirements and take this into account in the design.
-* The course participants understand that a public interface can be extended selectively for specific requirements of individual clients, without impairing the interface of other clients.
-* The course participants understand that an OHS is particularly worthwhile if several customers require a translation layer.
-
-[[LG-5-7]]
-==== LG 5-7: Be able to use Domain Events as a means of communication between Bounded Contexts
+==== LG 5-6: Be able to use Domain Events as a means of communication between Bounded Contexts
 * The course participants understand that Domain Events uncouple the Subscriber from the Publisher.
 ** In particular, the course participants understand that, for the Publisher, this means that it is not relevant for him who processes his events.
 * The course participants are able to create Domain Events as a means of communication between Bounded Contexts.

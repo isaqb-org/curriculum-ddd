@@ -4,6 +4,8 @@
 |===
 
 === Begriffe und Konzepte
+* Shared Kernel, Customer/Supplier Teams, Open Host Service footnote:6[Vgl.: Übersicht auf Seite 388 <<evans>>]
+* Domain Event als Kommunikationsmittel
 * Anticorruption-Layer 
 * Separate Ways footnote:6[]
 

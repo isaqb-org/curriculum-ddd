@@ -5,17 +5,35 @@
 Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt werden kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.
 
 [[LZ-6-1]]
-==== GESTRICHEN: LZ 6-1: Continuous Integration (CI)
-
+==== LZ 6-1: Schnittstellen bei Customer/Supplier Teams einsetzen können
+* Die TN können beurteilen, ob zwei Teams sich in einer Customer/Supplier-Konstellation befinden.
+* Die TN kennen die Rahmenbedingungen für die erfolgreiche Zusammenarbeit von Customer/Supplier Teams:
+** Stabilität und Dokumentation der Schnittstelle sind wichtig für die Integration
+** Gemeinsam entwickelte Akzeptanztests helfen, die Schnittstelle zu stabilisieren
+** Voraussetzung für eine funktionierende Kunde/Anbieter-Beziehung ist ein Interesse des Anbieters an der Nutzung durch den Kunden
+* Die TN wissen, dass in einer Kundenbeziehung der Kunde die Anforderungen an die Schnittstelle des Anbieters formuliert.
 
 [[LZ-6-2]]
-==== LZ 6-2: Das eigene Modell von äußeren Einflüssen isolieren können
+==== LZ 6-2: Ein System als Open Host Service (OHS) konzipieren können
+* Die TN verstehen, dass ein OHS die fachlichen übersetzungs-Schichten der Klienten ersetzt.
+* Die TN können Services für einen OHS entwerfen. Sie sind in der Lage, essentielle Anforderungen von spezifischen zu unterscheiden und im Entwurf zu berücksichtigen.
+* Die TN verstehen, dass eine öffentliche Schnittstelle punktuell für besondere Anforderungen einzelner Klienten erweitert werden kann, ohne die Schnittstelle der anderen Klienten zu beeinträchtigen.
+* Die TN verstehen, dass sich ein OHS besonders lohnt, wenn mehrere Kunden eine übersetzungs-Schicht benötigen.
+
+[[LZ-6-3]]
+==== LZ 6-3: Das eigene Modell von äußeren Einflüssen isolieren können
 * Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.
 * Die TN können die Schnittstellen-Patterns footnote:11[Vgl.: <<gamma>>] einsetzen, um ein Anticorruption Layer zu konstruieren.
 
+[[LZ-6-4]]
+==== LZ 6-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können
+* Die TN können die Angemessenheit eines Shared Kernels in einer konkreten Situation bewerten und ihn entwerfen.
+* Die TN verstehen, dass ein Shared Kernel hilft, Modell-übersetzungen zu vermeiden.
+* Die TN verstehen, dass ein Shared Kernel ein großes Maß an Koordination der beteiligten Teams erfordert.
+* Die TN verstehen, dass die Teams bei der Arbeit am Shared Kernel gleichberechtigt sind.
 
-[[LZ-6-3]]
-==== LZ 6-3: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways), unter Berücksichtigung der Aspekte aus Block 5
+[[LZ-6-5]]
+==== LZ 6-5: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways)
 * Die TN können die Koordinierungs-Kosten eines gemeinsamen Modells dem Overhead bei getrennten Modellen gegenüberstellen.
 * Die TN verstehen, dass die Aufteilung eines Modells entlang einer sinnvollen Grenze geschehen muss.
 * Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leichter zu wahren ist.
@@ -27,17 +45,35 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to outsource parts of the model.
 
 [[LG-6-1]]
-==== DELETED: LG 6-1: Continuous Integration (CI)
-
+==== LG 6-1: Be able to use interfaces for customer/supplier teams
+* The course participants can assess whether two teams are located in one customer/supplier constellation.
+* The course participants know the circumstances for the successful collaboration of customer/supplier teams:
+** Stability and documentation of the interface are important for integration
+** Jointly developed acceptance tests help to stabilize the interface
+** The prerequisite for a functioning relationship is that the supplier has an interest in the customer actually using the interface
+* The course participants know that, in a customer relationship, the customer formulates the requirements on the supplier's interface.
 
 [[LG-6-2]]
-==== LG 6-2: Be able to isolate your own model from external influences
+==== LG 6-2: Be able to design a system as an open host service (OHS)
+* The course participants understand that an OHS replaces the domain translation layers of the clients.
+* The course participants can design services for an OHS. They are able to distinguish between essential and specific requirements and take this into account in the design.
+* The course participants understand that a public interface can be extended selectively for specific requirements of individual clients, without impairing the interface of other clients.
+* The course participants understand that an OHS is particularly worthwhile if several customers require a translation layer.
+
+[[LG-6-3]]
+==== LG 6-3: Be able to isolate your own model from external influences
 * The course participants can identify the possible influences that a model of a neighboring system can have on their own model.
 * The course participants can apply the Interface Patterns footnote:11[Cf.: <<gamma>>] to construct an Anti-Corruption Layer.
 
+[[LG-6-4]]
+==== LG 6-4: Be able to reuse core elements of several partial models in a shared kernel
+* The course participants can design and assess the suitability of a shared kernel for a specific situation.
+* The course participants understand that a shared kernel helps to avoid model translations.
+* The course participants understand that a shared kernel requires a high degree of coordination among the teams involved.
+* The course participants understand that the teams are equally qualified to work on the shared kernel.
 
-[[LG-6-3]]
-==== LG 6-3: Understand the circumstances in which it is appropriate to divide the model (Separate Ways), taking into account the aspects from section 5.
+[[LG-6-5]]
+==== LG 6-5: Understand the circumstances in which it is appropriate to divide the model (Separate Ways), taking into account the aspects from section 5.
 * The course participants can contrast the coordination costs of a common model with the overheads for separate models.
 * The course participants understand that a model must be divided along a sensible boundary.
 * The course participants understand that, in these cases, local model consistency is easier to maintain in two partial models.
