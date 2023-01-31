@@ -39,6 +39,16 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 * Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leichter zu wahren ist.
 * Die TN sind in der Lage, die verbleibenden Funktionen können zu duplizieren oder miteinander zu integrieren.
 
+[[LZ-6-6]]
+==== LZ 6-6: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können
+* Die TN verstehen, dass Domain Events den Subscriber vom Publisher entkoppeln.
+** Insbesondere verstehen die TN, dass dies für den Publisher bedeutet, dass es für ihn nicht relevant ist, wer seine Events verarbeitet.
+* Die TN sind in der Lage Domain Events als Kommunikationsmittel zwischen Bounded Contexts zu entwerfen.
+* Die TN sind in der Lage, Chancen und Risiken von Domain Events in diesem Zusammenhang abzuwägen:
+** Wenn Events trotz vorhandener Abhängigkeiten (z. B. innerhalb eines Bounded Contexts) eingesetzt werden, besteht das Risiko, dass dadurch die Abhängigkeiten nur versteckt werden und zur Laufzeit zu schwer nachvollziehbaren Kontrollflüssen führen.
+* Die TN sind in der Lage einen Event Store footnote:8[Vgl.: Seite 539 <<vernon>>] einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
+
+
 // end::DE[]
 
 // tag::EN[]
@@ -78,6 +88,16 @@ This section teaches approaches with which the consistency within a model can be
 * The course participants understand that a model must be divided along a sensible boundary.
 * The course participants understand that, in these cases, local model consistency is easier to maintain in two partial models.
 * The course participants are able to duplicate the remaining functions or integrate them with each other.
+
+[[LG-6-6]]
+==== LG 6-6: Be able to use Domain Events as a means of communication between Bounded Contexts
+* The course participants understand that Domain Events uncouple the Subscriber from the Publisher.
+** In particular, the course participants understand that, for the Publisher, this means that it is not relevant for him who processes his events.
+* The course participants are able to create Domain Events as a means of communication between Bounded Contexts.
+* The course participants are able to assess opportunities and risks of Domain Events in this context:
+** If events are used despite existing dependencies (e.g., within a Bounded Context), there is a risk that the dependencies will only be hidden, which could lead to control flows that are difficult to understand at runtime.
+* The course participants are able to use an event store footnote:8[Cf.: page 539 <<vernon>>] to allow Subscribers to reprocess events that were incorrectly processed.
+
 
 // end::EN[]
 
