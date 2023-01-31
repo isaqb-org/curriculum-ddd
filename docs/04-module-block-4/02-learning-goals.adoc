@@ -4,15 +4,8 @@
 Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Software-Architekturen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Domain Driven Design und zwei verwandten Methoden.
 
 [[LZ-4-1]]
-==== LZ 4-1: Eine hexagonale Architektur um ein Domänenmodell herum entwerfen
-* Die TN können die Unterschiede zwischen einer hexagonalen Architektur und einer Schichtenarchitektur vermitteln.
-* **Ports** an den Außenseiten des inneren Hexagons bieten Schnittstellen zur Kommunikation zwischen fachlichem Kern und seiner Umgebung.
-* **Adapter**footnote:4[Vgl.: Adapter <<gamma>>] verbinden die Ports mit konkreten Drittsystemen über verschiedene Kommunikationskanäle wie REST-APIs, SOAP, Message Queues oder Db-Connections.
-* Die Applikation liegt im Inneren des Hexagons mit dem Domänenmodell als Kern.
-* Bei der inneren Modellierung liegt der Fokus auf der Realisierung fachlicher Anforderungen mit Hilfe des Domänenmodells.
-* In der äußeren Modellierung liegt der Fokus auf der Bereitstellung fachlicher Operationen und Daten über plattformunabhängige Schnittstellen.
-* Das Domänenmodell treibt die Modellierung externer Schnittstellen.
-* Ports verwenden Transfer-Klassen anstatt Entities aus dem Domänenmodell. Die TN verstehen, dass dies Versionskonflikte an den Schnittstellen bei Änderungen des Modells entgegenwirkt.
+==== LZ 4-1: Eine Ports&Adapter-Architektur um ein Domänenmodell herum entwerfen
+* Die TN können die Unterschiede zwischen einer Ports&Adapter-Architektur (z.B. Hexagonal, Clean oder Onion) und einer Schichtenarchitektur vermitteln.
 
 [[LZ-4-2]]
 ==== LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD, WAM und BDD formulieren können
@@ -26,15 +19,8 @@ Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell i
 This section uses selected examples to teach how a domain model can be integrated into software architectures. On the basis of examples, it teaches the similarities and differences between domain-driven design and two related methods.
 
 [[LG-4-1]]
-==== LG 4-1: Be able to design a hexagonal architecture for the domain model
-* The course participants can explain the differences between a hexagonal architecture and a layered architecture.
-* **Ports** to the outer sides of the inner hexagon offer interfaces for communication between the core of the domain and its environment.
-* **Adapters**footnote:4[Cf.: Adapter <<gamma>>] connect the ports to specific third-party systems via various communication channels, such as REST APIs, SOAP, message queues or database connections.
-* The application lies inside the hexagon with the domain model as the core.
-* During internal modeling, the focus lies on implementing domain requirements with the help of the domain model.
-* In external modeling, the focus lies on providing domain operations and data via platform-independent interfaces.
-* The domain model drives the modeling of external interfaces.
-* Ports use transfer classes instead of Entities from the domain model. The course participants understand that this counteracts conflicts between versions at the interfaces in the event of changes to the model.
+==== LG 4-1: Be able to design a ports&adapter architecture for the domain model
+* The course participants can explain the differences between a ports&adapter architecture (e.g., Hexagonal, Clean, or Onion) and a layered architecture.
 
 [[LG-4-2]]
 ==== LG 4-2: Be able to formulate correlations and distinctions between DDD, T&M Approach and BDD
