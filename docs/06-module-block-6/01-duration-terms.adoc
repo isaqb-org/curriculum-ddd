@@ -17,6 +17,8 @@
 |===
 
 === Terms and Principles
+* Shared Kernel, Customer/Supplier Teams, Open Host Service
+* Domain Event as means of communication
 * Anticorruption-Layer 
 * Separate Ways footnote:6[]
 

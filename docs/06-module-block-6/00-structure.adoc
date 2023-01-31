@@ -7,7 +7,7 @@
 // end::DE[]
 
 // tag::EN[]
-== Maintaining local model consistency
+== Strategic Design 2: Context Mapping
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

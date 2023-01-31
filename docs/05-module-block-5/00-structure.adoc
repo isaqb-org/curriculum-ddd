@@ -7,7 +7,7 @@
 // end::DE[]
 
 // tag::EN[]
-== Cutting and distinguishing models from one another
+== Strategic Design 1: Cutting and distinguishing models from one another
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
