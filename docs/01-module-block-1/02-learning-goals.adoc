@@ -14,11 +14,13 @@ Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen 
 [[LZ-1-2]]
 ==== LZ 1-2: Die Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
 * Die TN verstehen, dass eine gemeinsame Sprache für Domänen-Experten und Entwickler dem wechselseitigen Verständnis dient.
-* Die TN verstehen den Begriff der Ubiquity (Allgegenwärtigkeit): Alle Stakeholder verstehen und nutzen eine einzige, von ihnen entwickelte Fachsprache zur Kommunikation im Rahmen des Projekts.
+* Die TN verstehen den Begriff der Ubiquity (Allgegenwärtigkeit): "Allgegenwärtigkeit" gilt in einer definierten Grenze (Bounded Context) innerhalb derer die Sprache in Gesprächen, Diagrammen, Dokumentation und Code konsistent verwendet wird.
 
 [[LZ-1-3]]
 ==== LZ 1-3: Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
-* Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language direkt der Fachsprache der Domänen-Experten entspringen.
+* Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language der Fachsprache der Domänen-Experten entspringen.
+* Die TN verstehen, dass die Ubiquitous Language eine formalisierte Version der Fachsprache und eine bewusste Entwurfsentscheidung ist.
+* Die TN verstehen, dass sich die Ubiquitous Language im Dialog von Entwicklungsteam und Fachbereich weiterentwickelt.
 
 [[LZ-1-4]]
 ==== LZ 1-4: Die Bausteine von Domain Driven Design kennen und erklären können
@@ -56,11 +58,13 @@ The course participants also obtain a detailed insight into the various componen
 [[LG-1-2]]
 ==== LG 1-2: Understand the role of domain-specific terminology in the construction of a ubiquitous language
 * The course participants understand that a common language for both domain experts and developers assists mutual understanding.
-* The course participants understand the term ubiquity: all stakeholders understand and use a single domain-specific terminology that they have developed for communication within the project.
+* The course participants understand the term ubiquity: "Ubiquity" applies in a defined boundary (Bounded Context) within which the language is used consistently in conversations, diagrams, documentation, and code.
 
 [[LG-1-3]]
 ==== LG 1-3: Understand the role of domain-specific terminology in the construction of a ubiquitous language
 * The course participants know that the fundamental terms of a ubiquitous language originate from the domain experts.
+* The participants understand that the Ubiquitous Language is a formalized version of the domain language and a conscious design decision.
+* The participants understand that the Ubiquitous Language evolves in a dialog between development team and domain experts.
 
 [[LG-1-4]]
 ==== LG 1-4: Know and be able to explain the building blocks of domain-driven design

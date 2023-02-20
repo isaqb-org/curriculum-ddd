@@ -26,7 +26,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 * Die TN kennen die Begriffe "Problem-" und "Lösungsraum" und den Unterschied.
 * Die TN verstehen im Lösungsraum "Modell" und "Design" und wie sie entstehen.
 * Die TN verstehen, wie im Problemraum die Domäne verstanden und in Subdomänen aufgeteilt werden kann.
-* Die TN verstehen, dass in jeder Subdomäne ein eigener Dialekt der Ubiquitous Language gesprochen wird.
+* Die TN verstehen, dass Sprache kontextabhängig ist und Sprache ein wichtiger Treiber für das Ableiten von Bounded Contexts aus Subdomänen ist.
 * Die TN verstehen, wie Bounded Contexts aus Subdomänen abgeleitet werden können.
 
 [[LZ-5-4]]
@@ -68,7 +68,7 @@ It also teaches strategies for distributing multiple models and their resulting 
 * The participants know the terms "problem space" and "solution space" and the difference.
 * The participants understand in the solution space "model" and "design" and how tio build them.
 * The participants understand how in the problem space the domain can be understood and divided into subdomains.
-* Participants understand that each subdomain has its own dialect of the ubiquitous language.
+* The participants understand that language is context dependent and language is an important driver for deriving bounded contexts from subdomains.
 * The participants understand how bounded contexts can be derived from subdomains.
 
 [[LG-5-4]]
