@@ -1,6 +1,6 @@
 === {references}
 
-<<vernon>>, <<evans>>, <<cockburn>>, <<dahan>>, <<lilienthal>>, <<zullighoven>>, <<north>>
+<<vernon>>, <<evans>>, <<cockburn>>, <<dahan>>, <<lilienthal>>, <<north>>
 
 
 

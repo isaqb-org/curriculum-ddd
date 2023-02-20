@@ -17,6 +17,7 @@ Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vom Trainer nac
 ** Ein konkretes Implementationsbeispiel zeigen
 ** CRC Cards
 * Architektur:
+** Werkzeug- und Materialansatz (WAM)
 ** Event Sourcing
 ** CQRS
 * Organisation und Strategie:
@@ -46,6 +47,7 @@ Around DDD there are many topics that are related and can also be taught by the 
 ** Demonstrate a concrete implementation example
 ** CRC Cards
 * Architecture:
+** Tools & Materials Approach
 ** Event Sourcing
 ** CQRS
 * Organization and strategy:

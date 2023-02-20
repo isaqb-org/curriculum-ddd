@@ -8,10 +8,9 @@ Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell i
 * Die TN können die Unterschiede zwischen einer Ports&Adapter-Architektur (z.B. Hexagonal, Clean oder Onion) und einer Schichtenarchitektur vermitteln.
 
 [[LZ-4-2]]
-==== LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD, WAM und BDD formulieren können
+==== LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD und BDD formulieren können
 * Die TN kennen Spezifikationen aus BDD und können sie mit der Ubiquitous Language in Zusammenhang bringen. Sie verstehen, dass sich Spezifikationen mit den Wörtern der UL formulieren lassen.
 * Die TN verstehen, dass BDD Anforderungen mithilfe der Benutzungsschnittstelle formuliert (Outside-In), und DDD Anforderungen dies über das Domänenmodell ausdrückt (Inside-Out)footnote:5[Vgl.: <<stenberg>>]
-* Die TN können die Bausteine von DDD mit den Bausteinen von WAM vergleichen.
 
 // end::DE[]
 
@@ -23,10 +22,9 @@ This section uses selected examples to teach how a domain model can be integrate
 * The course participants can explain the differences between a ports&adapter architecture (e.g., Hexagonal, Clean, or Onion) and a layered architecture.
 
 [[LG-4-2]]
-==== LG 4-2: Be able to formulate correlations and distinctions between DDD, T&M Approach and BDD
+==== LG 4-2: Be able to formulate correlations and distinctions between DDD and BDD
 * The course participants know specifications from BDD and can relate them to the ubiquitous language. They understand that specifications can be formulated with the terms of the ubiquitous language.
 * The course participants understand that BDD formulates requirements with the help of the user interface (outside-in), and DDD expresses requirements via the domain model (inside-out)footnote:5[Cf.: <<stenberg>>]
-* The course participants can compare the building blocks of DDD with the components of the T&M approach.
 
 // end::EN[]
 

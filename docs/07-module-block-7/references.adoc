@@ -1,6 +1,6 @@
 === {references}
 
-<<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<kuhl>>
+<<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<kuhl>>, <<zullighoven>>
 
 // tag::REMARK[]
 [NOTE]

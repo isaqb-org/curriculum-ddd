@@ -9,7 +9,6 @@
 * SOLID
 * Zyklenfreiheit
 * Law of Demeter 
-* CRC-Karten
 
 // end::DE[]
 
@@ -23,7 +22,6 @@
 * SOLID
 * Avoidance of cyclical dependencies
 * Law of Demeter
-* CRC cards
 
 // end::EN[]
 
