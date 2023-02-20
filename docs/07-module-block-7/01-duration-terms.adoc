@@ -20,6 +20,7 @@ Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vom Trainer nac
 ** Werkzeug- und Materialansatz (WAM)
 ** Event Sourcing
 ** CQRS
+** Legacy-Software mit DDD modernisieren
 * Organisation und Strategie:
 ** Team Topologies
 ** Wardley Mapping
@@ -50,6 +51,7 @@ Around DDD there are many topics that are related and can also be taught by the 
 ** Tools & Materials Approach
 ** Event Sourcing
 ** CQRS
+** Modernizing Legacy-Software with DDD
 * Organization and strategy:
 ** Team Topologies
 ** Wardley Mapping

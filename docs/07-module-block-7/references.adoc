@@ -1,6 +1,6 @@
 === {references}
 
-<<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<kuhl>>, <<zullighoven>>
+<<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<kuhl>>, <<lilienthal2023>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<vernon>>, <<wardley>>, <<zullighoven>>
 
 // tag::REMARK[]
 [NOTE]
@@ -12,13 +12,3 @@ Eine Quelle wird über `<<label>>` referenziert. Dieses muss in `99-references/0
 A reference source is referenced via `<<label>>`. The label has to be defined in `99-references/00-references.adoc`.
 ====
 // end::REMARK[]
-
-
-
-TODO: Quellen für
-
-** Event Sourcing
-** Wardley Mapping
-** System approaches for organizations
-** Business Model Canvas & Value Proposition
-
