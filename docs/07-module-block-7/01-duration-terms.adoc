@@ -5,6 +5,10 @@
 
 Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vom Trainer nach Bedarf auch gelehrt werden können.
 
+=== Empfehlungen
+* "Refactoring towards deeper insights" an einem Fallbeispiel verständlich machen
+* "Large Scale Structures" über das Beispiel verständlich machen
+
 === Begriffe, Konzepte, mögliche Ideen
 * Tools:
 ** Bounded Context Canvas
@@ -32,6 +36,10 @@ Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vom Trainer nac
 |===
 
 Around DDD there are many topics that are related and can also be taught by the trainer as needed.
+
+=== Recommendations
+* "Refactoring towards deeper insights" should be illustrated with the case study
+* "Large Scale Structures" by extending the case study
 
 === Terms, Principles, possible Ideas
 * Implementation:
