@@ -3,7 +3,7 @@
 | Dauer: frei | Übungszeit: frei
 |===
 
-Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vom Trainer nach Bedarf auch gelehrt werden können.
+Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vov Trainer:innen nach Bedarf auch gelehrt werden können.
 
 === Empfehlungen
 * "Refactoring towards deeper insights" an einem Fallbeispiel verständlich machen
@@ -62,16 +62,3 @@ Around DDD there are many topics that are related and can also be taught by the 
 
 // end::EN[]
 
-// tag::REMARK[]
-[NOTE]
-====
-Überschrift in 00-structure.adoc ersetzen
-====
-// end::REMARK[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
-====
-// end::REMARK[]

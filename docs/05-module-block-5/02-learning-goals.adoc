@@ -23,7 +23,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 
 [[LZ-5-3]]
 ==== LZ 5-3: Vom Problem- zum Lösungsraum kommen können
-* Die TN kennen die Begriffe "Problem-" und "Lösungsraum" und den Unterschied.
+* Die TN kennen die Begriffe "Problemraum" und "Lösungsraum" und den Unterschied.
 * Die TN verstehen im Lösungsraum "Modell" und "Design" und wie sie entstehen.
 * Die TN verstehen, wie im Problemraum die Domäne verstanden und in Subdomänen aufgeteilt werden kann.
 * Die TN verstehen, dass Sprache kontextabhängig ist und Sprache ein wichtiger Treiber für das Ableiten von Bounded Contexts aus Subdomänen ist.
