@@ -5,7 +5,7 @@
 |===
 | Inhalt | Empfohlene Mindestdauer (min)
 | 1. Domäne, Modell und Ubiquitous Language | 195
-| 2. Der Weg zum Modell | 240
+| 2. Knowledge Crunching: Der Weg zum Modell | 240
 | 3. Vom Modell zur Implementierung | 120
 | 4. Das Modell in der Anwendungsarchitektur | 165
 | 5. Strategic Design 1: Modelle schneiden und voneinander abgrenzen | 210
@@ -26,7 +26,7 @@
 | Content
 | Recommended minimum duration (minutes)
 | 1. Domain, model, and ubiquitous language | 195
-| 2. The path to the model | 240
+| 2. Knowledge Crunching: The path to the model | 240
 | 3. From the model to implementation | 120
 | 4. The model in the application architecture | 165
 | 5. Strategic Design 1: Cutting and distinguishing models from one another | 210
