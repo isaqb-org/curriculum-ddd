@@ -35,6 +35,7 @@ ATTENTION: labels have to be non-numeric.
 
 **A**
 
+- [[[adzic,Adzic, G. (2012)]]] *Impact Mapping*. Provoking Thoughts.
 - [[[avram,Avram, A., & Marinescu, F. (2007)]]] *Domain-Driven Design Quickly*. InfoQ Enterprise Software Development Series.
 
 **B**
@@ -58,7 +59,7 @@ ATTENTION: labels have to be non-numeric.
 
 **F**
 
-- [[[fowler2002,Fowler, M. (November 2002)]]] *Patterns of Enterprise Application Architecture*. Addison Wesley.
+- [[[fowler2002,Fowler, M. (2002)]]] *Patterns of Enterprise Application Architecture*. Addison Wesley.
 - [[[fowler2011,Fowler, M. (14. Juli 2011)]]] *CQRS*. Von http://martinfowler.com/bliki/CQRS.html abgerufen
 
 **G**
@@ -67,7 +68,8 @@ ATTENTION: labels have to be non-numeric.
 
 **H**
 
-- [[[hruschka,Hruschka, P. (2014)]]] *Business Analysis und Requirements Engineering*. Carl Hanser, München.
+- [[[hofer,Hofer, S. & Schwentner, H. (2022)]]] *Domain Storytelling*. Addison-Wesley.
+- [[[hruschka,Hruschka, P. (2019)]]] *Business Analysis und Requirements Engineering*. Carl Hanser, München.
 
 **K**
 
@@ -112,6 +114,8 @@ ATTENTION: labels have to be non-numeric.
 **W**
 
 - [[[wardley, Wardley, S. (2020)]]] *Wardley Maps: Topographical Intelligence in Business*. Von https://github.com/HiredThought/wardley-maps-ebook/raw/main/bin/Wardley%20Maps%20-%20Simon%20Wardley.pdf abgerufen
+- [[[wynne, Wynne, M. (8. Dezember 2015)]]] *Introducing Example Mapping*.Von https://cucumber.io/blog/bdd/example-mapping-introduction/ aufgerufen.
+
 
 **Z**
 

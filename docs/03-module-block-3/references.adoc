@@ -1,6 +1,6 @@
 === {references}
 
-<<avram>>, <<martin>>, <<lilienthal>>, <<liebherr>>, <<beck>>
+<<avram>>, <<fowler2002>>, <<martin>>, <<lilienthal>>, <<liebherr>>
 
 
 // tag::REMARK[]
