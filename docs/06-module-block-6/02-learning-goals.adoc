@@ -23,7 +23,7 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 [[LZ-6-3]]
 ==== LZ 6-3: Das eigene Modell von äußeren Einflüssen isolieren können
 * Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.
-* Die TN können die Schnittstellen-Patterns footnote:11[Vgl.: <<gamma>>] einsetzen, um ein Anticorruption Layer zu konstruieren.
+* Die TN können die Schnittstellen-Patterns (vgl. <<gamma>>) einsetzen, um ein Anticorruption Layer zu konstruieren.
 
 [[LZ-6-4]]
 ==== LZ 6-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können
@@ -46,7 +46,7 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 * Die TN sind in der Lage Domain Events als Kommunikationsmittel zwischen Bounded Contexts zu entwerfen.
 * Die TN sind in der Lage, Chancen und Risiken von Domain Events in diesem Zusammenhang abzuwägen:
 ** Wenn Events trotz vorhandener Abhängigkeiten (z. B. innerhalb eines Bounded Contexts) eingesetzt werden, besteht das Risiko, dass dadurch die Abhängigkeiten nur versteckt werden und zur Laufzeit zu schwer nachvollziehbaren Kontrollflüssen führen.
-* Die TN sind in der Lage einen Event Store footnote:8[Vgl.: Seite 539 <<vernon>>] einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
+* Die TN sind in der Lage einen Event Store (vgl. Seite 539 <<vernon>>) einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
 
 
 // end::DE[]
@@ -73,7 +73,7 @@ This section teaches approaches with which the consistency within a model can be
 [[LG-6-3]]
 ==== LG 6-3: Be able to isolate your own model from external influences
 * The course participants can identify the possible influences that a model of a neighboring system can have on their own model.
-* The course participants can apply the Interface Patterns footnote:11[Cf.: <<gamma>>] to construct an Anti-Corruption Layer.
+* The course participants can apply the Interface Patterns (cf. <<gamma>>) to construct an Anti-Corruption Layer.
 
 [[LG-6-4]]
 ==== LG 6-4: Be able to reuse core elements of several partial models in a shared kernel
@@ -96,7 +96,7 @@ This section teaches approaches with which the consistency within a model can be
 * The course participants are able to create Domain Events as a means of communication between Bounded Contexts.
 * The course participants are able to assess opportunities and risks of Domain Events in this context:
 ** If events are used despite existing dependencies (e.g., within a Bounded Context), there is a risk that the dependencies will only be hidden, which could lead to control flows that are difficult to understand at runtime.
-* The course participants are able to use an event store footnote:8[Cf.: page 539 <<vernon>>] to allow Subscribers to reprocess events that were incorrectly processed.
+* The course participants are able to use an event store (cf.: page 539 <<vernon>>) to allow Subscribers to reprocess events that were incorrectly processed.
 
 
 // end::EN[]

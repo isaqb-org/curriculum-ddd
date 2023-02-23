@@ -14,7 +14,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 
 [[LZ-5-2]]
 ==== LZ 5-2: Vor- und Nachteile eines Team-übergreifenden Modells abwägen können
-* Die TN kennen Conway's Law footnote:7[Cf.: <<conway>>] und seine Auswirkungen auf Software-Architektur.
+* Die TN kennen Conway's Law <<conway>> und seine Auswirkungen auf Software-Architektur.
 * Die TN verstehen, dass von mehreren Teams genutzte Modelle teamübergreifende Kommunikation und Koordination (z. B. beim Deployment) erfordern.
 * Die TN verstehen, dass Modelle aufgeteilt werden müssen, damit mehrere Entwicklungsteams unabhängig voneinander arbeiten können.
 * Die TN verstehen, dass definierte Modellgrenzen eine wichtige Rolle dabei spielen, den Kommunikationsaufwand gering zu halten.
@@ -56,7 +56,7 @@ It also teaches strategies for distributing multiple models and their resulting 
 
 [[LG-5-2]]
 ==== LG 5-2: Be able to assess advantages and disadvantages of a cross-team model
-* The course participants know Conway's Law footnote:7[Cf.: <<conway>>] and its relevance for software architecture.
+* The course participants know Conway's Law <<conway>> and its relevance for software architecture.
 * The course participants understand that models used by several teams require cross-team communication and coordination (e.g., for deployment).
 * The course participants understand that models need to be partitioned so that several development teams can work independently of one another.
 * The course participants understand that specified model boundaries play an important role in keeping the communication effort low.
