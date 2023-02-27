@@ -8,7 +8,6 @@
 * Command-Query Responsibility Segregation (Dahan, 2009), (Vernon, 2013) 
 * Layered Architecture (Evans, 2003)
 * Dependency Injection (Vernon, 2013)
-* Werkzeug- und Materialansatz (WAM)
 * Behaviour Driven Development (BDD)
 
 
@@ -24,7 +23,6 @@
 * Command-Query Responsibility Segregation (Dahan, 2009), (Vernon, 2013) 
 * Layered Architecture (Evans, 2003)
 * Dependency Injection (Vernon, 2013)
-* Werkzeug- und Materialansatz (WAM)
 * Behaviour Driven Development (BDD)
 // end::EN[]
 

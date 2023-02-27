@@ -4,10 +4,11 @@
 |===
 
 === Begriffe und Konzepte
-* Modellkonsistenz
-* Bounded Context, Context Map
-* Shared Kernel, Customer/Supplier Teams, Open Host Service footnote:6[Vgl.: Übersicht auf Seite 388 <<evans>>]
-* Domain Event
+* Problem- vs. Lösungsraum
+* Subdomain
+* Bounded Context
+* Core vs supporting vs generic
+* Context Map
 
 // end::DE[]
 
@@ -17,10 +18,11 @@
 |===
 
 === Terms and Principles
-* Modelconsistency
-* Bounded Context, Context Map
-* Shared Kernel, Customer/Supplier Teams, Open Host Service footnote:6[Cf.: Overview on page 388 <<evans>>]
-* Domain Event
+* Problem Space and Solution Space
+* Subdomain
+* Bounded Context
+* Core vs supporting vs generic
+* Context Map
 
 // end::EN[]
 

@@ -1,8 +1,6 @@
 === {references}
 
-<<vernon>>, <<evans>>, <<cockburn>>, <<dahan>>, <<lilienthal>>, <<north>>
-
-
+<<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<kuhl>>, <<lilienthal2023>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<vernon>>, <<wardley>>, <<zullighoven>>
 
 // tag::REMARK[]
 [NOTE]

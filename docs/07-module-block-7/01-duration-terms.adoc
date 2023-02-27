@@ -1,0 +1,64 @@
+// tag::DE[]
+|===
+| Dauer: frei | Übungszeit: frei
+|===
+
+Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vov Trainer:innen nach Bedarf auch gelehrt werden können.
+
+=== Empfehlungen
+* "Refactoring towards deeper insights" an einem Fallbeispiel verständlich machen
+* "Large Scale Structures" über das Beispiel verständlich machen
+
+=== Begriffe, Konzepte, mögliche Ideen
+* Tools:
+** Bounded Context Canvas
+** User Story Mapping
+* Implementierung:
+** Ein konkretes Implementationsbeispiel zeigen
+** CRC Cards
+* Architektur:
+** Werkzeug- und Materialansatz (WAM)
+** Event Sourcing
+** CQRS
+** Legacy-Software mit DDD modernisieren
+* Organisation und Strategie:
+** Team Topologies
+** Wardley Mapping
+** Systemische Organisationstheorie
+** Business Model Canvas & Value Proposition
+* Kommunikation:
+** Wie überzeuge ich Kollegen und Chefinnen von DDD?
+
+
+// end::DE[]
+
+// tag::EN[]
+|===
+| Duration: free | Practice time: free
+|===
+
+Around DDD there are many topics that are related and can also be taught by the trainer as needed.
+
+=== Recommendations
+* "Refactoring towards deeper insights" should be illustrated with the case study
+* "Large Scale Structures" by extending the case study
+
+=== Terms, Principles, possible Ideas
+* Implementation:
+** Demonstrate a concrete implementation example
+** CRC Cards
+* Architecture:
+** Tools & Materials Approach
+** Event Sourcing
+** CQRS
+** Modernizing Legacy-Software with DDD
+* Organization and strategy:
+** Team Topologies
+** Wardley Mapping
+** System approaches for organizations
+** Business Model Canvas & Value Proposition
+* Communication:
+** How to win colleagues and managers for DDD?
+
+// end::EN[]
+

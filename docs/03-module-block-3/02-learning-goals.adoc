@@ -13,7 +13,6 @@ Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodel
 [[LZ-3-2]]
 ==== LZ 3-2: Schnittstellen für fachliche Klassen modellieren können
 * Die TN können die Entwurfsprinzipien und Heuristiken aus dem Foundation Level für den DDD-Entwurf einschätzen und anwenden.
-* Die TN beherrschen die Technik CRC-Karten als Hilfsmittel bei der Modellierung.
 
 
 [[LZ-3-3]]
@@ -44,7 +43,6 @@ This section teaches methods and approaches to derive the corresponding domain c
 [[LG-3-2]]
 ==== LG 3-2: Be able to model interfaces for domain classes
 * The course participants can assess and apply the design principles and heuristics from the Foundation Level to the DDD design.
-* The course participants are proficient in the CRC-Cards technique as a tool for modeling.
 
 
 [[LG-3-3]]

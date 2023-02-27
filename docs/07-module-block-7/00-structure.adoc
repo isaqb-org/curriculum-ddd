@@ -1,18 +1,16 @@
-// header file for curriculum section 5: Lerneinheit 5
+// header file for curriculum section 7: Lerneinheit 7
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
 // tag::DE[]
-== Strategic Design 1: Modelle schneiden und voneinander abgrenzen
+== Optional: Verwandte Themen
 // end::DE[]
 
 // tag::EN[]
-== Strategic Design 1: Cutting and distinguishing models from one another
+== Optional: Related Topics
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
-
-include::02-learning-goals.adoc[{include_configuration}]
 
 // references (if any!)
 include::references.adoc[{include_configuration}]

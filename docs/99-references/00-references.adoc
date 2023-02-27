@@ -35,62 +35,90 @@ ATTENTION: labels have to be non-numeric.
 
 **A**
 
-- [[[avram,Avram, A., & Marinescu, F. (2007)]]] Domain-Driven Design Quickly. InfoQ Enterprise Software Development Series.
+- [[[adzic,Adzic, G. (2012)]]] *Impact Mapping*. Provoking Thoughts.
+- [[[avram,Avram, A., & Marinescu, F. (2007)]]] *Domain-Driven Design Quickly*. InfoQ Enterprise Software Development Series.
 
 **B**
 
-- [[[beck,Beck, K., & Cunningham, W. (1989)]]]  A laboratory for teaching object oriented thinking. OOPSLA '89 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
-- [[[brandolini,Brandolini, A. (18. November 2013)]]]  Introducing Event Storming. Von http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html abgerufen
+- [[[beck,Beck, K., & Cunningham, W. (1989)]]] *A laboratory for teaching object oriented thinking*. OOPSLA '89 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
+- [[[beck2001,Beck, K. et al. (2001)]]] *Manifesto for Agile Software Development*. Von https://agilemanifesto.org. abgerufen
+- [[[brandolini,Brandolini, A. (18. November 2013)]]]  *Introducing Event Storming*. Von http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html abgerufen
 
 **C**
 
-- [[[cockburn,Cockburn, A. (2012)]]] Hexagonal Architecture. Von http://alistair.cockburn.us/Hexagonal+architecture abgerufen
-- [[[conway,Conway, M. E. (April 1968)]]] How do Committees Invent? Datamation 14.
+- [[[cockburn,Cockburn, A. (2012)]]] *Hexagonal Architecture*. Von http://alistair.cockburn.us/Hexagonal+architecture abgerufen
+- [[[conway,Conway, M. E. (April 1968)]]] *How do Committees Invent?* Datamation 14.
 
 **D**
 
-- [[[dahan,Dahan, U. (9. Dezember 2009)]]] Clarified CQRS. Von http://udidahan.com/2009/12/09/clarified-cqrs/ abgerufen
+- [[[dahan,Dahan, U. (9. Dezember 2009)]]] *Clarified CQRS*. Von http://udidahan.com/2009/12/09/clarified-cqrs/ abgerufen
 
 **E**
 
-- [[[evans,Evans, E. (2003)]]] Domain-Driven Design: Tacking Complexity In the Heart of Software. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.
+- [[[evans,Evans, E. (2003)]]] *Domain-Driven Design: Tacking Complexity In the Heart of Software*. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.
 
 **F**
 
-- [[[fowler2002,Fowler, M. (November 2002)]]] Patterns of Enterprise Application Architecture. Addison Wesley.
-- [[[fowler2011,Fowler, M. (14. Juli 2011)]]] CQRS. Von http://martinfowler.com/bliki/CQRS.html abgerufen
+- [[[fowler2002,Fowler, M. (2002)]]] *Patterns of Enterprise Application Architecture*. Addison Wesley.
+- [[[fowler2011,Fowler, M. (14. Juli 2011)]]] *CQRS*. Von http://martinfowler.com/bliki/CQRS.html abgerufen
 
 **G**
 
-- [[[gamma,Gamma, E., Helm, R., Johnson, R. E., & Vlissides, J. (1994)]]] Design Patterns. Elements of Reusable Object-Oriented Software. Addison-Wesley Professional Computing Series.
+- [[[gamma,Gamma, E., Helm, R., Johnson, R. E., & Vlissides, J. (1994)]]] *Design Patterns. Elements of Reusable Object-Oriented Software*. Addison-Wesley Professional Computing Series.
 
 **H**
 
-- [[[hruschka,Hruschka, P. (2014)]]] Business Analysis und Requirements Engineering. Carl Hanser, München.
+- [[[hofer,Hofer, S. & Schwentner, H. (2022)]]] *Domain Storytelling*. Addison-Wesley.
+- [[[hruschka,Hruschka, P. (2019)]]] *Business Analysis und Requirements Engineering*. Carl Hanser, München.
+
+**K**
+
+- [[[kuhl,Kühl, S. & Muster, J. (2018)]]] *Designing Organizations: A Very Brief Introduction*. Organizational Dialogue Press.
+
 
 **L**
 
-- [[[liebherr,Liebherr, K., Holland, I., & Riel, A. (1988)]]] Object-oriented programming: an objective sense of style. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
-- [[[lilienthal,Lilienthal, C. (December 2015)]]] Langlebige Software-Architekturen. dpunkt.verlag.
+- [[[liebherr,Liebherr, K., Holland, I., & Riel, A. (1988)]]] *Object-oriented programming: an objective sense of style*. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
+- [[[lilienthal,Lilienthal, C. (2019)]]] *Langlebige Software-Architekturen*. dpunkt.verlag.
+- [[[lilienthal2023,Lilienthal, C. & Schwentner, H. (2023)]]] *Domain-Driven Transformation*. dpunkt.verlag.
 
 **M**
 
-- [[[martin,Martin, R. C. (2002)]]] Agile Software Development, Principles, Patterns, and Practices. Prentice Hall Computer.
+- [[[mannsrising2015,Manns, M. L. & Rising, L.  (2015)]]]. *More Fearless Change*. Boston: Addison-Wesley.
+- [[[martin,Martin, R. C. (2002)]]] *Agile Software Development*, Principles, Patterns, and Practices. Prentice Hall Computer.
 
 **N**
 
-- [[[north,North, D. (3. März 2016)]]] Introducing BDD . Von http://dannorth.net/introducing-bdd/ abgerufen
+- [[[north,North, D. (3. März 2016)]]] *Introducing BDD*. Von http://dannorth.net/introducing-bdd/ abgerufen
+
+**O**
+
+- [[[osterwalder2010,Osterwalder, A. & Pigneur, Y. (2010)]]] *Business Model Generation*. Wiley.
+- [[[osterwalder2013,Osterwalder, A. (2013)]]] *Value Proposition Design: How to Create Products and Services Customers Want*. Wiley.
+
+**P**
+
+- [[[patton,Patton, J. (2014)]]] *User Story Mapping: Discover the Whole Story, Build the Right Product*. Sebastopol, CA: O'Reilly.
 
 **S**
 
-- [[[schulz2010,Schulz von Thun, F. (2010)]]] Miteinander Reden: 1. Rowohlt Taschenbuch Verlag.
-- [[[schulz2013,Schulz von Thun, F. (2013)]]] Miteinander Reden: 3. Rowohlt Taschenbuch Verlag.
+- [[[SkeltonPais2019,Skelton M. & Pais, M. (2019)]]] *Team Topologies: Organizing Business and Technology Teams for Fast Flow*. Portland, OR: IT Revolution.
 - [[[stenberg,Stenberg, J. (24. Februar 2015)]]] Behaviour-Driven Development Combined with Domain-Driven Design. Von http://www.infoq.com/news/2015/02/bdd-ddd abgerufen
 
 **V**
 
-- [[[vernon,Vernon, V. (2013)]]] Implementing Domain-Driven Design. Addison-Wesley Longman Publishing Co., Inc.
+- [[[vernon,Vernon, V. (2013)]]] *Implementing Domain-Driven Design*. Addison-Wesley.
+- [[[vernon2016,Vernon, V. (2016)]]] *Domain-Driven Design Distilled*. Addison-Wesley.
+- [[[vernon2017,Vernon, V. (2017)]]] *Domain-Driven Design kompakt*. dPunkt.
+
+**W**
+
+- [[[wardley, Wardley, S. (2020)]]] *Wardley Maps: Topographical Intelligence in Business*. Von https://github.com/HiredThought/wardley-maps-ebook/raw/main/bin/Wardley%20Maps%20-%20Simon%20Wardley.pdf abgerufen
+- [[[wynne, Wynne, M. (8. Dezember 2015)]]] *Introducing Example Mapping*.Von https://cucumber.io/blog/bdd/example-mapping-introduction/ aufgerufen.
+
 
 **Z**
 
-- [[[zullighoven,Züllighoven, H. (1998)]]] Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz. dpunkt.
+- [[[zullighoven,Züllighoven, H. (1998)]]] *Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz*. dpunkt.
+
+

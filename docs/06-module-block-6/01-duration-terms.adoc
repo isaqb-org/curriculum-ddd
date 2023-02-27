@@ -4,9 +4,10 @@
 |===
 
 === Begriffe und Konzepte
+* Shared Kernel, Customer/Supplier Teams, Open Host Service (vgl. Übersicht auf Seite 388 <<evans>>)
+* Domain Event als Kommunikationsmittel
 * Anticorruption-Layer 
-* Continuous Integration 
-* Separate Ways footnote:6[]
+* Separate Ways <<vernon>>
 
 // end::DE[]
 
@@ -16,9 +17,10 @@
 |===
 
 === Terms and Principles
+* Shared Kernel, Customer/Supplier Teams, Open Host Service (cf. overview on page 388 <<evans>>)
+* Domain Event as means of communication
 * Anticorruption-Layer 
-* Continuous Integration 
-* Separate Ways footnote:6[]
+* Separate Ways <<vernon>>
 
 // end::EN[]
 
