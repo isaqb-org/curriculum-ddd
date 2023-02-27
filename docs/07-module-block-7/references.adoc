@@ -2,13 +2,3 @@
 
 <<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<kuhl>>, <<lilienthal2023>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<vernon>>, <<wardley>>, <<zullighoven>>
 
-// tag::REMARK[]
-[NOTE]
-====
-Eine Quelle wird über `<<label>>` referenziert. Dieses muss in `99-references/00-references.adoc` definiert sein.
-
-= = =
-
-A reference source is referenced via `<<label>>`. The label has to be defined in `99-references/00-references.adoc`.
-====
-// end::REMARK[]

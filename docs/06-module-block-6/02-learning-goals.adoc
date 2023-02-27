@@ -98,12 +98,4 @@ This section teaches approaches with which the consistency within a model can be
 ** If events are used despite existing dependencies (e.g., within a Bounded Context), there is a risk that the dependencies will only be hidden, which could lead to control flows that are difficult to understand at runtime.
 * The course participants are able to use an event store (cf.: page 539 <<vernon>>) to allow Subscribers to reprocess events that were incorrectly processed.
 
-
 // end::EN[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
-====
-// end::REMARK[]

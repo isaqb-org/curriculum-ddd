@@ -19,11 +19,3 @@ At the end of the module, course participants will know the essential principles
 A large software project often requires the involvement of several development teams. This module addresses this challenge and teaches the course participants methods of domain-driven design to handle the growing complexity of a large software project.
 
 // end::EN[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Hier bitte das Modul bzw. dessen Lerninhalte zusammenfassend in 5-8 Sätzen beschreiben. Dabei `{curriculum-name}`
-nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen ersetzt.
-====
-// end::REMARK[]

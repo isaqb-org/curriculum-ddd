@@ -85,10 +85,3 @@ It also teaches strategies for distributing multiple models and their resulting 
 * The course participants understand the benefits of the correlation between the model boundaries, the organizational structure, and the source code.
 
 // end::EN[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
-====
-// end::REMARK[]

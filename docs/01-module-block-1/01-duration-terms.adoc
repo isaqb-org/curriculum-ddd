@@ -1,9 +1,4 @@
-// tag::REMARK[]
-[NOTE]
-====
-Überschrift in 00-structure.adoc ersetzen
-====
-// end::REMARK[]
+
 // tag::DE[]
 |===
 | Dauer: 120 Min. | Übungszeit: 75 Min.

@@ -6,7 +6,7 @@
 === Begriffe und Konzepte
 * Shared Kernel, Customer/Supplier Teams, Open Host Service (vgl. Übersicht auf Seite 388 <<evans>>)
 * Domain Event als Kommunikationsmittel
-* Anticorruption-Layer 
+* Anticorruption-Layer
 * Separate Ways <<vernon>>
 
 // end::DE[]
@@ -19,21 +19,7 @@
 === Terms and Principles
 * Shared Kernel, Customer/Supplier Teams, Open Host Service (cf. overview on page 388 <<evans>>)
 * Domain Event as means of communication
-* Anticorruption-Layer 
+* Anticorruption-Layer
 * Separate Ways <<vernon>>
 
 // end::EN[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Überschrift in 00-structure.adoc ersetzen
-====
-// end::REMARK[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
-====
-// end::REMARK[]
