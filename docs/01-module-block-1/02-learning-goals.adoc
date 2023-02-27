@@ -2,23 +2,23 @@
 
 // tag::DE[]
 Dieser Block dient der Motivation und Einführung in Domain Driven Design. Die grundlegenden Konzepte Domäne, Domänenmodell und Ubiquitous Language werden hier vermittelt.
-Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen Bausteine von Domänenmodellen und die dazwischenliegenden Beziehungen.
+Zudem erhalten die Teilnehmer:innen einen detaillierten Einblick in die verschiedenen Bausteine von Domänenmodellen und die dazwischenliegenden Beziehungen.
 
 [[LZ-1-1]]
 ==== LZ 1-1: Die Zusammenhänge zwischen Domäne, Software und Modell kennen und erläutern können
-* Die Teilnehmer (TN) können die Abhängigkeit von Software zu einer Domäne beschreiben. Sie verstehen, dass Software nicht zum Selbstzweck existiert.
+* Die Teilnehmer:innen (TN) können die Abhängigkeit von Software zu einer Domäne beschreiben. Sie verstehen, dass Software nicht zum Selbstzweck existiert.
 * Die TN verstehen Domänenmodelle als Mittel zur Abstraktion von Fachwissen.
 * Die TN verstehen, dass Domänenmodelle die Ideen und Zusammenhänge einer Domäne repräsentieren.
 * Die TN können das Domänenmodell als Hilfsmittel zur Annäherung von Software an die Domäne erklären.
 
 [[LZ-1-2]]
 ==== LZ 1-2: Die Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
-* Die TN verstehen, dass eine gemeinsame Sprache für Domänen-Experten und Entwickler dem wechselseitigen Verständnis dient.
+* Die TN verstehen, dass eine gemeinsame Sprache für Domänenexpert:innen und Entwickler:innen dem wechselseitigen Verständnis dient.
 * Die TN verstehen den Begriff der Ubiquity (Allgegenwärtigkeit): "Allgegenwärtigkeit" gilt in einer definierten Grenze (Bounded Context) innerhalb derer die Sprache in Gesprächen, Diagrammen, Dokumentation und Code konsistent verwendet wird.
 
 [[LZ-1-3]]
 ==== LZ 1-3: Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
-* Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language der Fachsprache der Domänen-Experten entspringen.
+* Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language der Fachsprache der Domänenexpert:innen entspringen.
 * Die TN verstehen, dass die Ubiquitous Language eine formalisierte Version der Fachsprache und eine bewusste Entwurfsentscheidung ist.
 * Die TN verstehen, dass sich die Ubiquitous Language im Dialog von Entwicklungsteam und Fachbereich weiterentwickelt.
 

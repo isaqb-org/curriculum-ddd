@@ -9,12 +9,12 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 ==== LZ 5-1: Symptome kennen, die bei zu großen Modellen auftreten können
 * Die TN können die folgenden Sachverhalte als Symptom identifizieren:
 ** Verschiedene Anwendergruppen verwenden dieselben Begriffe auf unterschiedliche Art und Weise.
-** Das Modell lässt sich nicht mehr von einem Entwickler-Team bewältigen.
+** Das Modell lässt sich nicht mehr von einem Entwicklungsteam bewältigen.
 ** Das Modell wirkt widersprüchlich.
 
 [[LZ-5-2]]
 ==== LZ 5-2: Vor- und Nachteile eines Team-übergreifenden Modells abwägen können
-* Die TN kennen Conway's Law <<conway>> und seine Auswirkungen auf Software-Architektur.
+* Die TN kennen Conway's Law <<conway>> und seine Auswirkungen auf Softwarearchitektur.
 * Die TN verstehen, dass von mehreren Teams genutzte Modelle teamübergreifende Kommunikation und Koordination (z. B. beim Deployment) erfordern.
 * Die TN verstehen, dass Modelle aufgeteilt werden müssen, damit mehrere Entwicklungsteams unabhängig voneinander arbeiten können.
 * Die TN verstehen, dass definierte Modellgrenzen eine wichtige Rolle dabei spielen, den Kommunikationsaufwand gering zu halten.
@@ -51,7 +51,7 @@ It also teaches strategies for distributing multiple models and their resulting 
 [[LG-5-1]]
 ==== LG 5-1: Know symptoms that can occur with excessively large models
 * The course participants can identify the following circumstances as symptoms:
-** Various user groups use the same terms in different ways. 
+** Various user groups use the same terms in different ways.
 ** The model can no longer be managed by a developer team. o The model appears inconsistent.
 
 [[LG-5-2]]

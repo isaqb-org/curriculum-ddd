@@ -28,7 +28,7 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 [[LZ-6-4]]
 ==== LZ 6-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können
 * Die TN können die Angemessenheit eines Shared Kernels in einer konkreten Situation bewerten und ihn entwerfen.
-* Die TN verstehen, dass ein Shared Kernel hilft, Modell-übersetzungen zu vermeiden.
+* Die TN verstehen, dass ein Shared Kernel hilft, Modellübersetzungen zu vermeiden.
 * Die TN verstehen, dass ein Shared Kernel ein großes Maß an Koordination der beteiligten Teams erfordert.
 * Die TN verstehen, dass die Teams bei der Arbeit am Shared Kernel gleichberechtigt sind.
 

@@ -1,7 +1,7 @@
 === {learning-goals}
 
 // tag::DE[]
-Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Software-Architekturen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Domain Driven Design und zwei verwandten Methoden.
+Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Softwarearchitekturen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Domain Driven Design und zwei verwandten Methoden.
 
 [[LZ-4-1]]
 ==== LZ 4-1: Eine Ports&Adapter-Architektur um ein Domänenmodell herum entwerfen

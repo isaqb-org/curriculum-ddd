@@ -12,9 +12,9 @@
 
 === Begriffe und Konzepte
 - Agile und evolutionäre Modellbildung
-- Empowerment der Domänen-Experten
-- Kollaborationsformen zur Modell-Erhebung
-- Werkzeuge zur Modell-Erhebung
+- Empowerment der Domänenexpert:innen
+- Kollaborationsformen zur Modellerhebung
+- Werkzeuge zur Modellerhebung
 
 
 // end::DE[]
@@ -31,10 +31,3 @@
 - Tools for model analysis
 
 // end::EN[]
-
-// tag::REMARK[]
-[NOTE]
-====
-Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
-====
-// end::REMARK[]

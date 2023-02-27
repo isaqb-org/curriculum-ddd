@@ -1,41 +1,40 @@
 === {learning-goals}
 
 // tag::DE[]
-In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten ein Domänenmodell erstellen und verfeinern können.
+In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexpert:innen ein Domänenmodell erstellen und verfeinern können.
 
 [[LZ-2-1]]
-==== LZ 2-1: Den hohen Stellenwert von Domänen-Experten in DDD kennen und erläutern können
-* Die TN können Domänen-Experten vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).
+==== LZ 2-1: Den hohen Stellenwert von Domänenexpert:innen in DDD kennen und erläutern können
+* Die TN können Domänenexpert:innen vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).
 * Die TN sind in der Lage, einem Entwicklungsteam zu vermitteln, dass Software die vorhandene Domäne unterstützen muss.
-* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänen-Experten vorhanden ist.
-* Die TN verstehen, dass implizites Domänen-Wissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
-* Die TN sind in der Lage, Vertrauen bei Domänen-Experten in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
-* Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänen-Experten vermitteln.
+* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänenexpert:innen vorhanden ist.
+* Die TN verstehen, dass implizites Domänenwissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
+* Die TN sind in der Lage, Vertrauen bei Domänenexpert:innen in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
+* Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänenexpert:innen vermitteln.
 
 [[LZ-2-2]]
-==== LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner unterstützen können
-* Die TN kennen Einflussfaktoren auf die Eignung von Domänen-Experten und können diese einschätzen:
+==== LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner:innen unterstützen können
+* Die TN kennen Einflussfaktoren auf die Eignung von Domänenexpert:innen und können diese einschätzen:
 ** Umfassende Erfahrung und Wissen in der eigenen Domäne
 ** Motivation
 ** Zeitliche Verfügbarkeit während und nach dem Projekt
 ** Abstraktionsvermögen
 ** Flexibilität
 
-
 [[LZ-2-3]]
-==== LZ 2-3: Mit Domänen-Experten kommunizieren können
-* Die TN beherrschen Modelle um mit Domänen-Experten in einen gleichberechtigten Dialog zu treten:
-** Das Kommunikationsquadrat 
+==== LZ 2-3: Mit Domänenexpert:innen kommunizieren können
+* Die TN beherrschen Modelle um mit Domänenexpert:innen in einen gleichberechtigten Dialog zu treten:
+** Das Kommunikationsquadrat
 ** Vier-Ohren-Modell
 ** Das innere Team
 * Die TN verstehen, dass der Kommunikation zwischen Fachbereichen und Entwicklungsteams in DDD eine zentrale Bedeutung zukommt.
-* Die TN verstehen, dass Domänen-Experten bewusst und unbewusst über Domänenwissen verfügen.
+* Die TN verstehen, dass Domänenexpert:innenen bewusst und unbewusst über Domänenwissen verfügen.
 
 
 [[LZ-2-4]]
-==== LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänen-Experten einsetzen können
+==== LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänenexpert:innen einsetzen können
 * Die TN beherrschen die Verwendung von Klassen- und Objektdiagrammen zur Darstellung von Domänenmodellen.
-* Die TN beherrschen szenariobasierte Modellierungstechniken: 
+* Die TN beherrschen szenariobasierte Modellierungstechniken:
 ** Use-Cases
 ** User-Stories zu späteren Modellierung von Domain Events
 ** Domain Events
@@ -43,14 +42,14 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 
 
 [[LZ-2-5]]
-==== LZ 2-5:  Interviews als Mittel zur Modellierung führen können
+==== LZ 2-5: Interviews als Mittel zur Modellierung führen können
 * Die TN verstehen, dass Interviews geeignet sind, um bewusstes Domänenwissen offenzulegen.
-* Die TN verstehen, dass der Interviewer das Gespräch auch unbewusst beeinflusst.
+* Die TN verstehen, dass der Interviewer oder die Interviewerin das Gespräch auch unbewusst beeinflusst.
 ** die Auswahl der Fragen bestimmt, was zur Sprache kommt
-** der Interviewer hat eigenen Annahmen, die der Interview-Partner nicht kennt 
+** Interviewer:innen haben eigene Annahmen, die Interviewpartner:innen nicht kennen
 ** durch den Bestätigungsfehler können Missverständnisse entstehen
 * Die TN beherrschen es, ein Interview entlang eines konkreten Szenarios aus der Domäne zu strukturieren und durchzuführen.
-* Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, welches der Interview-Partner nachvollziehen kann.
+* Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, welches Interviewpartner:innen nachvollziehen können.
 
 
 [[LZ-2-6]]
@@ -59,10 +58,10 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 ** Feldbeobachtung
 *** Analyse als stiller Beobachter
 *** Arbeitsabläufe werden schriftlich erfasst
-*** Verständnisfragen an den Domänen-Experten in seltenen Fällen
+*** Verständnisfragen an die Domänenexpert:innen in seltenen Fällen
 ** Apprenticing
 *** Ist eine Erweiterung der Feldbeobachtung
-*** Nach einer Reihe von Beobachtungsdurchläufen übernehmen die Beobachter exemplarisch einen kleinen Teil der Arbeit des Domänen-Experten
+*** Nach einer Reihe von Beobachtungsdurchläufen übernehmen die Beobachter exemplarisch einen kleinen Teil der Arbeit der Domänenexpert:innen
 
 
 [[LZ-2-7]]
@@ -74,20 +73,20 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 ** Impact Mapping (Adzic)
 ** Example Mapping (Wynne)
 * Die TN verstehen die gemeinsamen Werte der verschiedenen Methoden:
-** Gemeinsames Verständnis erarbeiten durch enge Zusammenarbeit unterschiedlicher Stakeholder: Fachexperte, Entwickler und weitere.
-** Leichtgewichtige Methodik, deren Elemente in fünf Minuten soweit erklärt sind, dass man starten kann.
+** Gemeinsames Verständnis erarbeiten durch enge Zusammenarbeit unterschiedlicher Stakeholder: Fachexpert:in, Entwickler:in und weitere.
+** Leichtgewichtige Methodik, deren Elemente in fünf Minuten so weit erklärt sind, dass man starten kann.
 ** Fokus auf Verhalten, nicht nur auf Struktur/Daten (nicht nur Substantive, sondern auch Verben).
 * TN verstehen, dass Collaborative Modeling auch unabhängig von DDD verwenden werden kann.
 
 
 [[LZ-2-8]]
-==== LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänen-Experten diskutieren können
+==== LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänenexpert:innen diskutieren können
 * Die TN können organisatorische Rahmenbedingungen ermitteln und berücksichtigen:
 ** Technische und räumliche Ressourcen
-** Räumliche Verteilung der Domänen-Experten
+** Räumliche Verteilung der Domänenexpert:innen
 ** Juristische Rahmenbedingungen für das Anfertigen von Mitschriften, Audio/Video-Streams, Fotos, etc.
-* Die TN können mit den Domänen-Experten diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.
-* Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Experten und Entwicklern diskutieren.
+* Die TN können mit den Domänenexpert:innen diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.
+* Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänenexpert:innen und Entwickler:innen diskutieren.
 
 
 [[LZ-2-9]]
@@ -122,7 +121,7 @@ In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten e
 [[LG-2-2]]
 ==== LG 2-2: Be able to provide support in selecting suitable contact persons
 * The course participants know influencing factors concerning the suitability of domain experts and can assess them based on their:
-** comprehensive experience and knowledge in their own domain; 
+** comprehensive experience and knowledge in their own domain;
 ** motivation;
 ** availability during and after the project;
 ** ability to think abstractly; and
@@ -168,7 +167,7 @@ possess domain knowledge.
 ** Field observation
 *** Analysis as a silent observer
 *** Working processes are recording in writing
-*** In rare cases, questions to the domain experts to verify comprehension 
+*** In rare cases, questions to the domain experts to verify comprehension
 ** Apprenticing
 *** Is an expansion of field observation
 *** Following a series of observation cycles, the observers performs a small, but exemplary part of the domain expert's work
