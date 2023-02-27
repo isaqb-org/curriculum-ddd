@@ -3,7 +3,7 @@
 | Dauer: frei | Übungszeit: frei
 |===
 
-Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und vov Trainer:innen nach Bedarf auch gelehrt werden können.
+Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und von Trainer:innen nach Bedarf auch gelehrt werden können.
 
 === Empfehlungen
 * "Refactoring towards deeper insights" an einem Fallbeispiel verständlich machen
