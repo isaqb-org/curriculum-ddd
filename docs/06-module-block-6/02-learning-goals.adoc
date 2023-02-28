@@ -83,7 +83,7 @@ This section teaches approaches with which the consistency within a model can be
 * The course participants understand that the teams are equally qualified to work on the shared kernel.
 
 [[LG-6-5]]
-==== LG 6-5: Understand the circumstances in which it is appropriate to divide the model (Separate Ways), taking into account the aspects from section 5.
+==== LG 6-5: Understand the circumstances in which it is appropriate to divide the model (Separate Ways)
 * The course participants can contrast the coordination costs of a common model with the overheads for separate models.
 * The course participants understand that a model must be divided along a sensible boundary.
 * The course participants understand that, in these cases, local model consistency is easier to maintain in two partial models.
