@@ -69,9 +69,6 @@
   - Open Host Service
   - Domain Event
 - Removed learning goal 6-1: Continuous Integration
-
-## Changes in "References"
-- Updated list of references
 - Changed ID of learning goal 6-2 to 6-3: "Be able to isolate your own model from external influences"
 - Changed ID of learning goal 6-3 to 6-5: "Understand the circumstances in which it is appropriate to divide the model (Separate Ways)"
 - Added learning goal 6-1 (former 5-5): "Be able to use interfaces for customer/supplier teams"
@@ -81,3 +78,6 @@
 
 ## Introduced "7. Related Topics"
 - Add a new chapter with optional related topics which are not part of the core curriculum
+
+## Changes in "References"
+- Updated list of references
