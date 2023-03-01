@@ -13,7 +13,7 @@
   - Focus is on common values and principles of Collaborative Modeling techniques
   - Event Storming is only one possible methods among others (Domain Story Telling, User Story Mapping)
   - Facilitiation of Event Storming is now part of learning goal 2-9
-- Addded learning goal 2-9: Be able to conduct a collaborative modeling workshop
+- Added learning goal 2-9: Be able to conduct a collaborative modeling workshop
 - Added learning goal 2-10: Understand agility as a foundation of DDD
 - Added reference: Beck, K. et al. (2001); Manifesto for Agile Software Development.
 
@@ -28,11 +28,11 @@
 - Moved terms and principles to chapter 7:
   - Werkzeug- und Materialansatz (WAM)
 - Changed learning goal 4-1:
-  - Focus on ports & adapter as an collection of architecural approaches
+  - Focus on ports & adapter as a collection of architecural approaches
   - Hexagonal architecure is only one style among others (Onion, Clean)
   - Remove details regarding hexagonal architecture
-  - Remove CRQS: Moved to chapter 7
 - Changed learning goal 4-2:
+  - Remove CQRS: Moved to chapter 7
   - Removed Werkzeug- und Materialansatz (WAM): Moved to chapter 7
 
 ## Changes in "5. Cutting and distinguishing models from one another"
