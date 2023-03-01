@@ -1,7 +1,7 @@
 # New in 2023.1
 
 ## Changes in "1. Domain, model, and ubiquitous language"
-- Merged learning goal 1-3 into learning goal 1-3
+- Merged learning goal 1-3 into learning goal 1-2
 - Changed learning goal 1-2: "Understand the role of domain-specific terminology in the construction of a ubiquitous language"
   - Redefined Ubiquitous Language
   - Add focus on formalization of the Ubiquitous Language and on the necessity to create it using a collaborative approach
