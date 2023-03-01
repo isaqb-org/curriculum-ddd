@@ -15,15 +15,12 @@ Zudem erhalten die Teilnehmer:innen einen detaillierten Einblick in die verschie
 ==== LZ 1-2: Die Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
 * Die TN verstehen, dass eine gemeinsame Sprache für Domänenexpert:innen und Entwickler:innen dem wechselseitigen Verständnis dient.
 * Die TN verstehen den Begriff der Ubiquity (Allgegenwärtigkeit): "Allgegenwärtigkeit" gilt in einer definierten Grenze (Bounded Context) innerhalb derer die Sprache in Gesprächen, Diagrammen, Dokumentation und Code konsistent verwendet wird.
-
-[[LZ-1-3]]
-==== LZ 1-3: Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen
 * Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language der Fachsprache der Domänenexpert:innen entspringen.
 * Die TN verstehen, dass die Ubiquitous Language eine formalisierte Version der Fachsprache und eine bewusste Entwurfsentscheidung ist.
 * Die TN verstehen, dass sich die Ubiquitous Language im Dialog von Entwicklungsteam und Fachbereich weiterentwickelt.
 
-[[LZ-1-4]]
-==== LZ 1-4: Die Bausteine von Domain Driven Design kennen und erklären können
+[[LZ-1-3]]
+==== LZ 1-3: Die Bausteine von Domain Driven Design kennen und erklären können
 * Die TN verstehen die grundlegenden Bausteine von Domain Driven Design.
 ** Value Objects stellen elementare Wert-Typen aus der fachlichen Welt dar. Sie können nur andere Value Objects enthalten. Value Objects haben keine Identität, sind jedoch
 vergleichbar.
@@ -36,8 +33,8 @@ vergleichbar.
 ** **Repositories** dienen der Bestandsverwaltung von Entities zur Laufzeit. Das Ermitteln und Herausgeben einer Referenz auf ein Entity oder Aggregate zu einem eindeutigen Identifikator fällt in ihren Aufgabenbereich. Hinter ihnen lassen sich Schnittstellen zu Drittsystemen wie Datenbanken oder entfernten Services verbergen.
 ** **Domain Events** unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern (vgl. Observer <<gamma>>) an angemeldete Klienten propagiert.
 
-[[LZ-1-5]]
-==== LZ 1-5: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können
+[[LZ-1-4]]
+==== LZ 1-4: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können
 * Die TN sind in der Lage die Bausteine in Beziehung zu setzen und sinnvoll miteinander zu kombinieren (vgl. Übersicht auf Seite 65 <<evans>>]).
 
 // end::DE[]
@@ -59,15 +56,12 @@ The course participants also obtain a detailed insight into the various componen
 ==== LG 1-2: Understand the role of domain-specific terminology in the construction of a ubiquitous language
 * The course participants understand that a common language for both domain experts and developers assists mutual understanding.
 * The course participants understand the term ubiquity: "Ubiquity" applies in a defined boundary (Bounded Context) within which the language is used consistently in conversations, diagrams, documentation, and code.
-
-[[LG-1-3]]
-==== LG 1-3: Understand the role of domain-specific terminology in the construction of a ubiquitous language
 * The course participants know that the fundamental terms of a ubiquitous language originate from the domain experts.
 * The participants understand that the Ubiquitous Language is a formalized version of the domain language and a conscious design decision.
 * The participants understand that the Ubiquitous Language evolves in a dialog between development team and domain experts.
 
-[[LG-1-4]]
-==== LG 1-4: Know and be able to explain the building blocks of domain-driven design
+[[LG-1-3]]
+==== LG 1-3: Know and be able to explain the building blocks of domain-driven design
 * The course participants understand the fundamental building blocks of domain-driven design. o Value Objects represent elementary value types from the domain. They can only
 contain other Value Objects. Value Objects have no identity, but are comparable.
 ** Entities represent things in the domain. They can contain Value Objects and other
@@ -80,8 +74,8 @@ Entities. Entities have an identity.
 ** **Repositories** are used for the inventory management of Entities at runtime. Determining and issuing a reference to an Entity or Aggregate for a unique identifier falls within their area of responsibility. They can be used to hide interfaces to third-party systems such as databases or remote services.
 ** **Domain Events** support the sharing of information about the occurrence of domain-related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern (cf. Observer <<gamma>>) to registered clients.
 
-[[LG-1-5]]
-==== LG 1-5: Know and be able to explain the connections between the building blocks
+[[LG-1-4]]
+==== LG 1-4: Know and be able to explain the connections between the building blocks
 * The course participants are able to create a relationship between the building blocks and combine them in a sensible manner (cf. overview on page 65 <<evans>>).
 
 // end::EN[]
