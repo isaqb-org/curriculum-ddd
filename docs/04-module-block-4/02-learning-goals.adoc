@@ -18,7 +18,7 @@ Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell i
 This section uses selected examples to teach how a domain model can be integrated into software architectures. On the basis of examples, it teaches the similarities and differences between domain-driven design and two related methods.
 
 [[LG-4-1]]
-==== LG 4-1: Be able to design a ports  &adapter architecture for the domain model
+==== LG 4-1: Be able to design a ports & adapter architecture for the domain model
 * The course participants can explain the differences between a ports&adapter architecture (e.g., Hexagonal, Clean, or Onion) and a layered architecture.
 
 [[LG-4-2]]
