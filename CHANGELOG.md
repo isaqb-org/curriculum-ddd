@@ -1,10 +1,12 @@
 # New in 2023.1
 
 ## Changes in "1. Domain, model, and ubiquitous language"
-- Changed learning goal 1-2: Understand the role of domain-specific terminology in the construction of a ubiquitous language
+- Merged learning goal 1-3 into learning goal 1-3
+- Changed learning goal 1-2: "Understand the role of domain-specific terminology in the construction of a ubiquitous language"
   - Redefined Ubiquitous Language
-- Changed learning goal 1-3: Understand the role of domain-specific terminology in the construction of a ubiquitous language
   - Add focus on formalization of the Ubiquitous Language and on the necessity to create it using a collaborative approach
+- Changed ID of learning goal 1-4 to 1-3: "Know and be able to explain the building blocks of domain-driven design"
+- Changed ID of learning goal 1-5 to 1-4: "Know and be able to explain the connections between the building blocks"
 
 ## Changes in "2. The path to the model"
 - Renamed chapter
