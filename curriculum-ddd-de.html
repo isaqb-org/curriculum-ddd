@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.8">
+<meta name="generator" content="Asciidoctor 2.0.17">
 <title>Curriculum fürCertified Professional forSoftware Architecture (CPSA)&#174;Advanced Level: ModulDDDDomain-Driven Design</title>
 <style>
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
@@ -1897,8 +1897,8 @@ h2 {
 <div id="header">
 <h1>Curriculum für<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Modul<br>DDD<br><br>Domain-Driven Design</h1>
 <div class="details">
-<span id="revnumber"> 2017.1-DE,</span>
-<span id="revdate">20220520</span>
+<span id="revnumber"> 2023.1-rev0-DE,</span>
+<span id="revdate">20230510</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Inhaltsverzeichnis</div>
@@ -1928,7 +1928,7 @@ h2 {
 <li><a href="#_referenzen">1.3. Referenzen</a></li>
 </ul>
 </li>
-<li><a href="#_der_weg_zum_modell">2. Der Weg zum Modell</a>
+<li><a href="#_knowledge_crunching_der_weg_zum_modell">2. Knowledge Crunching: Der Weg zum Modell</a>
 <ul class="sectlevel2">
 <li><a href="#_begriffe_und_konzepte_2">2.1. Begriffe und Konzepte</a></li>
 <li><a href="#_lernziele_2">2.2. Lernziele</a></li>
@@ -1949,21 +1949,28 @@ h2 {
 <li><a href="#_referenzen_4">4.3. Referenzen</a></li>
 </ul>
 </li>
-<li><a href="#_modelle_schneiden_und_voneinander_abgrenzen">5. Modelle schneiden und voneinander abgrenzen</a>
+<li><a href="#_strategic_design_1_modelle_schneiden_und_voneinander_abgrenzen">5. Strategic Design 1: Modelle schneiden und voneinander abgrenzen</a>
 <ul class="sectlevel2">
 <li><a href="#_begriffe_und_konzepte_5">5.1. Begriffe und Konzepte</a></li>
 <li><a href="#_lernziele_5">5.2. Lernziele</a></li>
 <li><a href="#_referenzen_5">5.3. Referenzen</a></li>
 </ul>
 </li>
-<li><a href="#_lokale_modellkonsistenz_wahren">6. Lokale Modellkonsistenz wahren</a>
+<li><a href="#_strategic_design_2_context_mapping">6. Strategic Design 2: Context Mapping</a>
 <ul class="sectlevel2">
 <li><a href="#_begriffe_und_konzepte_6">6.1. Begriffe und Konzepte</a></li>
 <li><a href="#_lernziele_6">6.2. Lernziele</a></li>
 <li><a href="#_referenzen_6">6.3. Referenzen</a></li>
 </ul>
 </li>
-<li><a href="#_referenzen_7">Referenzen</a></li>
+<li><a href="#_optional_verwandte_themen">7. Optional: Verwandte Themen</a>
+<ul class="sectlevel2">
+<li><a href="#_empfehlungen">7.1. Empfehlungen</a></li>
+<li><a href="#_begriffe_konzepte_mögliche_ideen">7.2. Begriffe, Konzepte, mögliche Ideen</a></li>
+<li><a href="#_referenzen_7">7.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_referenzen_8">Referenzen</a></li>
 </ul>
 </div>
 </div>
@@ -1973,7 +1980,7 @@ h2 {
 <div style="page-break-after: always;"></div>
 <div class="paragraph">
 <p><strong>&#169; (Copyright), International Software Architecture Qualification Board e. V.
-(iSAQB<sup>&#174;</sup> e. V.) 2021</strong></p>
+(iSAQB<sup>&#174;</sup> e. V.) 2023</strong></p>
 </div>
 <div class="paragraph">
 <p>Die Nutzung des Lehrplans ist nur unter den nachfolgenden Voraussetzungen erlaubt:</p>
@@ -1981,7 +1988,7 @@ h2 {
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Sie möchten das Zertifikat zum CPSA Certified Professional for Software Architecture Advanced Level<sup>&#174;</sup> erwerben.
+<p>Sie möchten das Zertifikat zum CPSA Certified Professional for Software Architecture Foundation Level<sup>&#174;</sup> oder CPSA Certified Professional for Software Architecture Advanced Level<sup>&#174;</sup> erwerben.
 Für den Erwerb des Zertifikats ist es gestattet, die Text-Dokumente und/oder Lehrpläne zu nutzen, indem eine Arbeitskopie für den eigenen Rechner erstellt wird. Soll eine darüber hinausgehende Nutzung der Dokumente und/oder Lehrpläne erfolgen, zum Beispiel zur Weiterverbreitung an Dritte, Werbung etc., bitte unter <a href="mailto:info@isaqb.org">info@isaqb.org</a> nachfragen.
 Es müsste dann ein eigener Lizenzvertrag geschlossen werden.</p>
 </li>
@@ -2025,37 +2032,40 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <p><a href="#LZ-1-2">LZ 1-2: Die Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen</a></p>
 </li>
 <li>
-<p><a href="#LZ-1-3">LZ 1-3: Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen</a></p>
+<p><a href="#LZ-1-3">LZ 1-3: Die Bausteine von Domain Driven Design kennen und erklären können</a></p>
 </li>
 <li>
-<p><a href="#LZ-1-4">LZ 1-4: Die Bausteine von Domain Driven Design kennen und erklären können</a></p>
+<p><a href="#LZ-1-4">LZ 1-4: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können</a></p>
 </li>
 <li>
-<p><a href="#LZ-1-5">LZ 1-5: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können</a></p>
+<p><a href="#LZ-2-1">LZ 2-1: Den hohen Stellenwert von Domänenexpert:innen in DDD kennen und erläutern können</a></p>
 </li>
 <li>
-<p><a href="#LZ-2-1">LZ 2-1: Den hohen Stellenwert von Domänen-Experten in DDD kennen und erläutern können</a></p>
+<p><a href="#LZ-2-2">LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner:innen unterstützen können</a></p>
 </li>
 <li>
-<p><a href="#LZ-2-2">LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner unterstützen können</a></p>
+<p><a href="#LZ-2-3">LZ 2-3: Mit Domänenexpert:innen kommunizieren können</a></p>
 </li>
 <li>
-<p><a href="#LZ-2-3">LZ 2-3: Mit Domänen-Experten kommunizieren können</a></p>
+<p><a href="#LZ-2-4">LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänenexpert:innen einsetzen können</a></p>
 </li>
 <li>
-<p><a href="#LZ-2-4">LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänen-Experten einsetzen können</a></p>
-</li>
-<li>
-<p><a href="#LZ-2-5">LZ 2-5:  Interviews als Mittel zur Modellierung führen können</a></p>
+<p><a href="#LZ-2-5">LZ 2-5: Interviews als Mittel zur Modellierung führen können</a></p>
 </li>
 <li>
 <p><a href="#LZ-2-6">LZ 2-6: Beobachtung als Mittel zur Modellierung beherrschen</a></p>
 </li>
 <li>
-<p><a href="#LZ-2-7">LZ 2-7: Einen Event-Storming-Workshop durchführen können</a></p>
+<p><a href="#LZ-2-7">LZ 2-7: Einen Überblick über Collaborative Modeling, seine Methoden und seinen Zusammenhang mit DDD bekommen</a></p>
 </li>
 <li>
-<p><a href="#LZ-2-8">LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänen-Experten diskutieren können</a></p>
+<p><a href="#LZ-2-8">LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänenexpert:innen diskutieren können</a></p>
+</li>
+<li>
+<p><a href="#LZ-2-9">LZ 2-9: Einen Collaborative Modeling-Workshop durchführen können</a></p>
+</li>
+<li>
+<p><a href="#LZ-2-10">LZ 2-10: Agilität als Fundament von DDD verstehen</a></p>
 </li>
 <li>
 <p><a href="#LZ-3-1">LZ 3-1: Ein Domänenmodell um technisch motivierte Bausteine von DDD erweitern können</a></p>
@@ -2070,10 +2080,10 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <p><a href="#LZ-3-4">LZ 3-4: Argumentieren können, wieso sich DDD bei komplexer Geschäftslogik lohnt</a></p>
 </li>
 <li>
-<p><a href="#LZ-4-1">LZ 4-1: Ausgewählte Architekturstile beherrschen und ein Domänenmodell integrieren können</a></p>
+<p><a href="#LZ-4-1">LZ 4-1: Eine Ports &amp; Adapter-Architektur um ein Domänenmodell herum entwerfen</a></p>
 </li>
 <li>
-<p><a href="#LZ-4-2">LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD, WAM und BDD formulieren können</a></p>
+<p><a href="#LZ-4-2">LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD und BDD formulieren können</a></p>
 </li>
 <li>
 <p><a href="#LZ-5-1">LZ 5-1: Symptome kennen, die bei zu großen Modellen auftreten können</a></p>
@@ -2082,28 +2092,31 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <p><a href="#LZ-5-2">LZ 5-2: Vor- und Nachteile eines Team-übergreifenden Modells abwägen können</a></p>
 </li>
 <li>
-<p><a href="#LZ-5-3">LZ 5-3: Modellgrenzen von Bounded Contexts in einer Context Map beschreiben können</a></p>
+<p><a href="#LZ-5-3">LZ 5-3: Vom Problem- zum Lösungsraum kommen können</a></p>
 </li>
 <li>
-<p><a href="#LZ-5-4">LZ 5-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können</a></p>
+<p><a href="#LZ-5-4">LZ 5-4: Den Kern herausdestilieren</a></p>
 </li>
 <li>
-<p><a href="#LZ-5-5">LZ 5-5: Schnittstellen bei Customer/Supplier Teams einsetzen können</a></p>
+<p><a href="#LZ-5-5">LZ 5-5: Modellgrenzen von Bounded Contexts in einer Context Map beschreiben können</a></p>
 </li>
 <li>
-<p><a href="#LZ-5-6">LZ 5-6: Ein System als Open Host Service (OHS) konzipieren können</a></p>
+<p><a href="#LZ-6-1">LZ 6-1: Schnittstellen bei Customer/Supplier Teams einsetzen können</a></p>
 </li>
 <li>
-<p><a href="#LZ-5-7">LZ 5-7: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können</a></p>
+<p><a href="#LZ-6-2">LZ 6-2: Ein System als Open Host Service (OHS) konzipieren können</a></p>
 </li>
 <li>
-<p><a href="#LZ-6-1">LZ 6-1: Verstehen, wie Continuous Integration (CI) <sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> zu lokaler Modellkonsistenz beiträgt</a></p>
+<p><a href="#LZ-6-3">LZ 6-3: Das eigene Modell von äußeren Einflüssen isolieren können</a></p>
 </li>
 <li>
-<p><a href="#LZ-6-2">LZ 6-2: Das eigene Modell von äußeren Einflüssen isolieren können</a></p>
+<p><a href="#LZ-6-4">LZ 6-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können</a></p>
 </li>
 <li>
-<p><a href="#LZ-6-3">LZ 6-3: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways), unter Berücksichtigung der Aspekte aus Block 5</a></p>
+<p><a href="#LZ-6-5">LZ 6-5: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways)</a></p>
+</li>
+<li>
+<p><a href="#LZ-6-6">LZ 6-6: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können</a></p>
 </li>
 </ul>
 </div>
@@ -2124,7 +2137,7 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <p>Der iSAQB Advanced Level bietet eine modulare Ausbildung in drei Kompetenzbereichen mit flexibel gestaltbaren Ausbildungswegen. Er berücksichtigt individuelle Neigungen und Schwerpunkte.</p>
 </li>
 <li>
-<p>Die Zertifizierung erfolgt als Hausarbeit. Die Bewertung und mündliche Prüfung wird durch vom iSAQB benannte Experten vorgenommen.</p>
+<p>Die Zertifizierung erfolgt als Hausarbeit. Die Bewertung und mündliche Prüfung wird durch vom iSAQB benannte Expert:innen vorgenommen.</p>
 </li>
 </ul>
 </div>
@@ -2170,13 +2183,6 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 </li>
 <li>
 <p>Aus- und Weiterbildung im Rahmen von iSAQB-Advanced-Level-Schulungen im Umfang von mindestens 70 Credit Points aus mindestens drei unterschiedlichen Kompetenzbereichen</p>
-<div class="ulist">
-<ul>
-<li>
-<p>bestehende Zertifizierungen (etwa Sun/Oracle Java-Architect, Microsoft CSA) können auf Antrag angerechnet werden</p>
-</li>
-</ul>
-</div>
 </li>
 <li>
 <p>erfolgreiche Bearbeitung der CPSA-A-Zertifizierungsprüfung</p>
@@ -2200,13 +2206,13 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <div class="sect2">
 <h3 id="_was_vermittelt_das_modul_ddd">Was vermittelt das Modul „DDD“?</h3>
 <div class="paragraph">
-<p>Das Modul präsentiert den TeilnehmerInnen Domain Driven Design (DDD) als Mittel, Software als präzise, transparente und transformierbare Repräsentation einer fachlichen Domäne zu gestalten.</p>
+<p>Das Modul präsentiert den Teilnehmer:innen Domain Driven Design (DDD) als Mittel, Software als präzise, transparente und transformierbare Repräsentation einer fachlichen Domäne zu gestalten.</p>
 </div>
 <div class="paragraph">
-<p>Am Ende des Moduls kennen die TeilnehmerInnen die wesentlichen Prinzipien des Domain Driven Designs und können diese bei Entwurf und Implementierung von Softwaresystemen anwenden. Sie sind mithilfe der vermittelten kommunikativen Fähigkeiten in der Lage, eine einheitliche Sprache zwischen Fachexperten und Entwicklern zu etablieren. Mit Hilfe der vermittelten Modellierungstechniken und Architekturwerkzeuge können sie die Bestandteile dieser gemeinsamen Fachsprache in ihre Softwaresysteme übernehmen.</p>
+<p>Am Ende des Moduls kennen die Teilnehmer:innen die wesentlichen Prinzipien des Domain Driven Designs und können diese bei Entwurf und Implementierung von Softwaresystemen anwenden. Sie sind mithilfe der vermittelten kommunikativen Fähigkeiten in der Lage, eine einheitliche Sprache zwischen Fachexpert:innen und Entwickler:innen zu etablieren. Mit Hilfe der vermittelten Modellierungstechniken und Architekturwerkzeuge können sie die Bestandteile dieser gemeinsamen Fachsprache in ihre Softwaresysteme übernehmen.</p>
 </div>
 <div class="paragraph">
-<p>Bei einem großen Softwareprojekt ist oft der Einsatz von mehreren Entwicklungsteams erforderlich. Dieses Modul adressiert diese Herausforderung und vermittelt den TeilnehmerInnen Methoden des Domain Driven Designs, um mit der wachsende Komplexität eines großen Softwareprojektes umzugehen.</p>
+<p>Bei einem großen Softwareprojekt ist oft der Einsatz von mehreren Entwicklungsteams erforderlich. Dieses Modul adressiert diese Herausforderung und vermittelt den Teilnehmer:innen Methoden des Domain Driven Designs, um mit der wachsenden Komplexität eines großen Softwareprojektes umzugehen.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2228,7 +2234,7 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <td class="tableblock halign-right valign-top"><p class="tableblock">195</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2. Der Weg zum Modell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Knowledge Crunching: Der Weg zum Modell</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">240</p></td>
 </tr>
 <tr>
@@ -2240,12 +2246,16 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <td class="tableblock halign-right valign-top"><p class="tableblock">165</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5. Modelle schneiden und voneinander abgrenzen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Strategic Design 1: Modelle schneiden und voneinander abgrenzen</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">210</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6. Lokale Modellkonsistenz wahren</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. Strategic Design 2: Context Mapping</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. Optional: Verwandte Themen</p></td>
+<td class="tableblock halign-right valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
@@ -2298,7 +2308,7 @@ Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett off
 <div class="ulist">
 <ul>
 <li>
-<p>Grundlagen und weiterführende Konzepte der objektorientierten Software-Entwicklung</p>
+<p>Grundlagen und weiterführende Konzepte der objektorientierten Softwareentwicklung</p>
 </li>
 <li>
 <p>Erfahrungen bei der Modellierung von objektorientierten Architekturen</p>
@@ -2311,10 +2321,10 @@ Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett off
 <div class="ulist">
 <ul>
 <li>
-<p>Wissen über agile Methoden der Software-Entwicklung, wie z. B. Scrum, Kanban, XP, etc.</p>
+<p>Wissen über agile Methoden der Softwareentwicklung, wie z. B. Scrum, Kanban, XP, etc.</p>
 </li>
 <li>
-<p>Erfahrung bei der Zusammenarbeit von Fachbereich und Software-Entwicklern.</p>
+<p>Erfahrung bei der Zusammenarbeit von Fachbereich und Softwareentwickler:innen.</p>
 </li>
 </ul>
 </div>
@@ -2394,14 +2404,14 @@ Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett off
 <h3 id="_lernziele">1.2. Lernziele</h3>
 <div class="paragraph">
 <p>Dieser Block dient der Motivation und Einführung in Domain Driven Design. Die grundlegenden Konzepte Domäne, Domänenmodell und Ubiquitous Language werden hier vermittelt.
-Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen Bausteine von Domänenmodellen und die dazwischenliegenden Beziehungen.</p>
+Zudem erhalten die Teilnehmer:innen einen detaillierten Einblick in die verschiedenen Bausteine von Domänenmodellen und die dazwischenliegenden Beziehungen.</p>
 </div>
 <div class="sect3">
 <h4 id="LZ-1-1">LZ 1-1: Die Zusammenhänge zwischen Domäne, Software und Modell kennen und erläutern können</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Die Teilnehmer (TN) können die Abhängigkeit von Software zu einer Domäne beschreiben. Sie verstehen, dass Software nicht zum Selbstzweck existiert.</p>
+<p>Die Teilnehmer:innen (TN) können die Abhängigkeit von Software zu einer Domäne beschreiben. Sie verstehen, dass Software nicht zum Selbstzweck existiert.</p>
 </li>
 <li>
 <p>Die TN verstehen Domänenmodelle als Mittel zur Abstraktion von Fachwissen.</p>
@@ -2420,26 +2430,25 @@ Zudem erhalten die Teilnehmer einen detaillierten Einblick in die verschiedenen 
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN verstehen, dass eine gemeinsame Sprache für Domänen-Experten und Entwickler dem wechselseitigen Verständnis dient.</p>
+<p>Die TN verstehen, dass eine gemeinsame Sprache für Domänenexpert:innen und Entwickler:innen dem wechselseitigen Verständnis dient.</p>
 </li>
 <li>
-<p>Die TN verstehen den Begriff der Ubiquity (Allgegenwärtigkeit): Alle Stakeholder verstehen und nutzen eine einzige, von ihnen entwickelte Fachsprache zur Kommunikation im Rahmen des Projekts.</p>
+<p>Die TN verstehen den Begriff der Ubiquity (Allgegenwärtigkeit): "Allgegenwärtigkeit" gilt in einer definierten Grenze (Bounded Context) innerhalb derer die Sprache in Gesprächen, Diagrammen, Dokumentation und Code konsistent verwendet wird.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language der Fachsprache der Domänenexpert:innen entspringen.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass die Ubiquitous Language eine formalisierte Version der Fachsprache und eine bewusste Entwurfsentscheidung ist.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass sich die Ubiquitous Language im Dialog von Entwicklungsteam und Fachbereich weiterentwickelt.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-1-3">LZ 1-3: Rolle der Fachsprache bei der Konstruktion einer Ubiquitous Language verstehen</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Die TN verstehen, dass die grundlegenden Begriffe einer Ubiquitous Language direkt der Fachsprache der Domänen-Experten entspringen.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="LZ-1-4">LZ 1-4: Die Bausteine von Domain Driven Design kennen und erklären können</h4>
+<h4 id="LZ-1-3">LZ 1-3: Die Bausteine von Domain Driven Design kennen und erklären können</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2476,7 +2485,7 @@ vergleichbar.</p>
 <p><strong>Repositories</strong> dienen der Bestandsverwaltung von Entities zur Laufzeit. Das Ermitteln und Herausgeben einer Referenz auf ein Entity oder Aggregate zu einem eindeutigen Identifikator fällt in ihren Aufgabenbereich. Hinter ihnen lassen sich Schnittstellen zu Drittsystemen wie Datenbanken oder entfernten Services verbergen.</p>
 </li>
 <li>
-<p><strong>Domain Events</strong> unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern <sup class="footnote" id="_footnote_1">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> an angemeldete Klienten propagiert.</p>
+<p><strong>Domain Events</strong> unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern (vgl. Observer <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>) an angemeldete Klienten propagiert.</p>
 </li>
 </ul>
 </div>
@@ -2485,11 +2494,11 @@ vergleichbar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-1-5">LZ 1-5: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können</h4>
+<h4 id="LZ-1-4">LZ 1-4: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN sind in der Lage die Bausteine in Beziehung zu setzen und sinnvoll miteinander zu kombinieren.<sup class="footnote" id="_footnote_2">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+<p>Die TN sind in der Lage die Bausteine in Beziehung zu setzen und sinnvoll miteinander zu kombinieren (vgl. Übersicht auf Seite 65 <a href="#evans">[Evans, E. (2003)]</a>]).</p>
 </li>
 </ul>
 </div>
@@ -2505,7 +2514,7 @@ vergleichbar.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_der_weg_zum_modell">2. Der Weg zum Modell</h2>
+<h2 id="_knowledge_crunching_der_weg_zum_modell">2. Knowledge Crunching: Der Weg zum Modell</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2524,13 +2533,16 @@ vergleichbar.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Empowerment der Domänen-Experten</p>
+<p>Agile und evolutionäre Modellbildung</p>
 </li>
 <li>
-<p>Kollaborationsformen zur Modell-Erhebung</p>
+<p>Empowerment der Domänenexpert:innen</p>
 </li>
 <li>
-<p>Werkzeuge zur Modell-Erhebung</p>
+<p>Kollaborationsformen zur Modellerhebung</p>
+</li>
+<li>
+<p>Werkzeuge zur Modellerhebung</p>
 </li>
 </ul>
 </div>
@@ -2538,39 +2550,39 @@ vergleichbar.</p>
 <div class="sect2">
 <h3 id="_lernziele_2">2.2. Lernziele</h3>
 <div class="paragraph">
-<p>In diesem Block lernen die Teilnehmer, wie sie gemeinsam mit Domänen-Experten ein Domänenmodell erstellen und verfeinern können.</p>
+<p>In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexpert:innen ein Domänenmodell erstellen und verfeinern können.</p>
 </div>
 <div class="sect3">
-<h4 id="LZ-2-1">LZ 2-1: Den hohen Stellenwert von Domänen-Experten in DDD kennen und erläutern können</h4>
+<h4 id="LZ-2-1">LZ 2-1: Den hohen Stellenwert von Domänenexpert:innen in DDD kennen und erläutern können</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN können Domänen-Experten vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).</p>
+<p>Die TN können Domänenexpert:innen vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).</p>
 </li>
 <li>
 <p>Die TN sind in der Lage, einem Entwicklungsteam zu vermitteln, dass Software die vorhandene Domäne unterstützen muss.</p>
 </li>
 <li>
-<p>Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänen-Experten vorhanden ist.</p>
+<p>Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänenexpert:innen vorhanden ist.</p>
 </li>
 <li>
-<p>Die TN verstehen, dass implizites Domänen-Wissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.</p>
+<p>Die TN verstehen, dass implizites Domänenwissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.</p>
 </li>
 <li>
-<p>Die TN sind in der Lage, Vertrauen bei Domänen-Experten in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.</p>
+<p>Die TN sind in der Lage, Vertrauen bei Domänenexpert:innen in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.</p>
 </li>
 <li>
-<p>Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänen-Experten vermitteln.</p>
+<p>Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänenexpert:innen vermitteln.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-2-2">LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner unterstützen können</h4>
+<h4 id="LZ-2-2">LZ 2-2: Bei der Auswahl geeigneter Ansprechpartner:innen unterstützen können</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN kennen Einflussfaktoren auf die Eignung von Domänen-Experten und können diese einschätzen:</p>
+<p>Die TN kennen Einflussfaktoren auf die Eignung von Domänenexpert:innen und können diese einschätzen:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2595,11 +2607,11 @@ vergleichbar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-2-3">LZ 2-3: Mit Domänen-Experten kommunizieren können</h4>
+<h4 id="LZ-2-3">LZ 2-3: Mit Domänenexpert:innen kommunizieren können</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN beherrschen Modelle um mit Domänen-Experten in einen gleichberechtigten Dialog zu treten:</p>
+<p>Die TN beherrschen Modelle um mit Domänenexpert:innen in einen gleichberechtigten Dialog zu treten:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2618,13 +2630,13 @@ vergleichbar.</p>
 <p>Die TN verstehen, dass der Kommunikation zwischen Fachbereichen und Entwicklungsteams in DDD eine zentrale Bedeutung zukommt.</p>
 </li>
 <li>
-<p>Die TN verstehen, dass Domänen-Experten bewusst und unbewusst über Domänenwissen verfügen.</p>
+<p>Die TN verstehen, dass Domänenexpert:innenen bewusst und unbewusst über Domänenwissen verfügen.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-2-4">LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänen-Experten einsetzen können</h4>
+<h4 id="LZ-2-4">LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänenexpert:innen einsetzen können</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2653,21 +2665,21 @@ vergleichbar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-2-5">LZ 2-5:  Interviews als Mittel zur Modellierung führen können</h4>
+<h4 id="LZ-2-5">LZ 2-5: Interviews als Mittel zur Modellierung führen können</h4>
 <div class="ulist">
 <ul>
 <li>
 <p>Die TN verstehen, dass Interviews geeignet sind, um bewusstes Domänenwissen offenzulegen.</p>
 </li>
 <li>
-<p>Die TN verstehen, dass der Interviewer das Gespräch auch unbewusst beeinflusst.</p>
+<p>Die TN verstehen, dass der Interviewer oder die Interviewerin das Gespräch auch unbewusst beeinflusst.</p>
 <div class="ulist">
 <ul>
 <li>
 <p>die Auswahl der Fragen bestimmt, was zur Sprache kommt</p>
 </li>
 <li>
-<p>der Interviewer hat eigenen Annahmen, die der Interview-Partner nicht kennt</p>
+<p>Interviewer:innen haben eigene Annahmen, die Interviewpartner:innen nicht kennen</p>
 </li>
 <li>
 <p>durch den Bestätigungsfehler können Missverständnisse entstehen</p>
@@ -2679,7 +2691,7 @@ vergleichbar.</p>
 <p>Die TN beherrschen es, ein Interview entlang eines konkreten Szenarios aus der Domäne zu strukturieren und durchzuführen.</p>
 </li>
 <li>
-<p>Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, welches der Interview-Partner nachvollziehen kann.</p>
+<p>Die TN verstehen, dass es hilfreich ist, während eines Interviews ein Modell aufzubauen, welches Interviewpartner:innen nachvollziehen können.</p>
 </li>
 </ul>
 </div>
@@ -2689,7 +2701,7 @@ vergleichbar.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN können die Beobachtungstechniken "Feldbeobachtung" und "Apprenticing"<sup class="footnote" id="_footnote_3">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:</p>
+<p>Die TN können die Beobachtungstechniken "Feldbeobachtung" und "Apprenticing" (vgl. <a href="#hruschka">[Hruschka, P. (2019)]</a>) als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2703,7 +2715,7 @@ vergleichbar.</p>
 <p>Arbeitsabläufe werden schriftlich erfasst</p>
 </li>
 <li>
-<p>Verständnisfragen an den Domänen-Experten in seltenen Fällen</p>
+<p>Verständnisfragen an die Domänenexpert:innen in seltenen Fällen</p>
 </li>
 </ul>
 </div>
@@ -2716,7 +2728,7 @@ vergleichbar.</p>
 <p>Ist eine Erweiterung der Feldbeobachtung</p>
 </li>
 <li>
-<p>Nach einer Reihe von Beobachtungsdurchläufen übernehmen die Beobachter exemplarisch einen kleinen Teil der Arbeit des Domänen-Experten</p>
+<p>Nach einer Reihe von Beobachtungsdurchläufen übernehmen die Beobachter exemplarisch einen kleinen Teil der Arbeit der Domänenexpert:innen</p>
 </li>
 </ul>
 </div>
@@ -2728,26 +2740,55 @@ vergleichbar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-2-7">LZ 2-7: Einen Event-Storming-Workshop durchführen können</h4>
+<h4 id="LZ-2-7">LZ 2-7: Einen Überblick über Collaborative Modeling, seine Methoden und seinen Zusammenhang mit DDD bekommen</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN können einen Event-Storming-Workshop (Brandolini, 2013) vorbereiten, moderieren, und nachbereiten.</p>
+<p>Die TN wissen, dass es verschiedene Methoden gibt, z. B.:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>EventStorming (Brandolini, 2021)</p>
 </li>
 <li>
-<p>Die TN verstehen, dass Event-Storming-Workshops ohne strenge Koordination stattfinden.</p>
+<p>Domain Storytelling (Hofer, Schwentner 2022)</p>
 </li>
 <li>
-<p>Die TN verstehen, dass Event Storming sich auf die Erhebung von Domain Events konzentriert.</p>
+<p>User Story Mapping (Patton, 2015)</p>
 </li>
 <li>
-<p>Die TN können die ungeordnete Information aus dem Workshop strukturieren.</p>
+<p>Impact Mapping (Adzic)</p>
+</li>
+<li>
+<p>Example Mapping (Wynne)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Die TN verstehen die gemeinsamen Werte der verschiedenen Methoden:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Gemeinsames Verständnis erarbeiten durch enge Zusammenarbeit unterschiedlicher Stakeholder: Fachexpert:in, Entwickler:in und weitere.</p>
+</li>
+<li>
+<p>Leichtgewichtige Methodik, deren Elemente in fünf Minuten so weit erklärt sind, dass man starten kann.</p>
+</li>
+<li>
+<p>Fokus auf Verhalten, nicht nur auf Struktur/Daten (nicht nur Substantive, sondern auch Verben).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>TN verstehen, dass Collaborative Modeling auch unabhängig von DDD verwenden werden kann.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-2-8">LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänen-Experten diskutieren können</h4>
+<h4 id="LZ-2-8">LZ 2-8: Ein geeignetes Vorgehen zur Modellierung auswählen und mit Domänenexpert:innen diskutieren können</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2758,7 +2799,7 @@ vergleichbar.</p>
 <p>Technische und räumliche Ressourcen</p>
 </li>
 <li>
-<p>Räumliche Verteilung der Domänen-Experten</p>
+<p>Räumliche Verteilung der Domänenexpert:innen</p>
 </li>
 <li>
 <p>Juristische Rahmenbedingungen für das Anfertigen von Mitschriften, Audio/Video-Streams, Fotos, etc.</p>
@@ -2767,10 +2808,52 @@ vergleichbar.</p>
 </div>
 </li>
 <li>
-<p>Die TN können mit den Domänen-Experten diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.</p>
+<p>Die TN können mit den Domänenexpert:innen diskutieren, ob das Modell iterativ oder im Voraus entwickelt werden soll.</p>
 </li>
 <li>
-<p>Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänen-Experten und Entwicklern diskutieren.</p>
+<p>Die TN können die Folgen von Unschärfe und Fehlannahmen im Modell mit Domänenexpert:innen und Entwickler:innen diskutieren.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-2-9">LZ 2-9: Einen Collaborative Modeling-Workshop durchführen können</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Die TN können einen Workshop in mindestens einer der o. g. Methoden vorbereiten, moderieren, und nachbereiten.</p>
+</li>
+<li>
+<p>TN sind in der Lage, passende TN zum Workshop einzuladen.</p>
+</li>
+<li>
+<p>Die TN können die ungeordnete Information aus dem Workshop strukturieren.</p>
+</li>
+<li>
+<p>Die TN wissen, dass online und on-premise unterschiedlich vorgegangen werden muss.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-2-10">LZ 2-10: Agilität als Fundament von DDD verstehen</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>TN können DDD zu Werten und Prinzipien aus dem Agilen Manifest in Beziehung setzen</p>
+</li>
+<li>
+<p>TN haben verstanden, dass DDD auf einen evolutionären Entwurf setzt:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ein Modell entwickelt sich immer weiter.</p>
+</li>
+<li>
+<p>Tragfähige Modelle entstehen durch exploratives Vorgehen.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -2779,7 +2862,7 @@ vergleichbar.</p>
 <div class="sect2">
 <h3 id="_referenzen_2">2.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#hruschka">[Hruschka, P. (2014)]</a>, <a href="#schulz2010">[Schulz von Thun, F. (2010)]</a>, <a href="#schulz2013">[Schulz von Thun, F. (2013)]</a></p>
+<p><a href="#adzic">[Adzic, G. (2012)]</a>, <a href="#beck2001">[Beck, K. et al. (2001)]</a>, <a href="#brandolini">[Brandolini, A. (18. November 2013)]</a>, <a href="#hofer">[Hofer, S. &amp; Schwentner, H. (2022)]</a>, <a href="#hruschka">[Hruschka, P. (2019)]</a>, <a href="#patton">[Patton, J. (2014)]</a>, <a href="#wynne">[Wynne, M. (8. Dezember 2015)]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2815,9 +2898,6 @@ vergleichbar.</p>
 </li>
 <li>
 <p>Law of Demeter</p>
-</li>
-<li>
-<p>CRC-Karten</p>
 </li>
 </ul>
 </div>
@@ -2856,9 +2936,6 @@ vergleichbar.</p>
 <ul>
 <li>
 <p>Die TN können die Entwurfsprinzipien und Heuristiken aus dem Foundation Level für den DDD-Entwurf einschätzen und anwenden.</p>
-</li>
-<li>
-<p>Die TN beherrschen die Technik CRC-Karten als Hilfsmittel bei der Modellierung.</p>
 </li>
 </ul>
 </div>
@@ -2900,7 +2977,7 @@ vergleichbar.</p>
 <div class="sect2">
 <h3 id="_referenzen_3">3.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#avram">[Avram, A., &amp; Marinescu, F. (2007)]</a>, <a href="#martin">[Martin, R. C. (2002)]</a>, <a href="#lilienthal">[Lilienthal, C. (December 2015)]</a>, <a href="#liebherr">[Liebherr, K., Holland, I., &amp; Riel, A. (1988)]</a>, <a href="#beck">[Beck, K., &amp; Cunningham, W. (1989)]</a></p>
+<p><a href="#avram">[Avram, A., &amp; Marinescu, F. (2007)]</a>, <a href="#fowler2002">[Fowler, M. (2002)]</a>, <a href="#martin">[Martin, R. C. (2002)]</a>, <a href="#lilienthal">[Lilienthal, C. (2019)]</a>, <a href="#liebherr">[Liebherr, K., Holland, I., &amp; Riel, A. (1988)]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2938,9 +3015,6 @@ vergleichbar.</p>
 <p>Dependency Injection (Vernon, 2013)</p>
 </li>
 <li>
-<p>Werkzeug- und Materialansatz (WAM)</p>
-</li>
-<li>
 <p>Behaviour Driven Development (BDD)</p>
 </li>
 </ul>
@@ -2949,74 +3023,27 @@ vergleichbar.</p>
 <div class="sect2">
 <h3 id="_lernziele_4">4.2. Lernziele</h3>
 <div class="paragraph">
-<p>Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Software-Architekturen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Domain Driven Design und zwei verwandten Methoden.</p>
+<p>Dieser Block vermittelt anhand ausgewählter Beispiele, wie ein Domänenmodell in Softwarearchitekturen integriert werden kann. Er vermittelt exemplarisch Gemeinsamkeiten und Unterschiede von Domain Driven Design und zwei verwandten Methoden.</p>
 </div>
 <div class="sect3">
-<h4 id="LZ-4-1">LZ 4-1: Ausgewählte Architekturstile beherrschen und ein Domänenmodell integrieren können</h4>
+<h4 id="LZ-4-1">LZ 4-1: Eine Ports &amp; Adapter-Architektur um ein Domänenmodell herum entwerfen</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN können um das Domänenmodell eine hexagonale Architektur entwerfen.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Ports</strong> an den Außenseiten des inneren Hexagons bieten Schnittstellen zur Kommunikation zwischen fachlichem Kern und seiner Umgebung.</p>
-</li>
-<li>
-<p><strong>Adapter</strong><sup class="footnote" id="_footnote_4">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> verbinden die Ports mit konkreten Drittsystemen über verschiedene Kommunikationskanäle wie REST-APIs, SOAP, Message Queues oder Db-Connections.</p>
-</li>
-<li>
-<p>Die Applikation liegt im Inneren des Hexagons mit dem Domänenmodell als Kern.</p>
-</li>
-<li>
-<p>Bei der inneren Modellierung liegt der Fokus auf der Realisierung fachlicher Anforderungen mit Hilfe des Domänenmodells.</p>
-</li>
-<li>
-<p>In der äußeren Modellierung liegt der Fokus auf der Bereitstellung fachlicher Operationen und Daten über plattformunabhängige Schnittstellen.</p>
-</li>
-<li>
-<p>Das Domänenmodell treibt die Modellierung externer Schnittstellen.</p>
-</li>
-<li>
-<p>Ports verwenden Transfer-Klassen anstatt Entities aus dem Domänenmodell. Die TN verstehen, dass dies Versionskonflikte an den Schnittstellen bei änderungen des Modells entgegenwirkt.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Die TN können das Domänenmodell mit dem Command-Query Responsibility Segregation Pattern (CQRS) einsetzen.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Aufteilen des Domänenmodells in Query- und Command Model</p>
-</li>
-<li>
-<p>Repositories und Aggregrates für die jeweilige Verarbeitung von Commands oder Queries</p>
-</li>
-<li>
-<p>Domain Events als Synchronisationsmittel zwischen Query- und Command Model</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Die TN können Software-Entwicklern die Unterschiede von CQRS, einer hexagonalen Architektur und einer Schichtenarchitektur vermitteln.</p>
+<p>Die TN können die Unterschiede zwischen einer Ports&amp;Adapter-Architektur (z.B. Hexagonal, Clean oder Onion) und einer Schichtenarchitektur vermitteln.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-4-2">LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD, WAM und BDD formulieren können</h4>
+<h4 id="LZ-4-2">LZ 4-2: Zusammenhänge und Abgrenzungen zwischen DDD und BDD formulieren können</h4>
 <div class="ulist">
 <ul>
 <li>
 <p>Die TN kennen Spezifikationen aus BDD und können sie mit der Ubiquitous Language in Zusammenhang bringen. Sie verstehen, dass sich Spezifikationen mit den Wörtern der UL formulieren lassen.</p>
 </li>
 <li>
-<p>Die TN verstehen, dass BDD Anforderungen mithilfe der Benutzungsschnittstelle formuliert (Outside-In), und DDD Anforderungen dies über das Domänenmodell ausdrückt (Inside-Out)<sup class="footnote" id="_footnote_5">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p>
-</li>
-<li>
-<p>Die TN können die Bausteine von DDD mit den Bausteinen von WAM vergleichen.</p>
+<p>Die TN verstehen, dass BDD Anforderungen mithilfe der Benutzungsschnittstelle formuliert (Outside-In), und DDD Anforderungen dies über das Domänenmodell ausdrückt (Inside-Out), vgl.: <a href="#stenberg">[Stenberg, J. (24. Februar 2015)]</a>.</p>
 </li>
 </ul>
 </div>
@@ -3025,14 +3052,14 @@ vergleichbar.</p>
 <div class="sect2">
 <h3 id="_referenzen_4">4.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#vernon">[Vernon, V. (2013)]</a>, <a href="#evans">[Evans, E. (2003)]</a>, <a href="#cockburn">[Cockburn, A. (2012)]</a>, <a href="#dahan">[Dahan, U. (9. Dezember 2009)]</a>, <a href="#lilienthal">[Lilienthal, C. (December 2015)]</a>, <a href="#zullighoven">[Züllighoven, H. (1998)]</a>, <a href="#north">[North, D. (3. März 2016)]</a></p>
+<p><a href="#vernon">[Vernon, V. (2013)]</a>, <a href="#evans">[Evans, E. (2003)]</a>, <a href="#cockburn">[Cockburn, A. (2012)]</a>, <a href="#dahan">[Dahan, U. (9. Dezember 2009)]</a>, <a href="#lilienthal">[Lilienthal, C. (2019)]</a>, <a href="#north">[North, D. (3. März 2016)]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_modelle_schneiden_und_voneinander_abgrenzen">5. Modelle schneiden und voneinander abgrenzen</h2>
+<h2 id="_strategic_design_1_modelle_schneiden_und_voneinander_abgrenzen">5. Strategic Design 1: Modelle schneiden und voneinander abgrenzen</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3051,16 +3078,19 @@ vergleichbar.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Modellkonsistenz</p>
+<p>Problem- vs. Lösungsraum</p>
 </li>
 <li>
-<p>Bounded Context, Context Map</p>
+<p>Subdomain</p>
 </li>
 <li>
-<p>Shared Kernel, Customer/Supplier Teams, Open Host Service <sup class="footnote" id="_footnote_6">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p>
+<p>Bounded Context</p>
 </li>
 <li>
-<p>Domain Event</p>
+<p>Core vs supporting vs generic</p>
+</li>
+<li>
+<p>Context Map</p>
 </li>
 </ul>
 </div>
@@ -3083,7 +3113,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <p>Verschiedene Anwendergruppen verwenden dieselben Begriffe auf unterschiedliche Art und Weise.</p>
 </li>
 <li>
-<p>Das Modell lässt sich nicht mehr von einem Entwickler-Team bewältigen.</p>
+<p>Das Modell lässt sich nicht mehr von einem Entwicklungsteam bewältigen.</p>
 </li>
 <li>
 <p>Das Modell wirkt widersprüchlich.</p>
@@ -3099,7 +3129,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN kennen Conway&#8217;s Law <sup class="footnote" id="_footnote_7">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup> und können es auf die (Kommunikations-)Struktur von Entwicklungs-Teams und Software-Artefakten anwenden.</p>
+<p>Die TN kennen Conway&#8217;s Law <a href="#conway">[Conway, M. E. (April 1968)]</a> und seine Auswirkungen auf Softwarearchitektur.</p>
 </li>
 <li>
 <p>Die TN verstehen, dass von mehreren Teams genutzte Modelle teamübergreifende Kommunikation und Koordination (z. B. beim Deployment) erfordern.</p>
@@ -3120,7 +3150,42 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-5-3">LZ 5-3: Modellgrenzen von Bounded Contexts in einer Context Map beschreiben können</h4>
+<h4 id="LZ-5-3">LZ 5-3: Vom Problem- zum Lösungsraum kommen können</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Die TN kennen die Begriffe "Problemraum" und "Lösungsraum" und den Unterschied.</p>
+</li>
+<li>
+<p>Die TN verstehen im Lösungsraum "Modell" und "Design" und wie sie entstehen.</p>
+</li>
+<li>
+<p>Die TN verstehen, wie im Problemraum die Domäne verstanden und in Subdomänen aufgeteilt werden kann.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass Sprache kontextabhängig ist und Sprache ein wichtiger Treiber für das Ableiten von Bounded Contexts aus Subdomänen ist.</p>
+</li>
+<li>
+<p>Die TN verstehen, wie Bounded Contexts aus Subdomänen abgeleitet werden können.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-4">LZ 5-4: Den Kern herausdestilieren</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Die TN wissen, dass man große Systeme nicht in allen Bereichen gleich gut designen kann und es deshalb wichtig ist, zu wissen, in welchen Bereichen mehr Wert auf das Design gelegt werden muss.</p>
+</li>
+<li>
+<p>Die TN kennen die Begriffe core, generic, supporting subdomain.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-5">LZ 5-5: Modellgrenzen von Bounded Contexts in einer Context Map beschreiben können</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -3141,27 +3206,57 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="LZ-5-4">LZ 5-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können</h4>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_5">5.3. Referenzen</h3>
+<div class="paragraph">
+<p><a href="#evans">[Evans, E. (2003)]</a>, <a href="#avram">[Avram, A., &amp; Marinescu, F. (2007)]</a>, <a href="#conway">[Conway, M. E. (April 1968)]</a>, <a href="#vernon">[Vernon, V. (2013)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_strategic_design_2_context_mapping">6. Strategic Design 2: Context Mapping</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 60 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 30 Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_6">6.1. Begriffe und Konzepte</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Die TN können die Angemessenheit eines Shared Kernels in einer konkreten Situation bewerten und ihn entwerfen.</p>
+<p>Shared Kernel, Customer/Supplier Teams, Open Host Service (vgl. Übersicht auf Seite 388 <a href="#evans">[Evans, E. (2003)]</a>)</p>
 </li>
 <li>
-<p>Die TN verstehen, dass ein Shared Kernel hilft, Modell-übersetzungen zu vermeiden.</p>
+<p>Domain Event als Kommunikationsmittel</p>
 </li>
 <li>
-<p>Die TN verstehen, dass ein Shared Kernel ein großes Maß an Koordination der beteiligten Teams erfordert.</p>
+<p>Anticorruption-Layer</p>
 </li>
 <li>
-<p>Die TN verstehen, dass die Teams bei der Arbeit am Shared Kernel gleichberechtigt sind.</p>
+<p>Separate Ways <a href="#vernon">[Vernon, V. (2013)]</a></p>
 </li>
 </ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_lernziele_6">6.2. Lernziele</h3>
+<div class="paragraph">
+<p>Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt werden kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.</p>
+</div>
 <div class="sect3">
-<h4 id="LZ-5-5">LZ 5-5: Schnittstellen bei Customer/Supplier Teams einsetzen können</h4>
+<h4 id="LZ-6-1">LZ 6-1: Schnittstellen bei Customer/Supplier Teams einsetzen können</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -3190,7 +3285,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-5-6">LZ 5-6: Ein System als Open Host Service (OHS) konzipieren können</h4>
+<h4 id="LZ-6-2">LZ 6-2: Ein System als Open Host Service (OHS) konzipieren können</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -3209,7 +3304,58 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 </div>
 </div>
 <div class="sect3">
-<h4 id="LZ-5-7">LZ 5-7: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können</h4>
+<h4 id="LZ-6-3">LZ 6-3: Das eigene Modell von äußeren Einflüssen isolieren können</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.</p>
+</li>
+<li>
+<p>Die TN können die Schnittstellen-Patterns (vgl. <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>) einsetzen, um ein Anticorruption Layer zu konstruieren.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-6-4">LZ 6-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Die TN können die Angemessenheit eines Shared Kernels in einer konkreten Situation bewerten und ihn entwerfen.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass ein Shared Kernel hilft, Modellübersetzungen zu vermeiden.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass ein Shared Kernel ein großes Maß an Koordination der beteiligten Teams erfordert.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass die Teams bei der Arbeit am Shared Kernel gleichberechtigt sind.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-6-5">LZ 6-5: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Die TN können die Koordinierungs-Kosten eines gemeinsamen Modells dem Overhead bei getrennten Modellen gegenüberstellen.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass die Aufteilung eines Modells entlang einer sinnvollen Grenze geschehen muss.</p>
+</li>
+<li>
+<p>Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leichter zu wahren ist.</p>
+</li>
+<li>
+<p>Die TN sind in der Lage, die verbleibenden Funktionen können zu duplizieren oder miteinander zu integrieren.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-6-6">LZ 6-6: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -3236,101 +3382,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 </div>
 </li>
 <li>
-<p>Die TN sind in der Lage einen Event Store <sup class="footnote" id="_footnote_8">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup> einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_referenzen_5">5.3. Referenzen</h3>
-<div class="paragraph">
-<p><a href="#evans">[Evans, E. (2003)]</a>, <a href="#avram">[Avram, A., &amp; Marinescu, F. (2007)]</a>, <a href="#conway">[Conway, M. E. (April 1968)]</a>, <a href="#vernon">[Vernon, V. (2013)]</a></p>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_lokale_modellkonsistenz_wahren">6. Lokale Modellkonsistenz wahren</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 60 Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 30 Min.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="sect2">
-<h3 id="_begriffe_und_konzepte_6">6.1. Begriffe und Konzepte</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Anticorruption-Layer</p>
-</li>
-<li>
-<p>Continuous Integration</p>
-</li>
-<li>
-<p>Separate Ways <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_lernziele_6">6.2. Lernziele</h3>
-<div class="paragraph">
-<p>Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt werden kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.</p>
-</div>
-<div class="sect3">
-<h4 id="LZ-6-1">LZ 6-1: Verstehen, wie Continuous Integration (CI) <sup class="footnote" id="_footnote_10">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> zu lokaler Modellkonsistenz beiträgt</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Die TN kennen die Vorteile davon, CI innerhalb eines Bounded Contexts stattfinden zu lassen, und können dies von Continuous Deployment abgrenzen.</p>
-</li>
-<li>
-<p>Die TN verstehen, dass Continuous Integration einer Fragmentierung des Modells durch verschiedene Entwickler entgegenwirkt.</p>
-</li>
-<li>
-<p>Die TN verstehen, dass CI die Kommunikation über das Modell und das Verständnis des Modells durch das Team fördert.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="LZ-6-2">LZ 6-2: Das eigene Modell von äußeren Einflüssen isolieren können</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.</p>
-</li>
-<li>
-<p>Die TN können die Schnittstellen-Patterns <sup class="footnote" id="_footnote_11">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup> einsetzen, um ein Anticorruption Layer zu konstruieren.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="LZ-6-3">LZ 6-3: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways), unter Berücksichtigung der Aspekte aus Block 5</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Die TN können die Koordinierungs-Kosten eines gemeinsamen Modells dem Overhead bei getrennten Modellen gegenüberstellen.</p>
-</li>
-<li>
-<p>Die TN verstehen, dass die Aufteilung eines Modells entlang einer sinnvollen Grenze geschehen muss.</p>
-</li>
-<li>
-<p>Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leichter zu wahren ist.</p>
-</li>
-<li>
-<p>Die TN sind in der Lage, die verbleibenden Funktionen können zu duplizieren oder miteinander zu integrieren.</p>
+<p>Die TN sind in der Lage einen Event Store (vgl. Seite 539 <a href="#vernon">[Vernon, V. (2013)]</a>) einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.</p>
 </li>
 </ul>
 </div>
@@ -3346,7 +3398,128 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_referenzen_7">Referenzen</h2>
+<h2 id="_optional_verwandte_themen">7. Optional: Verwandte Themen</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: frei</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: frei</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und von Trainer:innen nach Bedarf auch gelehrt werden können.</p>
+</div>
+<div class="sect2">
+<h3 id="_empfehlungen">7.1. Empfehlungen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>"Refactoring towards deeper insights" an einem Fallbeispiel verständlich machen</p>
+</li>
+<li>
+<p>"Large Scale Structures" über das Beispiel verständlich machen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_begriffe_konzepte_mögliche_ideen">7.2. Begriffe, Konzepte, mögliche Ideen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Tools:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Bounded Context Canvas</p>
+</li>
+<li>
+<p>User Story Mapping</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Implementierung:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ein konkretes Implementationsbeispiel zeigen</p>
+</li>
+<li>
+<p>CRC Cards</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Architektur:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Werkzeug- und Materialansatz (WAM)</p>
+</li>
+<li>
+<p>Event Sourcing</p>
+</li>
+<li>
+<p>CQRS</p>
+</li>
+<li>
+<p>Legacy-Software mit DDD modernisieren</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Organisation und Strategie:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Team Topologies</p>
+</li>
+<li>
+<p>Wardley Mapping</p>
+</li>
+<li>
+<p>Systemische Organisationstheorie</p>
+</li>
+<li>
+<p>Business Model Canvas &amp; Value Proposition</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Kommunikation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Wie überzeuge ich Kollegen und Chefinnen von DDD?</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_7">7.3. Referenzen</h3>
+<div class="paragraph">
+<p><a href="#beck">[Beck, K., &amp; Cunningham, W. (1989)]</a>, <a href="#dahan">[Dahan, U. (9. Dezember 2009)]</a>, <a href="#evans">[Evans, E. (2003)]</a>, <a href="#fowler2011">[Fowler, M. (14. Juli 2011)]</a>, <a href="#kuhl">[Kühl, S. &amp; Muster, J. (2018)]</a>, <a href="#lilienthal2023">[Lilienthal, C. &amp; Schwentner, H. (2023)]</a>, <a href="#mannsrising2015">[Manns, M. L. &amp; Rising, L.  (2015)]</a>, <a href="#osterwalder2010">[Osterwalder, A. &amp; Pigneur, Y. (2010)]</a>, <a href="#osterwalder2013">[Osterwalder, A. (2013)]</a>, <a href="#SkeltonPais2019">[Skelton M. &amp; Pais, M. (2019)]</a>, <a href="#vernon">[Vernon, V. (2013)]</a>, <a href="#wardley">[Wardley, S. (2020)]</a>, <a href="#zullighoven">[Züllighoven, H. (1998)]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_referenzen_8">Referenzen</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Dieser Abschnitt enthält Quellenangaben, die ganz oder teilweise im Curriculum referenziert werden.</p>
@@ -3357,7 +3530,10 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="avram"></a>[Avram, A., &amp; Marinescu, F. (2007)] Domain-Driven Design Quickly. InfoQ Enterprise Software Development Series.</p>
+<p><a id="adzic"></a>[Adzic, G. (2012)] <strong>Impact Mapping</strong>. Provoking Thoughts.</p>
+</li>
+<li>
+<p><a id="avram"></a>[Avram, A., &amp; Marinescu, F. (2007)] <strong>Domain-Driven Design Quickly</strong>. InfoQ Enterprise Software Development Series.</p>
 </li>
 </ul>
 </div>
@@ -3367,10 +3543,13 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="beck"></a>[Beck, K., &amp; Cunningham, W. (1989)]  A laboratory for teaching object oriented thinking. OOPSLA '89 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.</p>
+<p><a id="beck"></a>[Beck, K., &amp; Cunningham, W. (1989)] <strong>A laboratory for teaching object oriented thinking</strong>. OOPSLA '89 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.</p>
 </li>
 <li>
-<p><a id="brandolini"></a>[Brandolini, A. (18. November 2013)]  Introducing Event Storming. Von <a href="http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html" class="bare">http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html</a> abgerufen</p>
+<p><a id="beck2001"></a>[Beck, K. et al. (2001)] <strong>Manifesto for Agile Software Development</strong>. Von <a href="https://agilemanifesto.org" class="bare">https://agilemanifesto.org</a>. abgerufen</p>
+</li>
+<li>
+<p><a id="brandolini"></a>[Brandolini, A. (18. November 2013)]  <strong>Introducing Event Storming</strong>. Von <a href="http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html" class="bare">http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html</a> abgerufen</p>
 </li>
 </ul>
 </div>
@@ -3380,10 +3559,10 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="cockburn"></a>[Cockburn, A. (2012)] Hexagonal Architecture. Von <a href="http://alistair.cockburn.us/Hexagonal+architecture" class="bare">http://alistair.cockburn.us/Hexagonal+architecture</a> abgerufen</p>
+<p><a id="cockburn"></a>[Cockburn, A. (2012)] <strong>Hexagonal Architecture</strong>. Von <a href="http://alistair.cockburn.us/Hexagonal+architecture" class="bare">http://alistair.cockburn.us/Hexagonal+architecture</a> abgerufen</p>
 </li>
 <li>
-<p><a id="conway"></a>[Conway, M. E. (April 1968)] How do Committees Invent? Datamation 14.</p>
+<p><a id="conway"></a>[Conway, M. E. (April 1968)] <strong>How do Committees Invent?</strong> Datamation 14.</p>
 </li>
 </ul>
 </div>
@@ -3393,7 +3572,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="dahan"></a>[Dahan, U. (9. Dezember 2009)] Clarified CQRS. Von <a href="http://udidahan.com/2009/12/09/clarified-cqrs/" class="bare">http://udidahan.com/2009/12/09/clarified-cqrs/</a> abgerufen</p>
+<p><a id="dahan"></a>[Dahan, U. (9. Dezember 2009)] <strong>Clarified CQRS</strong>. Von <a href="http://udidahan.com/2009/12/09/clarified-cqrs/" class="bare">http://udidahan.com/2009/12/09/clarified-cqrs/</a> abgerufen</p>
 </li>
 </ul>
 </div>
@@ -3403,7 +3582,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="evans"></a>[Evans, E. (2003)] Domain-Driven Design: Tacking Complexity In the Heart of Software. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.</p>
+<p><a id="evans"></a>[Evans, E. (2003)] <strong>Domain-Driven Design: Tacking Complexity In the Heart of Software</strong>. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.</p>
 </li>
 </ul>
 </div>
@@ -3413,10 +3592,10 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="fowler2002"></a>[Fowler, M. (November 2002)] Patterns of Enterprise Application Architecture. Addison Wesley.</p>
+<p><a id="fowler2002"></a>[Fowler, M. (2002)] <strong>Patterns of Enterprise Application Architecture</strong>. Addison Wesley.</p>
 </li>
 <li>
-<p><a id="fowler2011"></a>[Fowler, M. (14. Juli 2011)] CQRS. Von <a href="http://martinfowler.com/bliki/CQRS.html" class="bare">http://martinfowler.com/bliki/CQRS.html</a> abgerufen</p>
+<p><a id="fowler2011"></a>[Fowler, M. (14. Juli 2011)] <strong>CQRS</strong>. Von <a href="http://martinfowler.com/bliki/CQRS.html" class="bare">http://martinfowler.com/bliki/CQRS.html</a> abgerufen</p>
 </li>
 </ul>
 </div>
@@ -3426,7 +3605,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="gamma"></a>[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)] Design Patterns. Elements of Reusable Object-Oriented Software. Addison-Wesley Professional Computing Series.</p>
+<p><a id="gamma"></a>[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)] <strong>Design Patterns. Elements of Reusable Object-Oriented Software</strong>. Addison-Wesley Professional Computing Series.</p>
 </li>
 </ul>
 </div>
@@ -3436,7 +3615,20 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="hruschka"></a>[Hruschka, P. (2014)] Business Analysis und Requirements Engineering. Carl Hanser, München.</p>
+<p><a id="hofer"></a>[Hofer, S. &amp; Schwentner, H. (2022)] <strong>Domain Storytelling</strong>. Addison-Wesley.</p>
+</li>
+<li>
+<p><a id="hruschka"></a>[Hruschka, P. (2019)] <strong>Business Analysis und Requirements Engineering</strong>. Carl Hanser, München.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>K</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="kuhl"></a>[Kühl, S. &amp; Muster, J. (2018)] <strong>Designing Organizations: A Very Brief Introduction</strong>. Organizational Dialogue Press.</p>
 </li>
 </ul>
 </div>
@@ -3446,10 +3638,13 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="liebherr"></a>[Liebherr, K., Holland, I., &amp; Riel, A. (1988)] Object-oriented programming: an objective sense of style. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.</p>
+<p><a id="liebherr"></a>[Liebherr, K., Holland, I., &amp; Riel, A. (1988)] <strong>Object-oriented programming: an objective sense of style</strong>. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.</p>
 </li>
 <li>
-<p><a id="lilienthal"></a>[Lilienthal, C. (December 2015)] Langlebige Software-Architekturen. dpunkt.verlag.</p>
+<p><a id="lilienthal"></a>[Lilienthal, C. (2019)] <strong>Langlebige Software-Architekturen</strong>. dpunkt.verlag.</p>
+</li>
+<li>
+<p><a id="lilienthal2023"></a>[Lilienthal, C. &amp; Schwentner, H. (2023)] <strong>Domain-Driven Transformation</strong>. dpunkt.verlag.</p>
 </li>
 </ul>
 </div>
@@ -3459,7 +3654,10 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="martin"></a>[Martin, R. C. (2002)] Agile Software Development, Principles, Patterns, and Practices. Prentice Hall Computer.</p>
+<p><a id="mannsrising2015"></a>[Manns, M. L. &amp; Rising, L.  (2015)]. <strong>More Fearless Change</strong>. Boston: Addison-Wesley.</p>
+</li>
+<li>
+<p><a id="martin"></a>[Martin, R. C. (2002)] <strong>Agile Software Development</strong>, Principles, Patterns, and Practices. Prentice Hall Computer.</p>
 </li>
 </ul>
 </div>
@@ -3469,7 +3667,30 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="north"></a>[North, D. (3. März 2016)] Introducing BDD . Von <a href="http://dannorth.net/introducing-bdd/" class="bare">http://dannorth.net/introducing-bdd/</a> abgerufen</p>
+<p><a id="north"></a>[North, D. (3. März 2016)] <strong>Introducing BDD</strong>. Von <a href="http://dannorth.net/introducing-bdd/" class="bare">http://dannorth.net/introducing-bdd/</a> abgerufen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>O</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="osterwalder2010"></a>[Osterwalder, A. &amp; Pigneur, Y. (2010)] <strong>Business Model Generation</strong>. Wiley.</p>
+</li>
+<li>
+<p><a id="osterwalder2013"></a>[Osterwalder, A. (2013)] <strong>Value Proposition Design: How to Create Products and Services Customers Want</strong>. Wiley.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>P</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="patton"></a>[Patton, J. (2014)] <strong>User Story Mapping: Discover the Whole Story, Build the Right Product</strong>. Sebastopol, CA: O&#8217;Reilly.</p>
 </li>
 </ul>
 </div>
@@ -3479,10 +3700,7 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="schulz2010"></a>[Schulz von Thun, F. (2010)] Miteinander Reden: 1. Rowohlt Taschenbuch Verlag.</p>
-</li>
-<li>
-<p><a id="schulz2013"></a>[Schulz von Thun, F. (2013)] Miteinander Reden: 3. Rowohlt Taschenbuch Verlag.</p>
+<p><a id="SkeltonPais2019"></a>[Skelton M. &amp; Pais, M. (2019)] <strong>Team Topologies: Organizing Business and Technology Teams for Fast Flow</strong>. Portland, OR: IT Revolution.</p>
 </li>
 <li>
 <p><a id="stenberg"></a>[Stenberg, J. (24. Februar 2015)] Behaviour-Driven Development Combined with Domain-Driven Design. Von <a href="http://www.infoq.com/news/2015/02/bdd-ddd" class="bare">http://www.infoq.com/news/2015/02/bdd-ddd</a> abgerufen</p>
@@ -3495,7 +3713,26 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="vernon"></a>[Vernon, V. (2013)] Implementing Domain-Driven Design. Addison-Wesley Longman Publishing Co., Inc.</p>
+<p><a id="vernon"></a>[Vernon, V. (2013)] <strong>Implementing Domain-Driven Design</strong>. Addison-Wesley.</p>
+</li>
+<li>
+<p><a id="vernon2016"></a>[Vernon, V. (2016)] <strong>Domain-Driven Design Distilled</strong>. Addison-Wesley.</p>
+</li>
+<li>
+<p><a id="vernon2017"></a>[Vernon, V. (2017)] <strong>Domain-Driven Design kompakt</strong>. dPunkt.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>W</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="wardley"></a>[Wardley, S. (2020)] <strong>Wardley Maps: Topographical Intelligence in Business</strong>. Von <a href="https://github.com/HiredThought/wardley-maps-ebook/raw/main/bin/Wardley%20Maps%20-%20Simon%20Wardley.pdf" class="bare">https://github.com/HiredThought/wardley-maps-ebook/raw/main/bin/Wardley%20Maps%20-%20Simon%20Wardley.pdf</a> abgerufen</p>
+</li>
+<li>
+<p><a id="wynne"></a>[Wynne, M. (8. Dezember 2015)] <strong>Introducing Example Mapping</strong>.Von <a href="https://cucumber.io/blog/bdd/example-mapping-introduction/" class="bare">https://cucumber.io/blog/bdd/example-mapping-introduction/</a> aufgerufen.</p>
 </li>
 </ul>
 </div>
@@ -3505,53 +3742,17 @@ Zudem vermittelt er Strategien, um mehrere Modelle, und die daraus erwachsenden 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="zullighoven"></a>[Züllighoven, H. (1998)] Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz. dpunkt.</p>
+<p><a id="zullighoven"></a>[Züllighoven, H. (1998)] <strong>Das objektorientierte Konstruktionshandbuch - nach dem Werkzeug und Material-Ansatz</strong>. dpunkt.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. Vgl.: Continuous Integration <a href="#evans">[evans]</a>
-</div>
-<div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. Vgl.: Continuous Integration <a href="#evans">[Evans, E. (2003)]</a>
-</div>
-<div class="footnote" id="_footnotedef_2">
-<a href="#_footnoteref_2">2</a>. Vgl.: Observer <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>
-</div>
-<div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. Vgl.: Übersicht auf Seite 65 <a href="#evans">[Evans, E. (2003)]</a>
-</div>
-<div class="footnote" id="_footnotedef_4">
-<a href="#_footnoteref_4">4</a>. Vgl.: Kapitel 10 <a href="#hruschka">[Hruschka, P. (2014)]</a>
-</div>
-<div class="footnote" id="_footnotedef_5">
-<a href="#_footnoteref_5">5</a>. Vgl.: Adapter <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>
-</div>
-<div class="footnote" id="_footnotedef_6">
-<a href="#_footnoteref_6">6</a>. Vgl.: <a href="#stenberg">[Stenberg, J. (24. Februar 2015)]</a>
-</div>
-<div class="footnote" id="_footnotedef_7">
-<a href="#_footnoteref_7">7</a>. Vgl.: Übersicht auf Seite 388 <a href="#evans">[Evans, E. (2003)]</a>
-</div>
-<div class="footnote" id="_footnotedef_8">
-<a href="#_footnoteref_8">8</a>. Cf.: <a href="#conway">[Conway, M. E. (April 1968)]</a>
-</div>
-<div class="footnote" id="_footnotedef_9">
-<a href="#_footnoteref_9">9</a>. Vgl.: Seite 539 <a href="#vernon">[Vernon, V. (2013)]</a>
-</div>
-<div class="footnote" id="_footnotedef_10">
-<a href="#_footnoteref_10">10</a>. Vgl.: <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>
-</div>
-</div>
 <div id="footer">
 <div id="footer-text">
- 2017.1-DE<br>
-Last updated 2022-05-20 14:42:07 UTC
+ 2023.1-rev0-DE<br>
+Last updated 2023-05-10 06:49:08 UTC
 </div>
 </div>
 </body>
