@@ -166,7 +166,7 @@ possess domain knowledge.
 * The course participants can apply the observation techniques of “field observation” and “apprenticing” (cf. <<hruschka>>) as tools for revealing unconscious domain knowledge:
 ** Field observation
 *** Analysis as a silent observer
-*** Working processes are recording in writing
+*** Working processes are recorded in writing
 *** In rare cases, questions to the domain experts to verify comprehension
 ** Apprenticing
 *** Is an expansion of field observation
