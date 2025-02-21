@@ -7,4 +7,8 @@ curriculum-ddd.iml
 .settings/
 .project
 learning-objectives.adoc
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
 .vscode/
