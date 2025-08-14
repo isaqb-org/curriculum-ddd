@@ -48,6 +48,13 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 ** Wenn Events trotz vorhandener Abhängigkeiten (z. B. innerhalb eines Bounded Contexts) eingesetzt werden, besteht das Risiko, dass dadurch die Abhängigkeiten nur versteckt werden und zur Laufzeit zu schwer nachvollziehbaren Kontrollflüssen führen.
 * Die TN sind in der Lage einen Event Store (vgl. Seite 539 <<vernon>>) einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
 
+[[LZ-6-7]]
+==== LZ 6-7: Upstream und Downstream erkennen und einbeziehen können
+* Die TN verstehen, dass eine Downstream Gruppe von den Ergebnissen einer Upstream Gruppe abhängig ist
+* Die TN verstehen, dass eine Upstream Gruppe auch ohne die Downstream Gruppe erfolgreich sein kann
+* Die TN sind in der Lage den Sachverhalt auf einer Context Map zum Ausdruck zu bringen
+* Die TN kennen unterschiedliche Beispiele wie eine solche Abhängigkeit sich ausdrücken kann
+* Die TN verstehen wie die Domäne Einfluss auf die Entstehung von Upstream und Downstream Gruppen nimmt
 
 // end::DE[]
 
@@ -97,5 +104,13 @@ This section teaches approaches with which the consistency within a model can be
 * The course participants are able to assess opportunities and risks of Domain Events in this context:
 ** If events are used despite existing dependencies (e.g., within a Bounded Context), there is a risk that the dependencies will only be hidden, which could lead to control flows that are difficult to understand at runtime.
 * The course participants are able to use an event store (cf.: page 539 <<vernon>>) to allow Subscribers to reprocess events that were incorrectly processed.
+
+[[LG-6-7]]
+==== LG 6-7: Be able to recognize upstream and downstream relationships and their implications
+* The course participants understand that a downstream group is dependent on the results of an upstream group
+* The course participants understand that an upstream group can succeed without the downstream group
+* The course participants can communicate upstream and downstream Relationships on a context map
+* The course participants know examples how an upstream and downstream relationship might look like in practice
+* The course participants understand the role of the domain in the creation of upstream and downstream relationships
 
 // end::EN[]
