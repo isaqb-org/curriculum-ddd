@@ -4,6 +4,7 @@
 |===
 
 === Begriffe und Konzepte
+* Upstream und Downstream
 * Shared Kernel, Customer/Supplier Teams, Open Host Service (vgl. Übersicht auf Seite 388 <<evans>>)
 * Domain Event als Kommunikationsmittel
 * Anticorruption-Layer
@@ -17,6 +18,7 @@
 |===
 
 === Terms and Principles
+* Upstream and Downstream
 * Shared Kernel, Customer/Supplier Teams, Open Host Service (cf. overview on page 388 <<evans>>)
 * Domain Event as means of communication
 * Anticorruption-Layer
