@@ -37,6 +37,7 @@ This section contains references that are cited in the curriculum.
 **E**
 
 - [[[evans,Evans, E. (2003)]]] *Domain-Driven Design: Tacking Complexity In the Heart of Software*. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.
+- [[[evans,Evans, E. (2015)]]] *Domain-Driven Design Reference: Definitions and Pattern Summaries*. Von https://www.domainlanguage.com/ddd/reference/ abgerufen
 
 **F**
 
