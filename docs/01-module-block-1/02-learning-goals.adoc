@@ -62,7 +62,8 @@ The course participants also obtain a detailed insight into the various componen
 
 [[LG-1-3]]
 ==== LG 1-3: Know and be able to explain the building blocks of domain-driven design
-* The course participants understand the fundamental building blocks of domain-driven design. o Value Objects represent elementary value types from the domain. They can only
+* The course participants understand the fundamental building blocks of domain-driven design.
+** Value Objects represent elementary value types from the domain. They can only
 contain other Value Objects. Value Objects have no identity, but are comparable.
 ** Entities represent things in the domain. They can contain Value Objects and other
 Entities. Entities have an identity.
