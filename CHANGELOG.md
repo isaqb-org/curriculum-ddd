@@ -1,3 +1,12 @@
+# Changes in 2023.1-rev1
+Fixed typos and references, improved English translation, and clarified terms:
+- fixed [#9](https://github.com/isaqb-org/curriculum-ddd/issues/9)
+- fixed [#12](https://github.com/isaqb-org/curriculum-ddd/issues/12)
+- fixed [#18](https://github.com/isaqb-org/curriculum-ddd/issues/18)
+- fixed [#20](https://github.com/isaqb-org/curriculum-ddd/issues/20)
+- fixed [#22](https://github.com/isaqb-org/curriculum-ddd/issues/22)
+- fixed [#24](https://github.com/isaqb-org/curriculum-ddd/issues/24)
+
 # New in 2023.1
 
 ## Changes in "1. Domain, model, and ubiquitous language"
@@ -14,7 +23,7 @@
 - Changed learning goal 2-7: "Get an overview of Collaborative Modeling, its methods, and how it relates to DDD."
   - Focus is on common values and principles of Collaborative Modeling techniques
   - Event Storming is only one possible methods among others (Domain Story Telling, User Story Mapping)
-  - Facilitiation of Event Storming is now part of learning goal 2-9
+  - Facilitation of Event Storming is now part of learning goal 2-9
 - Added learning goal 2-9: "Be able to conduct a collaborative modeling workshop"
 - Added learning goal 2-10: "Understand agility as a foundation of DDD"
 
@@ -29,8 +38,8 @@
 - Moved terms and principles to chapter 7:
   - Werkzeug- und Materialansatz (WAM)
 - Changed learning goal 4-1: "Be able to design a ports & adapter architecture for the domain model"
-  - Focus on ports & adapter as a collection of architecural approaches
-  - Hexagonal architecure is only one style among others (Onion, Clean)
+  - Focus on ports & adapter as a collection of architectural approaches
+  - Hexagonal architecture is only one style among others (Onion, Clean)
   - Remove details regarding hexagonal architecture
   - Remove CQRS: Moved to chapter 7
 - Changed learning goal 4-2: "Be able to formulate correlations and distinctions between DDD and BDD"
@@ -51,7 +60,7 @@
   - Core vs supporting vs generic
 - Changed ID of learning goal 5-3 to 5-5: "Be able to describe model boundaries of Bounded Contexts in a Context Map"
 - Changed ID of learning goal 5-7 to 5-6: "Be able to use Domain Events as a means of communication between Bounded Contexts"
-- Changed learing goal 5-2: Conway's Law has only descriptive properties
+- Changed learning goal 5-2: Conway's Law has only descriptive properties
 - Removed learning goal 5-4: Moved to learning goal 6-4
 - Removed learning goal 5-5: Moved to learning goal 6-1
 - Removed learning goal 5-6: Moved to learning goal 6-2
