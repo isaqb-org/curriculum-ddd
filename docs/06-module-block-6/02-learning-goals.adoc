@@ -41,7 +41,7 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 
 [[LZ-6-6]]
 ==== LZ 6-6: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können
-* Die TN verstehen, dass Domain Events den Subscriber vom Publisher entkoppeln.
+* Die TN verstehen, dass Domain Events den Publisher vom Subscriber entkoppeln.
 ** Insbesondere verstehen die TN, dass dies für den Publisher bedeutet, dass es für ihn nicht relevant ist, wer seine Events verarbeitet.
 * Die TN sind in der Lage Domain Events als Kommunikationsmittel zwischen Bounded Contexts zu entwerfen.
 * Die TN sind in der Lage, Chancen und Risiken von Domain Events in diesem Zusammenhang abzuwägen:
@@ -91,7 +91,7 @@ This section teaches approaches with which the consistency within a model can be
 
 [[LG-6-6]]
 ==== LG 6-6: Be able to use Domain Events as a means of communication between Bounded Contexts
-* The course participants understand that Domain Events uncouple the Subscriber from the Publisher.
+* The course participants understand that Domain Events decouple the Publisher from the Subscriber.
 ** In particular, the course participants understand that, for the Publisher, this means that it is not relevant for him who processes his events.
 * The course participants are able to create Domain Events as a means of communication between Bounded Contexts.
 * The course participants are able to assess opportunities and risks of Domain Events in this context:
