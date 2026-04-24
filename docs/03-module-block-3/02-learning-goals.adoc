@@ -4,7 +4,7 @@
 Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodell die entsprechenden fachlichen Klassen abzuleiten.
 
 [[LZ-3-1]]
-==== LZ 3-1: Ein Domänenmodell um technisch motivierte Bausteine von DDD erweitern können
+==== LZ 3-1: Ein Domänenmodell um technisch motivierte Bausteine des Tactical Design erweitern können
 * Die TN können für ein vorliegendes Domänenmodell bestehend aus Entities, Value Objects und Services weitere Bausteine bestimmen:
 ** Factories zur Erzeugung von Entities
 ** Repositories für die Verwaltung von Entities
@@ -33,7 +33,7 @@ Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodel
 This section teaches methods and approaches to derive the corresponding domain classes from a domain model.
 
 [[LG-3-1]]
-==== LG 3-1: Be able to extend a domain model with technical building blocks from DDD
+==== LG 3-1: Be able to extend a domain model with technically motivated building blocks of tactical design
 * The course participants specify additional components for an existing domain model consisting of Entities, Value Objects, and Services:
 ** Factories to create Entities
 ** Repositories to manage Entities
