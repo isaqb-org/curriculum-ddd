@@ -61,7 +61,7 @@ This section teaches approaches with which the consistency within a model can be
 ** Stability and documentation of the interface are important for integration
 ** Jointly developed acceptance tests help to stabilize the interface
 ** The prerequisite for a functioning relationship is that the supplier has an interest in the customer actually using the interface
-* The course participants know that, in a customer relationship, the customer formulates the requirements on the supplier's interface.
+* The course participants know that, in a customer/supplier relationship, the customer formulates the requirements on the supplier's interface.
 
 [[LG-6-2]]
 ==== LG 6-2: Be able to design a system as an open host service (OHS)
