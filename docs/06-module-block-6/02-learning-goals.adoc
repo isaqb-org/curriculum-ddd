@@ -80,7 +80,7 @@ This section teaches approaches with which the consistency within a model can be
 * The course participants can design and assess the suitability of a shared kernel for a specific situation.
 * The course participants understand that a shared kernel helps to avoid model translations.
 * The course participants understand that a shared kernel requires a high degree of coordination among the teams involved.
-* The course participants understand that the teams are equally qualified to work on the shared kernel.
+* The course participants understand that the teams collaborate on the shared kernel as equals.
 
 [[LG-6-5]]
 ==== LG 6-5: Understand the circumstances in which it is appropriate to divide the model (Separate Ways)
