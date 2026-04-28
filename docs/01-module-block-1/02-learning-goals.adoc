@@ -20,12 +20,12 @@ Zudem erhalten die Teilnehmer:innen einen detaillierten Einblick in die verschie
 * Die TN verstehen, dass sich die Ubiquitous Language im Dialog von Entwicklungsteam und Fachbereich weiterentwickelt.
 
 [[LZ-1-3]]
-==== LZ 1-3: Die Bausteine von Domain Driven Design kennen und erklären können
-* Die TN verstehen die grundlegenden Bausteine von Domain Driven Design.
+==== LZ 1-3: Die Bausteine des Tactical Design kennen und erklären können
+* Die TN verstehen die grundlegenden Bausteine des Tactical Design.
 ** Value Objects stellen elementare Wert-Typen aus der fachlichen Welt dar. Sie können nur andere Value Objects enthalten. Value Objects haben keine Identität, sind jedoch
 vergleichbar.
 ** Entities repräsentieren Dinge der fachlichen Welt. Sie können Value Objects und andere Entities enthalten. Entities haben eine Identität.
-* Die TN verstehen die weiterführenden Bausteine von Domain Driven Design.
+* Die TN verstehen die weiterführenden Bausteine des Tactical Design.
 ** **Modules** als statische Gruppierungsmechanismen für Code-Artefakte.
 ** **Services** kapseln eigenständige Funktionen, die sich nicht einzelnen Entities zuordnen lassen. Sie entkoppeln Funktionalität von Zuständen, und sollten deswegen selbst zustandslos sein. Sie ermöglichen unter anderem das Erfassen von fachlichen Prozessen in einem Domänenmodell.
 ** **Aggregates** dienen der Gruppierung von Entities. Der äußere Zugriff geschieht ausschließlich über ein global identifizierbares Aggregate Root. Das Aggregate Root ist zudem für die Einhaltung von Invarianten innerhalb des Aggregates verantwortlich. Dies erzielt eine lose Kopplung in der Benutzung von Aggregates, versteckt die enthaltenen Entities vor äußerem Zugriff und erleichtert so das Einhalten von Invarianten. Der Lebenszyklus aller enthaltenen Entities wird durch den Lebenszyklus des Aggregate Roots bestimmt.
@@ -34,8 +34,8 @@ vergleichbar.
 ** **Domain Events** unterstützen die Verbreitung von Informationen über das Auftreten von fachlichen Ereignissen. Fachliche Ereignisse werden von Aggregates oder Entities ausgelöst und über ein Publisher/Subscriber-Pattern (vgl. Observer <<gamma>>) an angemeldete Klienten propagiert.
 
 [[LZ-1-4]]
-==== LZ 1-4: Die Zusammenhänge zwischen den Bausteinen kennen und erklären können
-* Die TN sind in der Lage die Bausteine in Beziehung zu setzen und sinnvoll miteinander zu kombinieren (vgl. Übersicht auf Seite 65 <<evans>>]).
+==== LZ 1-4: Die Zusammenhänge zwischen den Bausteinen des Tactical Design kennen und erklären können
+* Die TN sind in der Lage, die Bausteine des Tactical Design in Beziehung zu setzen und sinnvoll miteinander zu kombinieren (vgl. Übersicht auf Seite 65 <<evans>>]).
 
 // end::DE[]
 
@@ -61,12 +61,11 @@ The course participants also obtain a detailed insight into the various componen
 * The participants understand that the Ubiquitous Language evolves in a dialog between development team and domain experts.
 
 [[LG-1-3]]
-==== LG 1-3: Know and be able to explain the building blocks of domain-driven design
-* The course participants understand the fundamental building blocks of domain-driven design. o Value Objects represent elementary value types from the domain. They can only
-contain other Value Objects. Value Objects have no identity, but are comparable.
-** Entities represent things in the domain. They can contain Value Objects and other
-Entities. Entities have an identity.
-* The course participants understand the additional building blocks of domain-driven design.
+==== LG 1-3: Know and be able to explain the building blocks of tactical design
+* The course participants understand the fundamental building blocks of tactical design.
+** Value Objects represent elementary value types from the domain. They can only contain other Value Objects. Value Objects have no identity, but are comparable.
+** Entities represent things in the domain. They can contain Value Objects and other Entities. Entities have an identity.
+* The course participants understand the additional building blocks of tactical design.
 ** **Modules** as static grouping mechanisms for code artifacts.
 ** **Services** encapsulate independent functions that cannot be allocated to individual Entities. They decouple functionality from states and should therefore be stateless. They enable, among other things, domain processes to be documented in a domain model.
 ** **Aggregates** are used to group Entities. External access exclusively takes place via a globally identifiable Aggregate Root. The Aggregate Root is also responsible for the compliance of invariants within the Aggregate. This achieves a loose coupling when using Aggregates, hides the contained Entities from external access, and facilitates the compliance of invariants. The lifecycle of all contained Entities is thus determined by the lifecycle of the Aggregate Root.
@@ -75,7 +74,7 @@ Entities. Entities have an identity.
 ** **Domain Events** support the sharing of information about the occurrence of domain-related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern (cf. Observer <<gamma>>) to registered clients.
 
 [[LG-1-4]]
-==== LG 1-4: Know and be able to explain the connections between the building blocks
-* The course participants are able to create a relationship between the building blocks and combine them in a sensible manner (cf. overview on page 65 <<evans>>).
+==== LG 1-4: Know and be able to explain the connections between the building blocks of tactical design
+* The course participants are able to relate the building blocks of tactical design to one another and combine them in a sensible manner (cf. overview on page 65 <<evans>>).
 
 // end::EN[]
