@@ -10,9 +10,10 @@ Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodel
 ** Repositories für die Verwaltung von Entities
 ** Aggregates, um Entities und Value Types zu kapseln
 
+
 [[LZ-3-2]]
-==== LZ 3-2: Schnittstellen für fachliche Klassen modellieren können
-* Die TN können die Entwurfsprinzipien und Heuristiken aus dem Foundation Level für den DDD-Entwurf einschätzen und anwenden.
+==== LZ 3-2: Fachliche Klassen modellieren können
+* Die TN können die Entwurfsprinzipien aus dem Foundation Level für den DDD-Entwurf einschätzen und anwenden.
 
 
 [[LZ-3-3]]
@@ -41,8 +42,8 @@ This section teaches methods and approaches to derive the corresponding domain c
 
 
 [[LG-3-2]]
-==== LG 3-2: Be able to model interfaces for domain classes
-* The course participants can assess and apply the design principles and heuristics from the Foundation Level to the DDD design.
+==== LG 3-2: Be able to model domain classes
+* The course participants can assess and apply the design principles from the Foundation Level to the DDD design.
 
 
 [[LG-3-3]]
