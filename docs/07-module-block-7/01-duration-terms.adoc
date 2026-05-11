@@ -28,6 +28,8 @@ Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und von Trainer:inn
 ** Business Model Canvas & Value Proposition
 * Kommunikation:
 ** Wie überzeuge ich Kollegen und Chefinnen von DDD?
+** Das Kommunikationsquadrat
+** Das innere Team
 
 
 // end::DE[]
@@ -59,6 +61,8 @@ Around DDD there are many topics that are related and can also be taught by the 
 ** Business Model Canvas & Value Proposition
 * Communication:
 ** How to win colleagues and managers for DDD?
+** the “Communication Square” or “Four Sides” (German: “Kommunikationsquadrat” or “Vier-Seiten”)
+** the Inner Team (German: „das Innere Team“)
 
 // end::EN[]
 

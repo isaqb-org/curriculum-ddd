@@ -83,6 +83,7 @@ This section contains references that are cited in the curriculum.
 
 **S**
 
+- [[[schulzvonthun, Schulz von Thun, F. (1981)]]] *Miteinander reden 1 – Störungen und Klärungen. Allgemeine Psychologie der Kommunikation*. Reinbek, Rowohlt.
 - [[[SkeltonPais2019,Skelton M. & Pais, M. (2019)]]] *Team Topologies: Organizing Business and Technology Teams for Fast Flow*. Portland, OR: IT Revolution.
 - [[[stenberg,Stenberg, J. (24. Februar 2015)]]] Behaviour-Driven Development Combined with Domain-Driven Design. Von http://www.infoq.com/news/2015/02/bdd-ddd abgerufen
 
