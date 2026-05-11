@@ -19,7 +19,7 @@ Dieser Block vermittelt Methoden und Vorgehensweisen, um aus einem Domänenmodel
 [[LZ-3-3]]
 ==== LZ 3-3: Wechselwirkungen zwischen einer Implementation und ihrem Modell kennen und berücksichtigen können
 * Die TN verstehen, dass Veränderungen in der Fachsprache oder dem Modell entsprechende Veränderungen in der Software folgen müssen.
-* Die TN verstehen, dass änderungen an der Implementierung des Modells, beispielsweise durch Refactorings von Services oder Repositories, ein Hinweis darauf sind, dass das Domänenmodell aktualisieren werden sollte.
+* Die TN verstehen, dass Änderungen an der Implementierung des Modells, beispielsweise durch Refactorings von Services oder Repositories, ein Hinweis darauf sind, dass das Domänenmodell aktualisiert werden sollte.
 
 
 [[LZ-3-4]]
