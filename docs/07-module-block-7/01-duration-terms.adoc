@@ -48,6 +48,9 @@ Around DDD there are many topics that are related and can also be taught by the 
 * "Large Scale Structures" by extending the case study
 
 === Terms, Principles, possible Ideas
+* Tools:
+** Bounded Context Canvas
+** User Story Mapping
 * Implementation:
 ** Demonstrate a concrete implementation example
 ** CRC Cards
