@@ -1,14 +1,17 @@
 # New in 2023.2
 
 ## Changes in "1. Domain, model, and ubiquitous language"
-- Removed distinction between "fundamental" and "additional" building blocks (fixed [#10](https://github.com/isaqb-org/curriculum-ddd/issues/10))
+- Removed distinction between "fundamental" and "additional" building blocks (fixes [#10](https://github.com/isaqb-org/curriculum-ddd/issues/10))
 - Clarified building block "modules"
 
 ## Changes in "2. The path to the model"
-- made concrete communication models (communication square, inner team) optional (fixed [#11](https://github.com/isaqb-org/curriculum-ddd/issues/11))
+- made concrete communication models (communication square, inner team) optional (fixes [#11](https://github.com/isaqb-org/curriculum-ddd/issues/11))
+- removed overlap of goals 2-1 and 2-3
+- removed overlap of goals 2-4 and 2-7
+- softened goal 2-6 from "be proficient in" to "know"
 
 ## Changes in "3. From the model to implementation"
-- renamed and rephrased goal 3-2 (fixed [#15](https://github.com/isaqb-org/curriculum-ddd/issues/15))
+- renamed and rephrased goal 3-2 (fixes [#15](https://github.com/isaqb-org/curriculum-ddd/issues/15))
 
 ## Changes in "7. Related Topics"
 - added Data Mesh as optional topic
