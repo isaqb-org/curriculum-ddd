@@ -16,6 +16,7 @@
 ## Changes in "7. Related Topics"
 - added Data Mesh as optional topic
 - added 'tools' section to English translation
+- recommend discussion of AI in context of DDD. **This discussion will become mandatory in future releases of the curriculum.**
 
 # Changes in 2023.1-rev1
 Fixed typos and references, improved English translation, and clarified terms:
