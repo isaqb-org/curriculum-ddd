@@ -1,6 +1,0 @@
-ext {
-    curriculumFileName = "curriculum-ddd"
-    languages = ["DE", "EN"]
-}
-
-defaultTasks 'buildDocs'
