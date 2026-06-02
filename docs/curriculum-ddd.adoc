@@ -22,6 +22,8 @@ include::config/i18n-definitions.adoc[tags={language}]
 
 <<<
 :sectnums!:
+[#copyright]
+== {copyright-title}
 include::../license-copyright/copyright.adoc[{include_configuration}]
 
 <<<
