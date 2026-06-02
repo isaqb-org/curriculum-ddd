@@ -1,4 +1,4 @@
 === {references}
 
-<<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<kuhl>>, <<lilienthal2023>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<SkeltonPais2019>>, <<vernon>>, <<wardley>>, <<zullighoven>>
+<<beck>>, <<dahan>>, <<evans>>, <<fowler2011>>, <<kuhl>>, <<lilienthal2023>>, <<mannsrising2015>>, <<osterwalder2010>>, <<osterwalder2013>>, <<schulzvonthun>>, <<SkeltonPais2019>>, <<vernon>>, <<wardley>>, <<zullighoven>>
 

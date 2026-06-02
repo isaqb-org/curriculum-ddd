@@ -6,6 +6,9 @@
 Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und von Trainer:innen nach Bedarf auch gelehrt werden können.
 
 === Empfehlungen
+* Diskussion (bis 30min) über den Einsatz von KI im Kontext von DDD. 
+** Mögliche Anwendungsfälle und Trade-offs besprechen.
+** Der Lehrplan gibt bewusst keine konkreten inhaltlichen Empfehlungen.
 * "Refactoring towards deeper insights" an einem Fallbeispiel verständlich machen
 * "Large Scale Structures" über das Beispiel verständlich machen
 
@@ -21,6 +24,8 @@ Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und von Trainer:inn
 ** Event Sourcing
 ** CQRS
 ** Legacy-Software mit DDD modernisieren
+* Daten:
+** Data Mesh
 * Organisation und Strategie:
 ** Team Topologies
 ** Wardley Mapping
@@ -28,6 +33,8 @@ Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und von Trainer:inn
 ** Business Model Canvas & Value Proposition
 * Kommunikation:
 ** Wie überzeuge ich Kollegen und Chefinnen von DDD?
+** Das Kommunikationsquadrat
+** Das innere Team
 
 
 // end::DE[]
@@ -40,10 +47,16 @@ Rund um DDD gibt es viele Themen, die einen Bezug dazu haben und von Trainer:inn
 Around DDD there are many topics that are related and can also be taught by the trainer as needed.
 
 === Recommendations
+* Discussion (up to 30min) about using AI in the context of DDD. 
+** Discuss possible use cases and trade-offs.
+** The curriculum deliberately does not provide any specific recommendations regarding content.
 * "Refactoring towards deeper insights" should be illustrated with the case study
 * "Large Scale Structures" by extending the case study
 
 === Terms, Principles, possible Ideas
+* Tools:
+** Bounded Context Canvas
+** User Story Mapping
 * Implementation:
 ** Demonstrate a concrete implementation example
 ** CRC Cards
@@ -52,6 +65,8 @@ Around DDD there are many topics that are related and can also be taught by the 
 ** Event Sourcing
 ** CQRS
 ** Modernizing Legacy-Software with DDD
+* Data:
+** Data Mesh
 * Organization and strategy:
 ** Team Topologies
 ** Wardley Mapping
@@ -59,6 +74,8 @@ Around DDD there are many topics that are related and can also be taught by the 
 ** Business Model Canvas & Value Proposition
 * Communication:
 ** How to win colleagues and managers for DDD?
+** the “Communication Square” or “Four Sides” (German: “Kommunikationsquadrat” or “Vier-Seiten”)
+** the Inner Team (German: „das Innere Team“)
 
 // end::EN[]
 

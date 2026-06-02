@@ -7,9 +7,6 @@ In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexper
 ==== LZ 2-1: Den hohen Stellenwert von Domänenexpert:innen in DDD kennen und erläutern können
 * Die TN können Domänenexpert:innen vermitteln, dass DDD ihnen Verantwortung und Gestaltungsmöglichkeiten bietet (Empowerment).
 * Die TN sind in der Lage, einem Entwicklungsteam zu vermitteln, dass Software die vorhandene Domäne unterstützen muss.
-* Die TN verstehen, dass das Wissen über die Domäne überwiegend in den Köpfen der Domänenexpert:innen vorhanden ist.
-* Die TN verstehen, dass implizites Domänenwissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
-* Die TN sind in der Lage, Vertrauen bei Domänenexpert:innen in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
 * Die TN können Projektsponsoren und Product Ownern die Notwendigkeit für die Mitgestaltung durch die Domänenexpert:innen vermitteln.
 
 [[LZ-2-2]]
@@ -23,21 +20,16 @@ In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexper
 
 [[LZ-2-3]]
 ==== LZ 2-3: Mit Domänenexpert:innen kommunizieren können
-* Die TN beherrschen Modelle um mit Domänenexpert:innen in einen gleichberechtigten Dialog zu treten:
-** Das Kommunikationsquadrat
-** Vier-Ohren-Modell
-** Das innere Team
+* Die TN beherrschen Methoden, um mit Domänenexpert:innen in einen gleichberechtigten Dialog zu treten.
 * Die TN verstehen, dass der Kommunikation zwischen Fachbereichen und Entwicklungsteams in DDD eine zentrale Bedeutung zukommt.
 * Die TN verstehen, dass Domänenexpert:innenen bewusst und unbewusst über Domänenwissen verfügen.
+* Die TN verstehen, dass implizites Domänenwissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
+* Die TN sind in der Lage, Vertrauen bei Domänenexpert:innen in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
 
 
 [[LZ-2-4]]
 ==== LZ 2-4: Modellierungstechniken bei der Zusammenarbeit mit Domänenexpert:innen einsetzen können
-* Die TN beherrschen die Verwendung von Klassen- und Objektdiagrammen zur Darstellung von Domänenmodellen.
-* Die TN beherrschen szenariobasierte Modellierungstechniken:
-** Use-Cases
-** User-Stories zu späteren Modellierung von Domain Events
-** Domain Events
+* Die TN beherrschen die Verwendung von z.B. Klassen- und Objektdiagrammen zur Darstellung von Domänenmodellen.
 * Die TN können Glossare für die Begriffe einer Ubiquitous Language anlegen.
 
 
@@ -53,8 +45,8 @@ In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexper
 
 
 [[LZ-2-6]]
-==== LZ 2-6: Beobachtung als Mittel zur Modellierung beherrschen
-* Die TN können die Beobachtungstechniken "Feldbeobachtung" und "Apprenticing" (vgl. <<hruschka>>) als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:
+==== LZ 2-6: Beobachtung als Mittel zur Modellierung kennen
+* Die TN kennen die Beobachtungstechniken "Feldbeobachtung" und "Apprenticing" (vgl. <<hruschka>>) als Mittel zur Offenlegung unbewussten Domänenwissens anwenden:
 ** Feldbeobachtung
 *** Analyse als stiller Beobachter
 *** Arbeitsabläufe werden schriftlich erfasst
@@ -112,9 +104,6 @@ In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexper
 ==== LG 2-1: Know and be able to explain the high importance of domain experts in DDD
 * The course participants can teach domain experts that DDD offers them responsibility and creative possibilities (empowerment).
 * The course participants are able to teach a development team that software must support the existing domain.
-* The course participants understand that knowledge about the domain primarily exists in the minds of the domain experts.
-* The course participants understand that implicit domain knowledge must be revealed and recorded so that it can be modeled.
-* The course participants are able to build trust with domain experts regarding the model as well as working together as equals.
 * The course participants are able to communicate to project sponsors and product owners about the need for active participation from the domain experts.
 
 
@@ -130,25 +119,16 @@ In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexper
 
 [[LG-2-3]]
 ==== LG 2-3: Be able to communicate with domain experts
-* The course participants are proficient in different communication models in order to enter into an equitable dialog with domain experts:
-** the “Communication Square” or “Four Sides” (German: “Kommunikationsquadrat” or “Vier-Seiten”)
-** Four-Ears (German: “Vier Ohren”)
-** the Inner Team (German: „das Innere Team“)
-* The course participants understand that the communication between domain experts and
-development teams in DDD is of critical importance.
-* The course participants understand that domain experts may consciously or unconsciously
-possess domain knowledge.
+* The course participants are proficient in different communication methods in order to enter into an equitable dialog with domain experts.
+* The course participants understand that the communication between domain experts and development teams in DDD is of critical importance.
+* The course participants understand that domain experts may consciously or unconsciously possess domain knowledge.
+* The course participants understand that knowledge about the domain primarily exists in the minds of the domain experts.
+* The course participants are able to build trust with domain experts regarding the model as well as working together as equals.
 
 
 [[LG-2-4]]
 ==== LG 2-4: Be able to use modeling techniques when working with domain experts
-* The course participants are proficient in the use of class and object diagrams to depict domain models.
-* The course participants are proficient in scenario-based modeling techniques:
-** Use cases
-** User stories for subsequent modeling of Domain Events
-** Domain Events
-* The course participants can create glossaries for the terms of a ubiquitous language.
-
+* The course participants are proficient in the use of e.g. class and object diagrams to depict domain models.
 
 [[LG-2-5]]
 ==== LG 2-5: Be able to conduct interviews to model a domain
@@ -162,8 +142,8 @@ possess domain knowledge.
 
 
 [[LG-2-6]]
-==== LG 2-6: Be proficient in observation to understand a domain
-* The course participants can apply the observation techniques of “field observation” and “apprenticing” (cf. <<hruschka>>) as tools for revealing unconscious domain knowledge:
+==== LG 2-6: Know observation techniques to understand a domain
+* The course participants know the observation techniques of “field observation” and “apprenticing” (cf. <<hruschka>>) as tools for revealing unconscious domain knowledge:
 ** Field observation
 *** Analysis as a silent observer
 *** Working processes are recorded in writing
