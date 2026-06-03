@@ -1,66 +1,90 @@
-= Template for https://isaqb.org[iSAQB] Advanced Level Curricula
-
-:toc:
-:toc-placement!:
-
-ifdef::env-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
+= Domain-Driven Design – iSAQB® Advanced Level Curriculum (DDD)
 
 == Status
-image:https://github.com/isaqb-org/curriculum-ddd/workflows/CI - Releases and Main/badge.svg?branch=main["CI"]
+image:https://github.com/isaqb-org/curriculum-ddd/workflows/CI%20-%20Releases%20and%20Main/badge.svg?branch=main["CI – Releases and Main"]
 image:https://img.shields.io/github/last-commit/isaqb-org/curriculum-ddd/main.svg["Last commit"]
 image:https://img.shields.io/github/contributors/isaqb-org/curriculum-ddd.svg["Contributors",link="https://github.com/isaqb-org/curriculum-ddd/graphs/contributors"]
 image:https://img.shields.io/github/issues/isaqb-org/curriculum-ddd.svg["Issues",link="https://github.com/isaqb-org/curriculum-ddd/issues"]
 image:https://img.shields.io/github/issues-closed/isaqb-org/curriculum-ddd.svg["Issues closed",link="https://github.com/isaqb-org/curriculum-ddd/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
 
-
 This is <<copyrighted,copyrighted work>>.
 
-== Content
+
+== About this curriculum
 This repository contains the curriculum for the https://www.isaqb.org/de/zertifizierungen/zertifizierungen-uebersicht/cpsa-advanced-level/ddd-domain-driven-design/#faqs[iSAQB Advanced Level *DDD*] in AsciiDoc. It is maintained by its curators.
 
-toc::[]
+The curriculum is written in AsciiDoc and built into versioned *PDF and HTML* output in
+*German (DE)* and *English (EN)*. It was created from the
+https://github.com/isaqb-org/advanced-template[iSAQB Advanced Level template].
 
-== How to contribute or participate
-We publish our curricula on Github to enable everyone to contribute and make suggestions how to evolve the software architecture education.
-To do this you can create an issue or a pull-request to propose additions or changes.
+== Released documents
+The latest released HTML and PDF documents (German and English) are published via GitHub
+Pages at https://public.isaqb.org/curriculum-ddd[public.isaqb.org/curriculum-ddd].
 
-If you are not familiar with Asciidoc, yet, the https://asciidoctor.org/docs/asciidoc-writers-guide/[Asciidoctor Writer's Guide] is good first place to visit.
-This guide will also be a great companion during your work with this repository.
+They are produced by CI on each release. Pre-rendered translations in other languages
+(if any) live in `docs-ext/` – see `docs-ext/EXTERNAL_DOCUMENTS_README.adoc`.
 
-== How to work with this curriculum
+== How to build locally
 
-. Either click on "Clone" in the GitHub UI or Clone the repository - including the submodule - via your git command line interface (CLI):
-+
---
+Prerequisite: https://docs.docker.com/get-docker/[Docker]. Nothing else — no JDK, no Ruby.
+
+Clone the repository (with submodules, for the license text):
+
 [source,shell]
 ----
-Via SSH:
 git clone git@github.com:isaqb-org/curriculum-ddd.git --recursive
-
-Via HTTPS:
-git clone https://github.com/isaqb-org/curriculum-ddd.git --recursive
 ----
---
-. If you don't have Java installed, https://openjdk.java.net/projects/jdk/[install a JDK]
-. Build the project with http://www.gradle.com[gradle] via the shell command `./gradle-tools/gradlew buildDocs` (NOTE: the `java` executable must be on your PATH for gradle to work properly)
-. Once the "BUILD SUCCESSFUL" is show, you can review the created files in the subdirectory `./build/index.html`
 
+If you already cloned without `--recursive`, run `git submodule update --init --recursive`.
 
-== Additional translations/languages
-include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
+Build all languages and formats:
 
-== Maintainers
+[source,shell]
+----
+./curriculum-build.sh        # Linux / macOS
+curriculum-build.bat         # Windows
+----
 
-This repository is currently maintained by Carola Lilienthal, Benjamin Wolf, and Alexander Heusingfeld.
-It was forked from https://github.com/isaqb-org/curriculum-template,
-so the contributors of that project basically contributed to this one, too.
+Build a single output — pass the format and language (and optionally a variant):
 
+[source,shell]
+----
+./curriculum-build.sh pdf DE          # Linux / macOS
+./curriculum-build.sh html EN
+./curriculum-build.sh pdf DE REMARKS
+----
+
+[source,bat]
+----
+curriculum-build.bat pdf DE           rem Windows
+curriculum-build.bat html EN
+curriculum-build.bat pdf DE REMARKS
+----
+
+Output is written to `build/`, named `<CURRICULUM_FILE>-<lang>.pdf` / `.html`, together
+with an `index.html` overview page. The launcher pulls the builder image on first run and
+reuses it afterwards.
+
+=== Build configuration
+
+`build.config` in the repository root holds the per-curriculum settings:
+
+[cols="1,3a",options="header"]
+|===
+|Key |Meaning
+
+|`CURRICULUM_FILE` |AsciiDoc root in `docs/` (without `.adoc`); also the output file name.
+|`LANGUAGES`       |Space-separated languages to build. Default `DE EN`; drop one for a single-language curriculum.
+|`SUFFIX_TAGS`     |Space-separated extra build variants, exposed as the `{suffix}` attribute. Empty = single build.
+|`PREPRESS`        |PDF print/book layout (recto chapter starts + binding margins). `true` / `false`.
+|===
+
+Any key can be overridden for a single run via an environment variable, e.g.
+`LANGUAGES="DE" ./curriculum-build.sh`.
+
+== How to contribute or participate
+
+Create an issue or a pull-request.
 
 [[copyrighted]]
 == Licensing and Copyright
