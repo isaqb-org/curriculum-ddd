@@ -4,10 +4,22 @@
 |===
 
 === Begriffe und Konzepte
-* Shared Kernel, Customer/Supplier Teams, Open Host Service (vgl. Übersicht auf Seite 388 <<evans>>)
-* Domain Event als Kommunikationsmittel
-* Anticorruption-Layer
-* Separate Ways <<vernon>>
+* Context Mapping Patterns (vgl. Übersicht auf Seite 388 <<evans>> und <<vernon>>)
+** Open-Host Service
+** Anticorruption Layer
+** Separate Ways 
+** Shared Kernel
+** Customer-Supplier
+** Conformist
+** Published Language
+** Partnership
+** Big Ball Of Mud 
+** Upstream-Downstream
+* Team-Abhängigkeiten
+** Mutual Dependency
+** Upstream-Downstream
+** Free
+* Domain Event
 
 // end::DE[]
 
@@ -17,9 +29,20 @@
 |===
 
 === Terms and Principles
-* Shared Kernel, Customer/Supplier Teams, Open Host Service (cf. overview on page 388 <<evans>>)
-* Domain Event as means of communication
-* Anticorruption-Layer
-* Separate Ways <<vernon>>
+* Context Mapping Patterns (cf. overview on page 388 <<evans>> and <<vernon>>)
+** Open-Host Service
+** Anticorruption Layer
+** Separate Ways 
+** Shared Kernel
+** Customer-Supplier
+** Conformist
+** Published Language
+** Partnership
+** Big Ball Of Mud 
+** Upstream-Downstream
+* Team Dependencies
+** Mutual Dependency
+** Upstream-Downstream
+** Free
 
 // end::EN[]
