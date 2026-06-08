@@ -13,6 +13,13 @@
 ## Changes in "3. From the model to implementation"
 - renamed and rephrased goal 3-2 (fixes [#15](https://github.com/isaqb-org/curriculum-ddd/issues/15))
 
+## Changes in "6. Strategic Design 2: Context Mapping"
+- Replaced goals 6-1 to 6-5 with two new goals, now 6-1 and 6-2
+- Renumbered goal 6-6 to 6-3
+- fixed [#19](https://github.com/isaqb-org/curriculum-ddd/issues/19)
+- fixed [#17](https://github.com/isaqb-org/curriculum-ddd/issues/17)
+- changes supersede PR [#26](https://github.com/isaqb-org/curriculum-ddd/pull/26)
+
 ## Changes in "7. Related Topics"
 - added Data Mesh as optional topic
 - added 'tools' section to English translation

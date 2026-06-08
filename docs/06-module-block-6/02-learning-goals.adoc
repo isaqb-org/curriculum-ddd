@@ -5,92 +5,67 @@
 Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Modells sichergestellt werden kann und wann es dafür notwendig ist, Teile des Modells auszugliedern.
 
 [[LZ-6-1]]
-==== LZ 6-1: Schnittstellen bei Customer/Supplier Teams einsetzen können
-* Die TN können beurteilen, ob zwei Teams sich in einer Customer/Supplier-Konstellation befinden.
-* Die TN kennen die Rahmenbedingungen für die erfolgreiche Zusammenarbeit von Customer/Supplier Teams:
-** Stabilität und Dokumentation der Schnittstelle sind wichtig für die Integration
-** Gemeinsam entwickelte Akzeptanztests helfen, die Schnittstelle zu stabilisieren
-** Voraussetzung für eine funktionierende Kunde/Anbieter-Beziehung ist ein Interesse des Anbieters an der Nutzung durch den Kunden
-* Die TN wissen, dass in einer Kundenbeziehung der Kunde die Anforderungen an die Schnittstelle des Anbieters formuliert.
+==== LZ 6-1: Team-Abhängigkeiten verstehen und bewerten
+* Die TN können beurteilen, welche Team-Abhängigkeit zwischen zwei Teams / Bounded Contexts bestehen.
+* Die TN kennen die drei von Domain-Driven Design propagierten Arten von Team-Abhängigkeiten und deren Einfluss auf das Design des Systems:
+** Mutual Dependency
+** Upstream-Downstream
+** Free
 
 [[LZ-6-2]]
-==== LZ 6-2: Ein System als Open Host Service (OHS) konzipieren können
-* Die TN verstehen, dass ein OHS die fachlichen übersetzungs-Schichten der Klienten ersetzt.
-* Die TN können Services für einen OHS entwerfen. Sie sind in der Lage, essentielle Anforderungen von spezifischen zu unterscheiden und im Entwurf zu berücksichtigen.
-* Die TN verstehen, dass eine öffentliche Schnittstelle punktuell für besondere Anforderungen einzelner Klienten erweitert werden kann, ohne die Schnittstelle der anderen Klienten zu beeinträchtigen.
-* Die TN verstehen, dass sich ein OHS besonders lohnt, wenn mehrere Kunden eine übersetzungs-Schicht benötigen.
+==== LZ 6-2: Context Mapping Patterns verstehen, erkennen und gezielt einsetzen
+* Die TN kennen mindestens fünf der folgenden Patterns, die in einer Context Map verwendet werden können:
+** Open-Host Service
+** Anticorruption Layer
+** Separate Ways
+** Shared Kernel
+** Customer-Supplier
+** Conformist
+** Published Language
+** Partnership
+** Big Ball Of Mud 
+* Die TN können die Vor- und Nachteile der oben genannten Patterns im System-Design bewerten, sowohl im Allgemeinen als auch situativ (beispielsweise unter Berücksichtigung strategischer Klassifizierungen).
+* Die TN können Patterns im Kontext der in LZ 6-1 erwähnten Team-Abhängigkeiten bewerten und korrekt einsetzen.
 
 [[LZ-6-3]]
-==== LZ 6-3: Das eigene Modell von äußeren Einflüssen isolieren können
-* Die TN können erkennen, welchen Einfluss das Modell eines angrenzenden Systems auf das eigene Modell hat.
-* Die TN können die Schnittstellen-Patterns (vgl. <<gamma>>) einsetzen, um ein Anticorruption Layer zu konstruieren.
-
-[[LZ-6-4]]
-==== LZ 6-4: Kern-Elemente mehrerer Teilmodelle in einem Shared Kernel wiederverwenden können
-* Die TN können die Angemessenheit eines Shared Kernels in einer konkreten Situation bewerten und ihn entwerfen.
-* Die TN verstehen, dass ein Shared Kernel hilft, Modellübersetzungen zu vermeiden.
-* Die TN verstehen, dass ein Shared Kernel ein großes Maß an Koordination der beteiligten Teams erfordert.
-* Die TN verstehen, dass die Teams bei der Arbeit am Shared Kernel gleichberechtigt sind.
-
-[[LZ-6-5]]
-==== LZ 6-5: Umstände verstehen, in denen eine Aufteilung des Modells sinnvoll ist (Separate Ways)
-* Die TN können die Koordinierungs-Kosten eines gemeinsamen Modells dem Overhead bei getrennten Modellen gegenüberstellen.
-* Die TN verstehen, dass die Aufteilung eines Modells entlang einer sinnvollen Grenze geschehen muss.
-* Die TN verstehen, dass in diesen Fällen die lokale Modellkonsistenz in zwei Teilmodellen leichter zu wahren ist.
-* Die TN sind in der Lage, die verbleibenden Funktionen können zu duplizieren oder miteinander zu integrieren.
-
-[[LZ-6-6]]
-==== LZ 6-6: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können
+==== LZ 6-3: Domain Events als Kommunikationsmittel zwischen Bounded Contexts nutzen können
 * Die TN verstehen, dass Domain Events den Publisher vom Subscriber entkoppeln.
 ** Insbesondere verstehen die TN, dass dies für den Publisher bedeutet, dass es für ihn nicht relevant ist, wer seine Events verarbeitet.
 * Die TN sind in der Lage Domain Events als Kommunikationsmittel zwischen Bounded Contexts zu entwerfen.
 * Die TN sind in der Lage, Chancen und Risiken von Domain Events in diesem Zusammenhang abzuwägen:
 ** Wenn Events trotz vorhandener Abhängigkeiten (z. B. innerhalb eines Bounded Contexts) eingesetzt werden, besteht das Risiko, dass dadurch die Abhängigkeiten nur versteckt werden und zur Laufzeit zu schwer nachvollziehbaren Kontrollflüssen führen.
-* Die TN sind in der Lage einen Event Store (vgl. Seite 539 <<vernon>>) einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
-
 
 // end::DE[]
 
 // tag::EN[]
-This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to outsource parts of the model.
+This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to separate parts of the model.
 
 [[LG-6-1]]
-==== LG 6-1: Be able to use interfaces for customer/supplier teams
-* The course participants can assess whether two teams are located in one customer/supplier constellation.
-* The course participants know the circumstances for the successful collaboration of customer/supplier teams:
-** Stability and documentation of the interface are important for integration
-** Jointly developed acceptance tests help to stabilize the interface
-** The prerequisite for a functioning relationship is that the supplier has an interest in the customer actually using the interface
-* The course participants know that, in a customer/supplier relationship, the customer formulates the requirements on the supplier's interface.
+==== LG 6-1: Understanding and evaluating team dependencies
+* Participants can assess which team dependencies exist between two teams / bounded contexts.
+* Participants are familiar with the three types of team dependencies publicized by Domain-Driven Design and their impact on system design:
+** Mutual Dependency
+** Upstream-Downstream
+** Free
+
 
 [[LG-6-2]]
-==== LG 6-2: Be able to design a system as an open host service (OHS)
-* The course participants understand that an OHS replaces the domain translation layers of the clients.
-* The course participants can design services for an OHS. They are able to distinguish between essential and specific requirements and take this into account in the design.
-* The course participants understand that a public interface can be extended selectively for specific requirements of individual clients, without impairing the interface of other clients.
-* The course participants understand that an OHS is particularly worthwhile if several customers require a translation layer.
+==== LG 6-2: Understanding, identifying, and effectively applying context mapping patterns
+* Participants should be familiar with at least five of the following patterns that can be used in a context map:
+** Open-Host Service
+** Anticorruption Layer
+** Separate Ways
+** Shared Kernel
+** Customer-Supplier
+** Conformist
+** Published Language
+** Partnership
+** Big Ball Of Mud 
+* Participants can evaluate the advantages and disadvantages of the above-mentioned patterns in system design, both in general and in specific contexts (for example, taking strategic classifications into account).
+* Participants can evaluate patterns in the context of the team dependencies mentioned in LG 6-1 and apply them correctly.
 
 [[LG-6-3]]
-==== LG 6-3: Be able to isolate your own model from external influences
-* The course participants can identify the possible influences that a model of a neighboring system can have on their own model.
-* The course participants can apply the Interface Patterns (cf. <<gamma>>) to construct an Anti-Corruption Layer.
-
-[[LG-6-4]]
-==== LG 6-4: Be able to reuse core elements of several partial models in a shared kernel
-* The course participants can design and assess the suitability of a shared kernel for a specific situation.
-* The course participants understand that a shared kernel helps to avoid model translations.
-* The course participants understand that a shared kernel requires a high degree of coordination among the teams involved.
-* The course participants understand that the teams collaborate on the shared kernel as equals.
-
-[[LG-6-5]]
-==== LG 6-5: Understand the circumstances in which it is appropriate to divide the model (Separate Ways)
-* The course participants can contrast the coordination costs of a common model with the overheads for separate models.
-* The course participants understand that a model must be divided along a sensible boundary.
-* The course participants understand that, in these cases, local model consistency is easier to maintain in two partial models.
-* The course participants are able to duplicate the remaining functions or integrate them with each other.
-
-[[LG-6-6]]
-==== LG 6-6: Be able to use Domain Events as a means of communication between Bounded Contexts
+==== LG 6-3: Be able to use Domain Events as a means of communication between Bounded Contexts
 * The course participants understand that Domain Events decouple the Publisher from the Subscriber.
 ** In particular, the course participants understand that, for the Publisher, this means that it is not relevant for him who processes his events.
 * The course participants are able to create Domain Events as a means of communication between Bounded Contexts.
