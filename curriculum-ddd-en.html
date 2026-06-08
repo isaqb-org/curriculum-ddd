@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <title>Curriculum forCertified Professional forSoftware Architecture (CPSA)&#174;Advanced Level: ModuleDDDDomain-Driven Design</title>
 <style>
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
@@ -1878,13 +1878,14 @@ h2 {
 <div id="header">
 <h1>Curriculum for<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Module<br>DDD<br><br>Domain-Driven Design</h1>
 <div class="details">
-<span id="revnumber"> 2023.1-rev1-EN,</span>
-<span id="revdate">20260518</span>
+<span id="revnumber"> 2023.2-rev0-EN,</span>
+<span id="revdate">20260608</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_list_of_learning_goals">List of Learning Goals</a></li>
+<li><a href="#copyright">License and Copyright</a></li>
+<li><a href="#learning-goals-overview">Learning Goals Overview</a></li>
 <li><a href="#_introduction_general_information_about_the_isaqb_advanced_level">Introduction: General information about the iSAQB Advanced Level</a>
 <ul class="sectlevel2">
 <li><a href="#_what_is_taught_in_an_advanced_level_module">What is taught in an Advanced Level module?</a></li>
@@ -1959,9 +1960,14 @@ h2 {
 <div id="preamble">
 <div class="sectionbody">
 <div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="copyright">License and Copyright</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong>&#169; (Copyright), International Software Architecture Qualification Board e. V.
-(iSAQB<sup>&#174;</sup> e. V.) 2025</strong></p>
+(iSAQB<sup>&#174;</sup> e. V.) 2026</strong></p>
 </div>
 <div class="paragraph">
 <p>The curriculum may only be used subject to the following conditions:</p>
@@ -1999,7 +2005,7 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 </div>
 </div>
 <div class="sect1">
-<h2 id="_list_of_learning_goals">List of Learning Goals</h2>
+<h2 id="learning-goals-overview">Learning Goals Overview</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -2019,6 +2025,9 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 <p><a href="#LG-2-1">LG 2-1: Know and be able to explain the high importance of domain experts in DDD</a></p>
 </li>
 <li>
+<p><a href="#LG-2-10">LG 2-10: Understand agility as a foundation of DDD</a></p>
+</li>
+<li>
 <p><a href="#LG-2-2">LG 2-2: Be able to provide support in selecting suitable contact persons</a></p>
 </li>
 <li>
@@ -2031,7 +2040,7 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 <p><a href="#LG-2-5">LG 2-5: Be able to conduct interviews to model a domain</a></p>
 </li>
 <li>
-<p><a href="#LG-2-6">LG 2-6: Be proficient in observation to understand a domain</a></p>
+<p><a href="#LG-2-6">LG 2-6: Know observation techniques to understand a domain</a></p>
 </li>
 <li>
 <p><a href="#LG-2-7">LG 2-7: Get an overview of Collaborative Modeling, its methods, and how it relates to DDD.</a></p>
@@ -2043,13 +2052,10 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 <p><a href="#LG-2-9">LG 2-9: Be able to conduct a collaborative modeling workshop</a></p>
 </li>
 <li>
-<p><a href="#LG-2-10">LG 2-10: Understand agility as a foundation of DDD</a></p>
-</li>
-<li>
 <p><a href="#LG-3-1">LG 3-1: Be able to extend a domain model with technically motivated building blocks of tactical design</a></p>
 </li>
 <li>
-<p><a href="#LG-3-2">LG 3-2: Be able to model interfaces for domain classes</a></p>
+<p><a href="#LG-3-2">LG 3-2: Be able to model domain classes</a></p>
 </li>
 <li>
 <p><a href="#LG-3-3">LG 3-3: Know and be able to take into account interactions between an implementation and its model</a></p>
@@ -2079,33 +2085,26 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 <p><a href="#LG-5-5">LG 5-5: Be able to describe model boundaries of Bounded Contexts in a Context Map</a></p>
 </li>
 <li>
-<p><a href="#LG-6-1">LG 6-1: Be able to use interfaces for customer/supplier teams</a></p>
+<p><a href="#LG-6-1">LG 6-1: Understanding and evaluating team dependencies</a></p>
 </li>
 <li>
-<p><a href="#LG-6-2">LG 6-2: Be able to design a system as an open host service (OHS)</a></p>
+<p><a href="#LG-6-2">LG 6-2: Understanding, identifying, and effectively applying context mapping patterns</a></p>
 </li>
 <li>
-<p><a href="#LG-6-3">LG 6-3: Be able to isolate your own model from external influences</a></p>
-</li>
-<li>
-<p><a href="#LG-6-4">LG 6-4: Be able to reuse core elements of several partial models in a shared kernel</a></p>
-</li>
-<li>
-<p><a href="#LG-6-5">LG 6-5: Understand the circumstances in which it is appropriate to divide the model (Separate Ways)</a></p>
-</li>
-<li>
-<p><a href="#LG-6-6">LG 6-6: Be able to use Domain Events as a means of communication between Bounded Contexts</a></p>
+<p><a href="#LG-6-3">LG 6-3: Be able to use Domain Events as a means of communication between Bounded Contexts</a></p>
 </li>
 </ul>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect1">
+<div class="sect1 arabic-start">
 <h2 id="_introduction_general_information_about_the_isaqb_advanced_level">Introduction: General information about the iSAQB Advanced Level</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_what_is_taught_in_an_advanced_level_module">What is taught in an Advanced Level module?</h3>
+<div class="paragraph">
+<p>The module can be attended independently of a CPSA-F certification.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -2192,6 +2191,9 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 </div>
 <div class="sect2">
 <h3 id="_curriculum_structure_and_recommended_durations">Curriculum Structure and Recommended Durations</h3>
+<div class="paragraph">
+<p><strong>Note:</strong> The order of the chapters does not dictate the layout of a training course. Providers can adjust this for didactic reasons.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2427,24 +2429,14 @@ The course participants also obtain a detailed insight into the various componen
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants understand the fundamental building blocks of tactical design.</p>
+<p>The course participants understand the building blocks of tactical design.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Value Objects represent elementary value types from the domain. They can only contain other Value Objects. Value Objects have no identity, but are comparable.</p>
+<p><strong>Value Objects</strong> represent elementary value types from the domain. They can only contain other Value Objects. Value Objects have no identity, but are comparable.</p>
 </li>
 <li>
-<p>Entities represent things in the domain. They can contain Value Objects and other Entities. Entities have an identity.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>The course participants understand the additional building blocks of tactical design.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Modules</strong> as static grouping mechanisms for code artifacts.</p>
+<p><strong>Entities</strong> represent things in the domain. They can contain Value Objects and other Entities. Entities have an identity.</p>
 </li>
 <li>
 <p><strong>Services</strong> encapsulate independent functions that cannot be allocated to individual Entities. They decouple functionality from states and should therefore be stateless. They enable, among other things, domain processes to be documented in a domain model.</p>
@@ -2460,6 +2452,9 @@ The course participants also obtain a detailed insight into the various componen
 </li>
 <li>
 <p><strong>Domain Events</strong> support the sharing of information about the occurrence of domain-related incidents. Domain Events are triggered by Aggregates or Entities and propagated via a publisher/subscriber pattern (cf. Observer <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>) to registered clients.</p>
+</li>
+<li>
+<p><strong>Modules</strong> as static grouping mechanisms for building blocks.</p>
 </li>
 </ul>
 </div>
@@ -2534,15 +2529,6 @@ The course participants also obtain a detailed insight into the various componen
 <p>The course participants are able to teach a development team that software must support the existing domain.</p>
 </li>
 <li>
-<p>The course participants understand that knowledge about the domain primarily exists in the minds of the domain experts.</p>
-</li>
-<li>
-<p>The course participants understand that implicit domain knowledge must be revealed and recorded so that it can be modeled.</p>
-</li>
-<li>
-<p>The course participants are able to build trust with domain experts regarding the model as well as working together as equals.</p>
-</li>
-<li>
 <p>The course participants are able to communicate to project sponsors and product owners about the need for active participation from the domain experts.</p>
 </li>
 </ul>
@@ -2582,28 +2568,19 @@ The course participants also obtain a detailed insight into the various componen
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants are proficient in different communication models in order to enter into an equitable dialog with domain experts:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>the “Communication Square” or “Four Sides” (German: “Kommunikationsquadrat” or “Vier-Seiten”)</p>
+<p>The course participants are proficient in different communication methods in order to enter into an equitable dialog with domain experts.</p>
 </li>
 <li>
-<p>Four-Ears (German: “Vier Ohren”)</p>
+<p>The course participants understand that the communication between domain experts and development teams in DDD is of critical importance.</p>
 </li>
 <li>
-<p>the Inner Team (German: „das Innere Team“)</p>
-</li>
-</ul>
-</div>
+<p>The course participants understand that domain experts may consciously or unconsciously possess domain knowledge.</p>
 </li>
 <li>
-<p>The course participants understand that the communication between domain experts and
-development teams in DDD is of critical importance.</p>
+<p>The course participants understand that knowledge about the domain primarily exists in the minds of the domain experts.</p>
 </li>
 <li>
-<p>The course participants understand that domain experts may consciously or unconsciously
-possess domain knowledge.</p>
+<p>The course participants are able to build trust with domain experts regarding the model as well as working together as equals.</p>
 </li>
 </ul>
 </div>
@@ -2613,26 +2590,7 @@ possess domain knowledge.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants are proficient in the use of class and object diagrams to depict domain models.</p>
-</li>
-<li>
-<p>The course participants are proficient in scenario-based modeling techniques:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Use cases</p>
-</li>
-<li>
-<p>User stories for subsequent modeling of Domain Events</p>
-</li>
-<li>
-<p>Domain Events</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>The course participants can create glossaries for the terms of a ubiquitous language.</p>
+<p>The course participants are proficient in the use of e.g. class and object diagrams to depict domain models.</p>
 </li>
 </ul>
 </div>
@@ -2670,11 +2628,11 @@ possess domain knowledge.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LG-2-6">LG 2-6: Be proficient in observation to understand a domain</h4>
+<h4 id="LG-2-6">LG 2-6: Know observation techniques to understand a domain</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants can apply the observation techniques of “field observation” and “apprenticing” (cf. <a href="#hruschka">[Hruschka, P. (2019)]</a>) as tools for revealing unconscious domain knowledge:</p>
+<p>The course participants know the observation techniques of “field observation” and “apprenticing” (cf. <a href="#hruschka">[Hruschka, P. (2019)]</a>) as tools for revealing unconscious domain knowledge:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2829,7 +2787,7 @@ possess domain knowledge.</p>
 <div class="sect2">
 <h3 id="_references_2">2.3. References</h3>
 <div class="paragraph">
-<p><a href="#adzic">[Adzic, G. (2012)]</a>, <a href="#beck2001">[Beck, K. et al. (2001)]</a>, <a href="#brandolini">[Brandolini, A. (18. November 2013)]</a>, <a href="#hofer">[Hofer, S. &amp; Schwentner, H. (2022)]</a>, <a href="#hruschka">[Hruschka, P. (2019)]</a>, <a href="#patton">[Patton, J. (2014)]</a>, <a href="#wynne">[Wynne, M. (8. Dezember 2015)]</a></p>
+<p><a href="#adzic">[Adzic, G. (2012)]</a>, <a href="#beck2001">[Beck, K. et al. (2001)]</a>, <a href="#brandolini">[Brandolini, A. (2021)]</a>, <a href="#hofer">[Hofer, S. &amp; Schwentner, H. (2022)]</a>, <a href="#hruschka">[Hruschka, P. (2019)]</a>, <a href="#patton">[Patton, J. (2014)]</a>, <a href="#wynne">[Wynne, M. (8. Dezember 2015)]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2898,11 +2856,11 @@ possess domain knowledge.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LG-3-2">LG 3-2: Be able to model interfaces for domain classes</h4>
+<h4 id="LG-3-2">LG 3-2: Be able to model domain classes</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants can assess and apply the design principles and heuristics from the Foundation Level to the DDD design.</p>
+<p>The course participants can assess and apply the design principles from the Foundation Level to the DDD design.</p>
 </li>
 </ul>
 </div>
@@ -3200,16 +3158,57 @@ It also teaches strategies for distributing multiple models and their resulting 
 <div class="ulist">
 <ul>
 <li>
-<p>Shared Kernel, Customer/Supplier Teams, Open Host Service (cf. overview on page 388 <a href="#evans">[Evans, E. (2003)]</a>)</p>
+<p>Context Mapping Patterns (cf. overview on page 388 <a href="#evans">[Evans, E. (2003)]</a> and <a href="#vernon">[Vernon, V. (2013)]</a>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Open-Host Service</p>
 </li>
 <li>
-<p>Domain Event as means of communication</p>
+<p>Anticorruption Layer</p>
 </li>
 <li>
-<p>Anticorruption-Layer</p>
+<p>Separate Ways</p>
 </li>
 <li>
-<p>Separate Ways <a href="#vernon">[Vernon, V. (2013)]</a></p>
+<p>Shared Kernel</p>
+</li>
+<li>
+<p>Customer-Supplier</p>
+</li>
+<li>
+<p>Conformist</p>
+</li>
+<li>
+<p>Published Language</p>
+</li>
+<li>
+<p>Partnership</p>
+</li>
+<li>
+<p>Big Ball Of Mud</p>
+</li>
+<li>
+<p>Upstream-Downstream</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Team Dependencies</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Mutual Dependency</p>
+</li>
+<li>
+<p>Upstream-Downstream</p>
+</li>
+<li>
+<p>Free</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -3217,109 +3216,83 @@ It also teaches strategies for distributing multiple models and their resulting 
 <div class="sect2">
 <h3 id="_learning_goals_6">6.2. Learning Goals</h3>
 <div class="paragraph">
-<p>This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to outsource parts of the model.</p>
+<p>This section teaches approaches with which the consistency within a model can be ensured as well as when it is necessary to separate parts of the model.</p>
 </div>
 <div class="sect3">
-<h4 id="LG-6-1">LG 6-1: Be able to use interfaces for customer/supplier teams</h4>
+<h4 id="LG-6-1">LG 6-1: Understanding and evaluating team dependencies</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants can assess whether two teams are located in one customer/supplier constellation.</p>
+<p>Participants can assess which team dependencies exist between two teams / bounded contexts.</p>
 </li>
 <li>
-<p>The course participants know the circumstances for the successful collaboration of customer/supplier teams:</p>
+<p>Participants are familiar with the three types of team dependencies publicized by Domain-Driven Design and their impact on system design:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Stability and documentation of the interface are important for integration</p>
+<p>Mutual Dependency</p>
 </li>
 <li>
-<p>Jointly developed acceptance tests help to stabilize the interface</p>
+<p>Upstream-Downstream</p>
 </li>
 <li>
-<p>The prerequisite for a functioning relationship is that the supplier has an interest in the customer actually using the interface</p>
+<p>Free</p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p>The course participants know that, in a customer/supplier relationship, the customer formulates the requirements on the supplier&#8217;s interface.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LG-6-2">LG 6-2: Be able to design a system as an open host service (OHS)</h4>
+<h4 id="LG-6-2">LG 6-2: Understanding, identifying, and effectively applying context mapping patterns</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>The course participants understand that an OHS replaces the domain translation layers of the clients.</p>
+<p>Participants should be familiar with at least five of the following patterns that can be used in a context map:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Open-Host Service</p>
 </li>
 <li>
-<p>The course participants can design services for an OHS. They are able to distinguish between essential and specific requirements and take this into account in the design.</p>
+<p>Anticorruption Layer</p>
 </li>
 <li>
-<p>The course participants understand that a public interface can be extended selectively for specific requirements of individual clients, without impairing the interface of other clients.</p>
+<p>Separate Ways</p>
 </li>
 <li>
-<p>The course participants understand that an OHS is particularly worthwhile if several customers require a translation layer.</p>
+<p>Shared Kernel</p>
+</li>
+<li>
+<p>Customer-Supplier</p>
+</li>
+<li>
+<p>Conformist</p>
+</li>
+<li>
+<p>Published Language</p>
+</li>
+<li>
+<p>Partnership</p>
+</li>
+<li>
+<p>Big Ball Of Mud</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Participants can evaluate the advantages and disadvantages of the above-mentioned patterns in system design, both in general and in specific contexts (for example, taking strategic classifications into account).</p>
+</li>
+<li>
+<p>Participants can evaluate patterns in the context of the team dependencies mentioned in LG 6-1 and apply them correctly.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="LG-6-3">LG 6-3: Be able to isolate your own model from external influences</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>The course participants can identify the possible influences that a model of a neighboring system can have on their own model.</p>
-</li>
-<li>
-<p>The course participants can apply the Interface Patterns (cf. <a href="#gamma">[Gamma, E., Helm, R., Johnson, R. E., &amp; Vlissides, J. (1994)]</a>) to construct an Anti-Corruption Layer.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="LG-6-4">LG 6-4: Be able to reuse core elements of several partial models in a shared kernel</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>The course participants can design and assess the suitability of a shared kernel for a specific situation.</p>
-</li>
-<li>
-<p>The course participants understand that a shared kernel helps to avoid model translations.</p>
-</li>
-<li>
-<p>The course participants understand that a shared kernel requires a high degree of coordination among the teams involved.</p>
-</li>
-<li>
-<p>The course participants understand that the teams collaborate on the shared kernel as equals.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="LG-6-5">LG 6-5: Understand the circumstances in which it is appropriate to divide the model (Separate Ways)</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>The course participants can contrast the coordination costs of a common model with the overheads for separate models.</p>
-</li>
-<li>
-<p>The course participants understand that a model must be divided along a sensible boundary.</p>
-</li>
-<li>
-<p>The course participants understand that, in these cases, local model consistency is easier to maintain in two partial models.</p>
-</li>
-<li>
-<p>The course participants are able to duplicate the remaining functions or integrate them with each other.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="LG-6-6">LG 6-6: Be able to use Domain Events as a means of communication between Bounded Contexts</h4>
+<h4 id="LG-6-3">LG 6-3: Be able to use Domain Events as a means of communication between Bounded Contexts</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -3384,6 +3357,19 @@ It also teaches strategies for distributing multiple models and their resulting 
 <div class="ulist">
 <ul>
 <li>
+<p>Discussion (up to 30min) about using AI in the context of DDD.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Discuss possible use cases and trade-offs.</p>
+</li>
+<li>
+<p>The curriculum deliberately does not provide any specific recommendations regarding content.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
 <p>"Refactoring towards deeper insights" should be illustrated with the case study</p>
 </li>
 <li>
@@ -3396,6 +3382,19 @@ It also teaches strategies for distributing multiple models and their resulting 
 <h3 id="_terms_principles_possible_ideas">7.2. Terms, Principles, possible Ideas</h3>
 <div class="ulist">
 <ul>
+<li>
+<p>Tools:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Bounded Context Canvas</p>
+</li>
+<li>
+<p>User Story Mapping</p>
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p>Implementation:</p>
 <div class="ulist">
@@ -3429,6 +3428,16 @@ It also teaches strategies for distributing multiple models and their resulting 
 </div>
 </li>
 <li>
+<p>Data:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Data Mesh</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
 <p>Organization and strategy:</p>
 <div class="ulist">
 <ul>
@@ -3454,6 +3463,12 @@ It also teaches strategies for distributing multiple models and their resulting 
 <li>
 <p>How to win colleagues and managers for DDD?</p>
 </li>
+<li>
+<p>the “Communication Square” or “Four Sides” (German: “Kommunikationsquadrat” or “Vier-Seiten”)</p>
+</li>
+<li>
+<p>the Inner Team (German: „das Innere Team“)</p>
+</li>
 </ul>
 </div>
 </li>
@@ -3463,7 +3478,7 @@ It also teaches strategies for distributing multiple models and their resulting 
 <div class="sect2">
 <h3 id="_references_7">7.3. References</h3>
 <div class="paragraph">
-<p><a href="#beck">[Beck, K., &amp; Cunningham, W. (1989)]</a>, <a href="#dahan">[Dahan, U. (9. Dezember 2009)]</a>, <a href="#evans">[Evans, E. (2003)]</a>, <a href="#fowler2011">[Fowler, M. (14. Juli 2011)]</a>, <a href="#kuhl">[Kühl, S. &amp; Muster, J. (2018)]</a>, <a href="#lilienthal2023">[Lilienthal, C. &amp; Schwentner, H. (2023)]</a>, <a href="#mannsrising2015">[Manns, M. L. &amp; Rising, L.  (2015)]</a>, <a href="#osterwalder2010">[Osterwalder, A. &amp; Pigneur, Y. (2010)]</a>, <a href="#osterwalder2013">[Osterwalder, A. (2013)]</a>, <a href="#SkeltonPais2019">[Skelton M. &amp; Pais, M. (2019)]</a>, <a href="#vernon">[Vernon, V. (2013)]</a>, <a href="#wardley">[Wardley, S. (2020)]</a>, <a href="#zullighoven">[Züllighoven, H. (1998)]</a></p>
+<p><a href="#beck">[Beck, K., &amp; Cunningham, W. (1989)]</a>, <a href="#dahan">[Dahan, U. (9. Dezember 2009)]</a>, <a href="#evans">[Evans, E. (2003)]</a>, <a href="#fowler2011">[Fowler, M. (14. Juli 2011)]</a>, <a href="#kuhl">[Kühl, S. &amp; Muster, J. (2018)]</a>, <a href="#lilienthal2023">[Lilienthal, C. &amp; Schwentner, H. (2023)]</a>, <a href="#mannsrising2015">[Manns, M. L. &amp; Rising, L.  (2015)]</a>, <a href="#osterwalder2010">[Osterwalder, A. &amp; Pigneur, Y. (2010)]</a>, <a href="#osterwalder2013">[Osterwalder, A. (2013)]</a>, <a href="#schulzvonthun">[Schulz von Thun, F. (1981)]</a>, <a href="#SkeltonPais2019">[Skelton M. &amp; Pais, M. (2019)]</a>, <a href="#vernon">[Vernon, V. (2013)]</a>, <a href="#wardley">[Wardley, S. (2020)]</a>, <a href="#zullighoven">[Züllighoven, H. (1998)]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -3500,7 +3515,7 @@ It also teaches strategies for distributing multiple models and their resulting 
 <p><a id="beck2001"></a>[Beck, K. et al. (2001)] <strong>Manifesto for Agile Software Development</strong>. Von <a href="https://agilemanifesto.org" class="bare">https://agilemanifesto.org</a>. abgerufen</p>
 </li>
 <li>
-<p><a id="brandolini"></a>[Brandolini, A. (18. November 2013)]  <strong>Introducing Event Storming</strong>. Von <a href="http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html" class="bare">http://ziobrando.blogspot.de/2013/11/introducing-event-storming.html</a> abgerufen</p>
+<p><a id="brandolini"></a>[Brandolini, A. (2021)]  <strong>Introducing EventStorming</strong>. Leanpub. Von <a href="https://leanpub.com/introducing_eventstorming" class="bare">https://leanpub.com/introducing_eventstorming</a> abgerufen</p>
 </li>
 </ul>
 </div>
@@ -3651,6 +3666,9 @@ It also teaches strategies for distributing multiple models and their resulting 
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
+<p><a id="schulzvonthun"></a>[Schulz von Thun, F. (1981)] <strong>Miteinander reden 1 – Störungen und Klärungen. Allgemeine Psychologie der Kommunikation</strong>. Reinbek, Rowohlt.</p>
+</li>
+<li>
 <p><a id="SkeltonPais2019"></a>[Skelton M. &amp; Pais, M. (2019)] <strong>Team Topologies: Organizing Business and Technology Teams for Fast Flow</strong>. Portland, OR: IT Revolution.</p>
 </li>
 <li>
@@ -3702,8 +3720,8 @@ It also teaches strategies for distributing multiple models and their resulting 
 </div>
 <div id="footer">
 <div id="footer-text">
- 2023.1-rev1-EN<br>
-Last updated 2026-05-18 09:05:33 UTC
+ 2023.2-rev0-EN<br>
+Last updated 2026-06-08 09:15:14 UTC
 </div>
 </div>
 </body>
