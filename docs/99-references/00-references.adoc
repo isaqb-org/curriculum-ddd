@@ -90,8 +90,6 @@ This section contains references that are cited in the curriculum.
 **V**
 
 - [[[vernon,Vernon, V. (2013)]]] *Implementing Domain-Driven Design*. Addison-Wesley.
-- [[[vernon2016,Vernon, V. (2016)]]] *Domain-Driven Design Distilled*. Addison-Wesley.
-- [[[vernon2017,Vernon, V. (2017)]]] *Domain-Driven Design kompakt*. dPunkt.
 
 **W**
 

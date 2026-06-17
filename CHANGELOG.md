@@ -1,3 +1,7 @@
+# Changes in 2023.2-rev1
+- re-added line about 'event store' to German translation of goal 6-3 (was accidentally deleted in 2023.2.rev-0)
+- removed Vernon's "DDD Distilled" from list of references because it is no longer cited
+
 # New in 2023.2
 
 ## Changes in "1. Domain, model, and ubiquitous language"

@@ -34,6 +34,7 @@ Dieser Block vermittelt Ansätze, mit denen die Konsistenz innerhalb eines Model
 * Die TN sind in der Lage Domain Events als Kommunikationsmittel zwischen Bounded Contexts zu entwerfen.
 * Die TN sind in der Lage, Chancen und Risiken von Domain Events in diesem Zusammenhang abzuwägen:
 ** Wenn Events trotz vorhandener Abhängigkeiten (z. B. innerhalb eines Bounded Contexts) eingesetzt werden, besteht das Risiko, dass dadurch die Abhängigkeiten nur versteckt werden und zur Laufzeit zu schwer nachvollziehbaren Kontrollflüssen führen.
+* Die TN sind in der Lage einen Event Store (vgl. Seite 539 <<vernon>>) einzusetzen, um es den Subscribern zu ermöglichen, fehlerhaft verarbeitete Events erneut zu verarbeiten.
 
 // end::DE[]
 
