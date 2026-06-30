@@ -52,7 +52,8 @@ It also teaches strategies for distributing multiple models and their resulting 
 ==== LG 5-1: Know symptoms that can occur with excessively large models
 * The course participants can identify the following circumstances as symptoms:
 ** Various user groups use the same terms in different ways.
-** The model can no longer be managed by a developer team. o The model appears inconsistent.
+** The model can no longer be managed by a developer team.
+** The model appears inconsistent.
 
 [[LG-5-2]]
 ==== LG 5-2: Be able to assess advantages and disadvantages of a cross-team model
@@ -66,7 +67,7 @@ It also teaches strategies for distributing multiple models and their resulting 
 [[LG-5-3]]
 ==== LG 5-3: Be able to move on from problem to solution space
 * The participants know the terms "problem space" and "solution space" and the difference.
-* The participants understand in the solution space "model" and "design" and how tio build them.
+* The participants understand in the solution space "model" and "design" and how to build them.
 * The participants understand how in the problem space the domain can be understood and divided into subdomains.
 * The participants understand that language is context dependent and language is an important driver for deriving bounded contexts from subdomains.
 * The participants understand how bounded contexts can be derived from subdomains.

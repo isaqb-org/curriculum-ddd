@@ -34,7 +34,7 @@ vergleichbar.
 
 [[LZ-1-4]]
 ==== LZ 1-4: Die Zusammenhänge zwischen den Bausteinen des Tactical Design kennen und erklären können
-* Die TN sind in der Lage, die Bausteine des Tactical Design in Beziehung zu setzen und sinnvoll miteinander zu kombinieren (vgl. Übersicht auf Seite 65 <<evans>>]).
+* Die TN sind in der Lage, die Bausteine des Tactical Design in Beziehung zu setzen und sinnvoll miteinander zu kombinieren (vgl. Übersicht auf Seite 65 <<evans>>).
 
 // end::DE[]
 

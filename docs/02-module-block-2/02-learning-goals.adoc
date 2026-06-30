@@ -22,7 +22,7 @@ In diesem Block lernen die Teilnehmer:innen, wie sie gemeinsam mit Domänenexper
 ==== LZ 2-3: Mit Domänenexpert:innen kommunizieren können
 * Die TN beherrschen Methoden, um mit Domänenexpert:innen in einen gleichberechtigten Dialog zu treten.
 * Die TN verstehen, dass der Kommunikation zwischen Fachbereichen und Entwicklungsteams in DDD eine zentrale Bedeutung zukommt.
-* Die TN verstehen, dass Domänenexpert:innenen bewusst und unbewusst über Domänenwissen verfügen.
+* Die TN verstehen, dass Domänenexpert:innen bewusst und unbewusst über Domänenwissen verfügen.
 * Die TN verstehen, dass implizites Domänenwissen offengelegt und festgehalten werden muss, damit es modelliert werden kann.
 * Die TN sind in der Lage, Vertrauen bei Domänenexpert:innen in das Modell und in die gleichberechtigte Zusammenarbeit zu schaffen.
 

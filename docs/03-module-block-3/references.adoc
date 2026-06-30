@@ -1,4 +1,4 @@
 === {references}
 
-<<avram>>, <<fowler2002>>, <<martin>>, <<lilienthal>>, <<liebherr>>
+<<avram>>, <<fowler2002>>, <<martin>>, <<lilienthal>>, <<lieberherr>>
 

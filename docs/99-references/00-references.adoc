@@ -59,7 +59,7 @@ This section contains references that are cited in the curriculum.
 
 **L**
 
-- [[[liebherr,Liebherr, K., Holland, I., & Riel, A. (1988)]]] *Object-oriented programming: an objective sense of style*. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
+- [[[lieberherr,Lieberherr, K., Holland, I., & Riel, A. (1988)]]] *Object-oriented programming: an objective sense of style*. OOPSLA '88 Conference proceedings on Object-oriented programming systems, languages and applications. ACM New York.
 - [[[lilienthal,Lilienthal, C. (2019)]]] *Langlebige Software-Architekturen*. dpunkt.verlag.
 - [[[lilienthal2023,Lilienthal, C. & Schwentner, H. (2023)]]] *Domain-Driven Transformation*. dpunkt.verlag.
 
